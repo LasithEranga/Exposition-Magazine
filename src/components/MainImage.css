@@ -1,0 +1,23 @@
+.main-image {
+  height: 25rem;
+}
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+  .main-image {
+    height: 35rem;
+  }
+}
+
+@media (min-width: 2000px) {
+    .main-image {
+        height: 50rem;
+      }
+}
