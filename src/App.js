@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
@@ -7,14 +8,20 @@ import HorizontalView from './components/HorizontalCarousel';
 import StudentsCorner from './components/StudentsCorner';
 
 
+
 function App() {
   return (
     <React.Fragment>
-      <Header/>
-      <LatestArticles/>
-      <MainImage/>
-    <HorizontalView />
+
+      <Header />
+      <LatestArticles />
+      <MainImage />
+
+      <div className="mt-4">
+        <HorizontalView />
+      </div>
     <StudentsCorner />
+
     </React.Fragment>
   );
 }
