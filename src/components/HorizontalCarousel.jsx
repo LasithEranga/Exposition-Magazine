@@ -1,10 +1,6 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-// import Carousel from "react-bootstrap/Carousel";
-import Col from "react-bootstrap/Col";
 import CardView from "./CardView";
-//test
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import './dotStyle.css';
