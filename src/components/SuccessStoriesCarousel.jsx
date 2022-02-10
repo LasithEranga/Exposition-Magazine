@@ -3,11 +3,10 @@ import "./SuccessStories.css";
 
 const SuccessStoryCarousel = ({ stories }) => {
   return (
-    <div className=" w-100">
-      <Carousel controls={false} fade className="position-relative">
+      <Carousel controls={false} fade className="position-relative" pause={false}>
 
         {stories?stories.map((story,index) => (
-          <Carousel.Item key={index} interval={1500}>
+          <Carousel.Item key={index} interval={1000} >
             <div className=" bg-dark w-100 " style={{ height: "40rem" }}>
               
               <img
@@ -55,7 +54,6 @@ const SuccessStoryCarousel = ({ stories }) => {
           </Carousel.Item>
         )):''}
       </Carousel>
-    </div>
   );
 };
 
