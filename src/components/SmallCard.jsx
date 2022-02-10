@@ -9,8 +9,8 @@ function SmallCard() {
   return (
    
         <Row>
-          <Col className="bg-dark"  style={{ height: "7rem" }}>Image</Col>
-          <Col>
+          <Col className="bg-dark col-12 col-md-6"  style={{ height: "7rem" }}>Image</Col>
+          <Col className=" col-12 col-md-6">
             <span>Hello Title</span>
             <br></br>{" "}
             <span>
