@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import CardView from "./CardView";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import './dotStyle.css';
+import "./dotStyle.css";
 
 function HorizontalView() {
   const responsive = {
@@ -24,46 +24,45 @@ function HorizontalView() {
     },
   };
 
-
-
   return (
-    <Container className="justify-content-center bg-light pt-3 ps-4 pb-4">
-      <Carousel
-      arrows={false} 
-        dotListClass = "dotw"
-        removeArrowOnDeviceType={["tablet", "mobile"]}
-        autoPlay={true}
-        autoPlaySpeed={1000}
-        infinite={true}
-        showDots={true}
-        responsive={responsive}
-      >
-        <div>
-          <CardView />
-        </div>
-        <div>
-          <CardView />
-        </div>
-        <div>
-          <CardView />
-        </div>
-        <div>
-          <CardView />
-        </div>
-        <div>
-          <CardView />
-        </div>
-        <div>
-          <CardView />
-        </div>
-        <div>
-          <CardView />
-        </div>
-        <div>
-          <CardView />
-        </div>
-      </Carousel>
-    </Container>
+      <Container className="justify-content-center bg-light pt-3 ps-4 pb-4">
+        
+        <Carousel
+          arrows={false}
+          dotListClass="dotw"
+          removeArrowOnDeviceType={["tablet", "mobile"]}
+          autoPlay={true}
+          autoPlaySpeed={1000}
+          infinite={true}
+          showDots={true}
+          responsive={responsive}
+        >
+          <div>
+            <CardView />
+          </div>
+          <div>
+            <CardView />
+          </div>
+          <div>
+            <CardView />
+          </div>
+          <div>
+            <CardView />
+          </div>
+          <div>
+            <CardView />
+          </div>
+          <div>
+            <CardView />
+          </div>
+          <div>
+            <CardView />
+          </div>
+          <div>
+            <CardView />
+          </div>
+        </Carousel>
+      </Container>
   );
 
   // return (

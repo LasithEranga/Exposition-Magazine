@@ -5,9 +5,11 @@ const SuccessStoryCarousel = ({ stories }) => {
   return (
     <div className=" w-100">
       <Carousel controls={false} fade className="position-relative">
+
         {stories?stories.map((story,index) => (
-          <Carousel.Item key={index}>
+          <Carousel.Item key={index} interval={1500}>
             <div className=" bg-dark w-100 " style={{ height: "40rem" }}>
+              
               <img
                 src={story.image?story.image:''}
                 alt={story.alt?story.alt:''}
