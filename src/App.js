@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import LatestArticles from "./components/LatestArticles";
 import MainImage from "./components/MainImage";
 import HorizontalView from "./components/HorizontalCarousel";
-import StudentsCorner from "./components/StudentsCorner";
+import BelowLanding from "./components/BelowLanding";
 import SuccessStories from "./components/SuccessStories";
 
 function App() {
@@ -17,7 +17,9 @@ function App() {
       <div className="mt-4">
         <HorizontalView />
       </div>
-      <StudentsCorner />
+      <div className="mt-4">
+      <BelowLanding />
+      </div>
       <SuccessStories/>
     </React.Fragment>
   );

@@ -1,18 +1,12 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 import SmallCard from "./SmallCard";
 import Card from "react-bootstrap/Card";
 import './StudentCorner.css'
 
-function StudentsCorner() {
+function News() {
   return (
-      <Card className="border-0 ps-2 pt-2">
+      <Card className="border-0 ps-2 pt-2 border-0">
         <Card.Body className=" student-corner-container ">
-          <SmallCard />
-          <SmallCard />
-          <SmallCard />
-          <SmallCard />
-          <SmallCard />
           <SmallCard />
           <SmallCard />
           <SmallCard />
@@ -22,4 +16,4 @@ function StudentsCorner() {
   );
 }
 
-export default StudentsCorner;
+export default News;
