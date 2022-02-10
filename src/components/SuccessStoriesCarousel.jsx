@@ -38,7 +38,7 @@ const SuccessStoryCarousel = ({ stories }) => {
                 alt={story.alt?story.alt:''}
               />
               <div
-                className="testomonial-width bg-light p-4 fst-italic d-flex justify-content-center align-items-center flex-column"
+                className="testomonial-width mx-2  bg-light p-4 fst-italic d-flex justify-content-center align-items-center flex-column"
                 style={{
                   borderRadius: "1.5rem",
                   height: "fit-content"
