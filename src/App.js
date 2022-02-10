@@ -6,6 +6,7 @@ import MainImage from "./components/MainImage";
 import HorizontalView from "./components/HorizontalCarousel";
 import BelowLanding from "./components/BelowLanding";
 import SuccessStories from "./components/SuccessStories";
+import SectionFour from "./components/SectionFour.jsx";
 
 function App() {
   return (
@@ -20,7 +21,11 @@ function App() {
       <div className="mt-4">
       <BelowLanding />
       </div>
+      
       <SuccessStories/>
+      <div className="mt-4">
+      <SectionFour />
+      </div>
     </React.Fragment>
   );
 }
