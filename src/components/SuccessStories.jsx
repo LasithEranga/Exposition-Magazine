@@ -1,8 +1,14 @@
-import stories from '../Data/SuccessStories.json';
+import { Container } from "react-bootstrap";
+import Title from './Title';
+import stories from "../Data/SuccessStories.json";
 
-import SuccessStoriesCarousel from './SuccessStoriesCarousel';
-const SuccessStories = ()=>{
-    return <SuccessStoriesCarousel stories={stories}/>
-}
+import SuccessStoriesCarousel from "./SuccessStoriesCarousel";
 
-export default SuccessStories; 
+const SuccessStories = () => {
+  return <Container fluid={'md'} className="m-0 p-0 m-lg-auto">
+      <Title style={{marginLeft:'1rem'}}>Success Stories</Title>
+      <SuccessStoriesCarousel stories={stories} />
+  </Container>;
+};
+
+export default SuccessStories;
