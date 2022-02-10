@@ -30,7 +30,7 @@ function HorizontalView() {
       <Container>
         <Title >Interviews</Title>
       </Container>
-      <Container className="justify-content-center bg-light pt-3 ps-4 pb-4">
+      <Container className="justify-content-center bg-light pt-3 ps-4 pb-4 ">
         <Carousel
           arrows={false}
           dotListClass="dotw"
