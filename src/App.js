@@ -14,7 +14,7 @@ function App() {
       <LatestArticles />
       <MainImage />
 
-      <div className="mt-4">
+      <div className="mt-4 px-3 px-md-0">
         <HorizontalView />
       </div>
       <div className="mt-4">

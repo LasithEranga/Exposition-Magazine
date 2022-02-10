@@ -4,9 +4,9 @@ import SmallCard from "./SmallCard";
 import Card from "react-bootstrap/Card";
 import './StudentCorner.css'
 
-function StudentsCorner() {
+function StudentsCorner(props) {
   return (
-      <Card className="border-0 ps-2 pt-2">
+      <Card className={"border-0 ps-2 pt-2 rounded-0 " + props.className}  >
         <Card.Body className=" student-corner-container ">
           <SmallCard />
           <SmallCard />
