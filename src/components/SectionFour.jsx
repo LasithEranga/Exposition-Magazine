@@ -15,25 +15,17 @@ import "./SectionFour.css";
 
 function SectionFour() {
   return (
-    <Container className=" p-0">
+    <Container className="p-md-0">
       <Row>
         <Col className="col-12 col-lg-9">
           <Row className="px-4 px-lg-0 me-lg-2">
             <Title>Spirits</Title>
             <Card className="px-3 pt-1 rounded-0">
-              <Card.Body className="spirit">
+              <Card.Body className="spirit mb-2">
                 <SpiritCard />
                 <SpiritCard />
                 <SpiritCard />
-                <p className="text-center pb-4">
-                  <Button
-                    className="mt-5 mb-3 lg"
-                    size="lg"
-                    variant="outline-secondary"
-                  >
-                    View All Articles
-                  </Button>
-                </p>
+                
               </Card.Body>
             </Card>
           </Row>

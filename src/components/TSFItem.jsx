@@ -3,16 +3,16 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import "./SmallCard.css";
+import "./TSFItem.css";
 
 
 function TSFItem() {
   return (
    
-        <Row>
-          <Col className="bg-dark col-12 col-md-6 image-height">Image</Col>
-          <Col className=" col-12 col-md-6">
-            <span>Hello Title</span>
+        <Row className="py-1 py-md-2">
+          <Col className="bg-dark col-12 col-md-5 image-tsf">Image</Col>
+          <Col className="px-0 ps-md-3 col-12 col-md-7 mb-3">
+            <span style={{fontWeight:"bold"}}> Djskhfjks skdjfhjk </span>
             <br></br>{" "}
             <span>
               lorem4kjnl
@@ -20,7 +20,7 @@ function TSFItem() {
               sdjfojsdi
             </span>
           </Col>
-          <hr className="mt-3" style={{color:"white"}} />
+          
         </Row>
       
   );
