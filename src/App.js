@@ -8,10 +8,10 @@ import BelowLanding from "./components/BelowLanding";
 import SuccessStories from "./components/SuccessStories";
 import SectionFour from "./components/SectionFour.jsx";
 import SectionFive from "./components/SectionFive";
-import MemoryLane from "./components/MemoryLane";
 import Events from "./components/Events";
 import Team from "./components/Team";
 import Footer from "./components/Footer";
+import MemoryLane from "./components/MemotyLane";
 
 
 function App() {
@@ -36,7 +36,7 @@ function App() {
       <SectionFive />
       </div>
       <div className="mt-4">
-      <MemoryLane />
+      <MemoryLane/>
       </div>
       <div className="mt-4">
       <Events />
