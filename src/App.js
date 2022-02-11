@@ -9,6 +9,7 @@ import SuccessStories from "./components/SuccessStories";
 import SectionFour from "./components/SectionFour.jsx";
 import SectionFive from "./components/SectionFive";
 import MemoryLane from "./components/MemoryLane";
+import Events from "./components/Events";
 import Team from "./components/Team";
 
 function App() {
@@ -34,6 +35,9 @@ function App() {
       </div>
       <div className="mt-4">
       <MemoryLane />
+      </div>
+      <div className="mt-4">
+      <Events />
       </div>
       <div className="mt-4">
       <Team />

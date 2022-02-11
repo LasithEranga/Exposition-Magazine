@@ -11,8 +11,6 @@ function FirstCarousel() {
         <FirstCarouselItem />
         <div className="mb-5"></div>
         <ExpertInsightCard />
-        <ExpertInsightCard />
-        <ExpertInsightCard />
       </Card.Body>
     </Card>
   );
