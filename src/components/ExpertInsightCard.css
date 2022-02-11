@@ -1,0 +1,28 @@
+.image-expert {
+    height: 10rem;
+  }
+  
+  
+  @media (min-width: 576px) {
+    .image-expert {
+        height: 10rem;
+      }
+  }
+  
+  @media screen and (min-width: 768px) {
+  }
+  
+  @media (min-width: 992px) {
+  }
+  
+  @media (min-width: 1200px) {
+    .image-expert {
+      height: 8rem;
+  
+    }
+  }
+  
+  .expert-card-hr div:last-of-type div:last-of-type hr
+{
+color: rgb(252, 252, 252);
+}
