@@ -9,17 +9,9 @@ function ExpertInsightCard() {
 
   return (
     <Row>
-      <div className="d-flex mt-3">
-        <Col className=" col-12 col-md-4 image-expert">
-        <img
-                src={expertimg}
-                className="w-100 h-100"
-                style={{ objectFit: "cover" }}
-              />
-        </Col>
-        <Col className=" col-12 col-md-8 ms-lg-3">
-          <span>iChair: A Smart Chair as a Companion </span>
-          <br />
+      <div className="d-flex mt-1">
+        <Col className=" col-12 ms-lg-3 pb-5">
+          <h4>iChair: A Smart Chair as a Companion </h4>
           <span>
             Dr. Janaka Wijekoon (Visiting Lecturer - Department of Industrial
             Management, University of Kelaniya
@@ -27,7 +19,7 @@ function ExpertInsightCard() {
         </Col>
       </div>
       <div>
-        <hr style={styles} />
+        
       </div>
     </Row>
   );
