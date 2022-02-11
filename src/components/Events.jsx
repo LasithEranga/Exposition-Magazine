@@ -6,7 +6,7 @@ import Title from "./Title";
 
 function Events() {
   return (
-    <Container className="p-0">
+    <Container className="p-md-0">
       <Row className="px-4 px-lg-0">
         <Title>Events</Title>
         <Card className="rounded-0">

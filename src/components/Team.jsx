@@ -9,7 +9,7 @@ import Title from "./Title";
 
 function Team() {
   return (
-    <Container className="p-0">
+    <Container className="p-md-0">
       <Row className="px-4 px-lg-0">
         <Title>Exposition Team</Title>
         <Card className="rounded-0">

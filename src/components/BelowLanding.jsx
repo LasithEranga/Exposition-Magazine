@@ -21,7 +21,7 @@ function BelowLanding() {
             <StudentsCorner />
           </Row>
         </Col>
-        <Col className="col-9">
+        <Col className="col-12 col-md-9">
           <Row>
             <Col className="col  mx-md-3">
               <Row className="px-3 px-md-0">
@@ -31,7 +31,7 @@ function BelowLanding() {
               </Row>
             </Col>
 
-            <Col className="col-4 col-md-4  ">
+            <Col className="col-12 col-md-4  ">
               <Row className="px-3 px-md-0">
                 <Title>News</Title>
                 <News />
@@ -39,18 +39,18 @@ function BelowLanding() {
             </Col>
           </Row>
           <Row>
-            <Col className="col ms-3 ">
+            <Col className="col ms-md-3 ">
               <Row className="px-3 px-md-0">
                 <Title>365 x 4 </Title>
-                <Card>
+                <Card className="rounded-0 ps-3">
                 <Card.Body>
                 <Row>
-                  <Col className="col-6"> <TSFItem /></Col>
-                  <Col className="col-6"><TSFItem /></Col>
+                  <Col className="col-12 col-md-6"> <TSFItem /></Col>
+                  <Col className="col-12 col-md-6"><TSFItem /></Col>
                 </Row>
                 <Row>
-                  <Col className="col-6"> <TSFItem /></Col>
-                  <Col className="col-6"><TSFItem /></Col>
+                  <Col className="col-12 col-md-6"> <TSFItem /></Col>
+                  <Col className="col-12 col-md-6"><TSFItem /></Col>
                 </Row>
                 </Card.Body>
                 </Card>
