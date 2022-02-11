@@ -15,8 +15,6 @@ function StudentsCorner(props) {
           <SmallCard />
           <SmallCard />
           <SmallCard />
-          <SmallCard />
-          <SmallCard />
         </Card.Body>
       </Card>
   );

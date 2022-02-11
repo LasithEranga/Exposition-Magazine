@@ -1,11 +1,13 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import LatestArticlesSlider from "./LatestArticlesSlider";
 
 const LatestArticles = () => {
   return (
-    <Container>
-      <div className="d-none d-lg-flex justify-content-start align-items-center  mt-2 ">
+    <Container className="px-0">
+    <Row>
+      <div className="d-none d-lg-flex justify-content-start align-items-center  mt-2">
         <div
           style={{
             width: "fit-content",
@@ -33,6 +35,7 @@ const LatestArticles = () => {
         ></div>
         <LatestArticlesSlider />
       </div>
+      </Row>
     </Container>
   );
 };
