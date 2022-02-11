@@ -11,6 +11,8 @@ import SectionFive from "./components/SectionFive";
 import MemoryLane from "./components/MemoryLane";
 import Events from "./components/Events";
 import Team from "./components/Team";
+import Footer from "./components/Footer";
+
 
 function App() {
   return (
@@ -42,6 +44,7 @@ function App() {
       <div className="mt-4">
       <Team />
       </div>
+      <Footer/>
     </React.Fragment>
   );
 }
