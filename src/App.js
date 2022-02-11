@@ -7,7 +7,12 @@ import HorizontalView from "./components/HorizontalCarousel";
 import BelowLanding from "./components/BelowLanding";
 import SuccessStories from "./components/SuccessStories";
 import SectionFour from "./components/SectionFour.jsx";
+import SectionFive from "./components/SectionFive";
+import MemoryLane from "./components/MemoryLane";
+import Events from "./components/Events";
+import Team from "./components/Team";
 import Footer from "./components/Footer";
+
 
 function App() {
   return (
@@ -26,6 +31,18 @@ function App() {
       <SuccessStories/>
       <div className="mt-4">
       <SectionFour />
+      </div>
+      <div className="mt-4">
+      <SectionFive />
+      </div>
+      <div className="mt-4">
+      <MemoryLane />
+      </div>
+      <div className="mt-4">
+      <Events />
+      </div>
+      <div className="mt-4">
+      <Team />
       </div>
       <Footer/>
     </React.Fragment>
