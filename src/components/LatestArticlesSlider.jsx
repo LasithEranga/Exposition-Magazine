@@ -2,7 +2,7 @@ import { Carousel } from "react-bootstrap";
 
 const LatestArticlesSlider = () => {
   return (
-    <Carousel className="ms-3" >
+    <Carousel className="ms-3" controls={false} indicators={false}>
       <Carousel.Item interval={2000} >
        Lorem one 
       </Carousel.Item>

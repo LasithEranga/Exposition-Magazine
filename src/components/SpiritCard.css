@@ -1,0 +1,28 @@
+.image-spirit {
+    height: 10rem;
+  }
+  
+  
+  @media (min-width: 576px) {
+    .image-spirit {
+        height: 10rem;
+      }
+  }
+  
+  @media screen and (min-width: 768px) {
+  }
+  
+  @media (min-width: 992px) {
+  }
+  
+  @media (min-width: 1200px) {
+    .image-spirit {
+      height: 20rem;
+  
+    }
+  }
+  
+  .student-corner-container div:last-of-type hr
+{
+display: none;
+}
