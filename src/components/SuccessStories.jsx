@@ -5,7 +5,7 @@ import stories from "../Data/SuccessStories.json";
 import SuccessStoriesCarousel from "./SuccessStoriesCarousel";
 
 const SuccessStories = () => {
-  return <Container fluid={'md'} className="m-0 p-0 m-lg-auto">
+  return <Container fluid={'lg'} className="m-0 p-0 m-lg-auto">
       <div className="px-3 px-md-0"><Title >Success Stories</Title></div>
       
       <SuccessStoriesCarousel stories={stories} />
