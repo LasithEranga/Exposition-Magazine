@@ -11,7 +11,7 @@ import SectionFive from "./components/SectionFive";
 import Events from "./components/Events";
 import Team from "./components/Team";
 import Footer from "./components/Footer";
-import MemoryLane from "./components/MemotyLane";
+import MemoryLane from "./components/MemoryLane";
 
 
 function App() {
