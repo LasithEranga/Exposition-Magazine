@@ -3,7 +3,7 @@ import "./SuccessStories.css";
 
 const SuccessStoryCarousel = ({ stories }) => {
   return (
-      <Carousel controls={false} fade className="position-relative" pause={false}>
+      <Carousel controls={false} fade className="position-relative p-0 " pause={false}>
 
         {stories?stories.map((story,index) => (
           <Carousel.Item key={index} interval={1000} >

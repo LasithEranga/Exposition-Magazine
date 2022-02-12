@@ -7,7 +7,7 @@ import CarouselImageWithPopUp from './CarouselImageWithPopUp/CarouselImageWithPo
 
 const MemoryLaneCarousel =({stories}) =>{
   return (
-    <Container className="p-md-0">
+    <Container>
       <Row className="px-4 px-lg-0">
         <Title>Memory Lane</Title>
         <Carousel controls={false} fade className="position-relative p-0" pause={false}>
