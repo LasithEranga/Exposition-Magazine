@@ -8,7 +8,7 @@ import BelowLanding from "./components/BelowLanding";
 import SuccessStories from "./components/SuccessStories";
 import SectionFour from "./components/SectionFour.jsx";
 import SectionFive from "./components/SectionFive";
-import Events from "./components/Events";
+import Events from "./components/Events/Events";
 import Team from "./components/Team";
 import Footer from "./components/Footer";
 import MemoryLane from "./components/MemoryLane";
