@@ -7,6 +7,7 @@ import MemoryLane from "../components/MemoryLane";
 import SectionFive from "../components/SectionFive";
 import SectionFour from "../components/SectionFour";
 import SuccessStories from "../components/SuccessStories";
+import Events from "../components/Events/Events";
 import Team from "../components/Team";
 
 const Home = () => {
@@ -32,9 +33,9 @@ const Home = () => {
       <div className="mt-4">
         <MemoryLane/>
       </div>
-      {/* <div className="mt-4">
+      <div className="mt-4">
       <Events />
-      </div> */}
+      </div>
       <div className="mt-4">
         <Team/>
       </div>
