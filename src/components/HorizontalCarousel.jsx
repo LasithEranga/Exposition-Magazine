@@ -27,8 +27,8 @@ function HorizontalView() {
 
   return (
     <React.Fragment>
-      <Container>
-        <Title >Interviews</Title>
+      <Container className="p-0">
+        <Title>Interviews</Title>
       </Container>
       <Container className="justify-content-center bg-light pt-3 ps-4 pb-4 ">
         <Carousel

@@ -1,8 +1,9 @@
   .testomonial-width{
-      width: 98%;
+      width: 97%;
   }
 
 
+  
   @media (min-width: 576px) {
   }
   
@@ -10,6 +11,7 @@
     .testomonial-width{
         width: 50%;
     }
+
   }
   
   @media (min-width: 992px) {

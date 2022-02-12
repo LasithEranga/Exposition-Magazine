@@ -1,15 +1,25 @@
-import { Container } from "react-bootstrap";
-import Title from './Title';
+import { Container, Row } from "react-bootstrap";
+import React from "react";
+import Title from "./Title";
 import stories from "../Data/SuccessStories.json";
 
 import SuccessStoriesCarousel from "./SuccessStoriesCarousel";
 
 const SuccessStories = () => {
-  return <Container fluid={'lg'} className="m-0 p-0 m-lg-auto">
-      <div className="px-3 px-md-0"><Title >Success Stories</Title></div>
-      
-      <SuccessStoriesCarousel stories={stories} />
-  </Container>;
+  return (
+    <React.Fragment>
+      <Container className="mx-1 mx-md-auto px-md-0">
+        <div >
+          <Title>Success Stories</Title>
+        </div>
+      </Container>
+      <Container>
+        <Row className="px-3 px-lg-0">
+          <SuccessStoriesCarousel stories={stories} />
+        </Row>
+      </Container>
+    </React.Fragment>
+  );
 };
 
 export default SuccessStories;
