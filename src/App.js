@@ -9,6 +9,7 @@ import SuccessStories from "./components/SuccessStories";
 import SectionFour from "./components/SectionFour.jsx";
 import SectionFive from "./components/SectionFive";
 import Events from "./components/Events/Events";
+import VirtualView from "./components/VirtualMagazine/VirtualView";
 import Team from "./components/Team";
 import Footer from "./components/Footer";
 import MemoryLane from "./components/MemoryLane";
