@@ -12,6 +12,7 @@ import Events from "./components/Events/Events";
 import Team from "./components/Team";
 import Footer from "./components/Footer";
 import MemoryLane from "./components/MemoryLane";
+import ScrollToTop from "./components/Buttons/ScrollToTop";
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
       <Team />
       </div>
       <Footer/>
+      <ScrollToTop/>
     </React.Fragment>
   );
 }
