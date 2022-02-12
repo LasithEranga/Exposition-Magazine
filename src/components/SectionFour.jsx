@@ -15,7 +15,7 @@ import "./SectionFour.css";
 
 function SectionFour() {
   return (
-    <Container className="p-md-0">
+    <Container className="">
       <Row>
         <Col className="col-12 col-lg-9">
           <Row className="px-4 px-lg-0 me-lg-2">

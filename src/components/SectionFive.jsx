@@ -9,7 +9,7 @@ import Title from "./Title";
 
 function SectionFive() {
   return (
-    <Container className="p-md-0">
+    <Container className="">
       <Row className="px-4 px-lg-0">
         <Title>Empowering Partner - Astra</Title>
         <Card className="rounded-0">
