@@ -4,7 +4,7 @@ import "./MainImage.css";
 
 const MainImage = () => {
   return (
-    <Container className="p-0 m-0 m-md-auto">
+    <Container fluid={'lg'}className="p-0 m-0 m-md-auto">
         <div className="container-main-image ">
       <img
         src={image}

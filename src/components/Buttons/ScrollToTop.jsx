@@ -1,19 +1,19 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 
 const ScrollToTop = () => {
   const [isScrolling, setisScrolling] = useState(false);
+  const scrollEventhandler = useCallback(() => {
+    window.scrollY > 300 ? setisScrolling(true) : setisScrolling(false);
+  }, []);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      window.scrollY>300?setisScrolling(true):setisScrolling(false);
-    });
+    window.addEventListener("scroll", scrollEventhandler);
 
     return () => {
-      window.removeEventListener("scroll", () => {
-      });
+      window.removeEventListener("scroll", scrollEventhandler);
     };
-  },[]);
+  }, [scrollEventhandler]);
 
   const clickHandler = () => {
     window.scrollTo({
@@ -39,7 +39,7 @@ const ScrollToTop = () => {
           boxShadow: " 0px 8px 15px rgba(0, 0, 0, 0.1)",
         }}
       >
-        <IoIosArrowUp size={30} style={{color:'white'}} />
+        <IoIosArrowUp size={30} style={{ color: "white" }} />
       </div>
     )
   );
