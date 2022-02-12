@@ -1,0 +1,34 @@
+[
+    {
+        "id":"1",
+        "image":"https://financerewind.com/wp-content/uploads/2021/07/Melissa-Roxburgh-1-1200x1441.jpeg",
+        "title":"Article One",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nulla natus doloribus rerum labore nobis placeat libero veritatis velit veniam.",
+        "category":"interviews"
+
+    },
+    {
+        "id":"2",
+        "image":"https://financerewind.com/wp-content/uploads/2021/07/Melissa-Roxburgh-1-1200x1441.jpeg",
+        "title":"Article Two",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nulla natus doloribus rerum labore nobis placeat libero veritatis velit veniam.",
+        "category":"student-corner"
+
+    },
+    {
+        "id":"1",
+        "image":"https://financerewind.com/wp-content/uploads/2021/07/Melissa-Roxburgh-1-1200x1441.jpeg",
+        "title":"Article One",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nulla natus doloribus rerum labore nobis placeat libero veritatis velit veniam.",
+        "category":"category-one"
+
+    },
+    {
+        "id":"1",
+        "image":"https://financerewind.com/wp-content/uploads/2021/07/Melissa-Roxburgh-1-1200x1441.jpeg",
+        "title":"Article One",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nulla natus doloribus rerum labore nobis placeat libero veritatis velit veniam.",
+        "category":"category-one"
+
+    }
+]
