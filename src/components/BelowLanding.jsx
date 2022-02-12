@@ -5,7 +5,6 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import StudentsCorner from "./StudentsCorner";
 import FirstCarousel from "./FirstCarousel";
-import SmallCard from "./SmallCard";
 import Title from "./Title";
 import News from "./News";
 import TSFItem from "./TSFItem";

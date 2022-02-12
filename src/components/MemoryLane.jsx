@@ -5,7 +5,7 @@ import MemoryLaneCarousel from "./MemoryLaneCarousel";
 
 const MemoryLane = () => {
   return (
-    <Container fluid={"md"} className="m-0 p-0 m-lg-auto">
+    <Container>
 
       <MemoryLaneCarousel stories={stories} />
     </Container>
