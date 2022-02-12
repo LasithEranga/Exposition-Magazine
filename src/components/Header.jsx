@@ -6,7 +6,7 @@ import logo from "../images/logo.png";
 const Header = () => {
   return (
     
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="py-3">
         <Container>
             <Link to={'/'}> <img src={logo} alt="" style={{height:'3.3rem'}}/></Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
