@@ -10,10 +10,10 @@ const Footer = () => {
       style={{ height: "fit-content" }}
     >
       <div className="w-100 w-md-50 h-100 justify-content-center  ps-md-5 d-flex flex-column">
-        <img src={img} alt="" style={{ width: "22rem" }} className="mb-2" />
+        <img src={img} alt=""  className="mb-2 col-12 col-md-6" />
         <p
-          className="text-light fw-light text-wrap"
-          style={{ width: "22rem", textAlign: "justify" }}
+          className="text-light fw-light text-wrap mb-2 col-12 col-md-6"
+          style={{  textAlign: "justify" }}
         >
           Exposition Magazine, most outstanding magazine of the year to bridge
           the gap between Management and IT platforms which is one of the
@@ -23,8 +23,7 @@ const Footer = () => {
         <img
           src={dimLogo}
           alt=""
-          style={{ width: "22rem" }}
-          className="mb-2 mt-3"
+          className="mb-2 mt-3 mb-2 col-12 col-md-6"
         />
       </div>
       <div className="w-100 w-md-50 h-100 d-flex justify-content-center flex-column ">
