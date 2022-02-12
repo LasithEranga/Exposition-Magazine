@@ -39,9 +39,9 @@ function App() {
       <div className="mt-4">
       <MemoryLane/>
       </div>
-      <div className="mt-4">
+      {/* <div className="mt-4">
       <Events />
-      </div>
+      </div> */}
       <div className="mt-4">
       <Team />
       </div>
