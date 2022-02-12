@@ -6,6 +6,7 @@ import ScrollToTop from "./components/Buttons/ScrollToTop";
 import {Routes,Route} from 'react-router-dom';
 import Home from "./Pages/Home";
 import NotFound from "./Pages/NotFound";
+import AboutUs from "./Pages/AboutUs";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Routes>
         <Route element={<Home/>} path='/'/>
+        <Route element={<AboutUs/>} path='/about-us'/>
         <Route element={<NotFound/>} path='*'/>
       </Routes>
       <Footer/>

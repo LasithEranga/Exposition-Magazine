@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
 
 const Header = () => {
@@ -7,11 +8,12 @@ const Header = () => {
     
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-             <img src={logo} alt="" style={{height:'3.3rem'}}/>
+            <Link to={'/'}> <img src={logo} alt="" style={{height:'3.3rem'}}/></Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="#home">HOME</Nav.Link>
+              {/* <Nav.Link href="/">HOME</Nav.Link> */}
+              <Link className="nav-link" to='/'>HOME</Link>
               <Nav.Link href="#memory-lane">MEMORY LANE</Nav.Link>
               <Nav.Link href="#im-news">IM NEWS</Nav.Link>
               <NavDropdown title="SEGMENTS" id="collasible-nav-dropdown">
@@ -34,6 +36,7 @@ const Header = () => {
                   Miscellaneous
                 </NavDropdown.Item>
               </NavDropdown>
+              <Link className="nav-link" to='/about-us'>ABOUT-US</Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
