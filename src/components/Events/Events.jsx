@@ -33,7 +33,7 @@ import CarouselView from "./CarouselView";
 
 function Events() {
   return (
-    <Container className="px-0">
+    <Container className="px-md-0">
       <Title>Events</Title>
       <Row className="mx-0">
         <Col className="col">
@@ -42,7 +42,7 @@ function Events() {
           </Row>
         </Col>
 
-        <Col className="col-12 col-md-4 ms-3">
+        <Col className="col-12 col-md-4 ms-md-3">
           <Row className="mb-3">
             <Card className="border-0  ps-2 pt-0 border-0 rounded-0">
               <Card.Body>

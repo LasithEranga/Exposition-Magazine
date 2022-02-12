@@ -8,13 +8,9 @@ import SuccessStoriesCarousel from "./SuccessStoriesCarousel";
 const SuccessStories = () => {
   return (
     <React.Fragment>
-      <Container className="mx-1 mx-md-auto px-md-0">
-        <div >
-          <Title>Success Stories</Title>
-        </div>
-      </Container>
-      <Container>
+      <Container >
         <Row className="px-3 px-lg-0">
+        <Title>Success Stories</Title>
           <SuccessStoriesCarousel stories={stories} />
         </Row>
       </Container>
