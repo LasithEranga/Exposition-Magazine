@@ -37,6 +37,7 @@ const ScrollToTop = () => {
           right: "1.5rem",
           backgroundColor: "#F2B900",
           boxShadow: " 0px 8px 15px rgba(0, 0, 0, 0.1)",
+          zIndex:"1000",
         }}
       >
         <IoIosArrowUp size={30} style={{ color: "white" }} />
