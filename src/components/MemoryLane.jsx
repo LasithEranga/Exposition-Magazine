@@ -5,7 +5,9 @@ import MemoryLaneCarousel from "./MemoryLaneCarousel";
 
 const MemoryLane = () => {
   return (
-    <MemoryLaneCarousel stories={stories} />
+    <div id="memory-lane">
+      <MemoryLaneCarousel stories={stories} />
+    </div>
   );
 };
 
