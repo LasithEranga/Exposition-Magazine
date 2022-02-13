@@ -19,7 +19,7 @@ function ArticleCard(props) {
           <Card.Text className="text-muted" style={{ textAlign: "justify" }}>
             {props.description}
           </Card.Text>
-          <Link to={`/${props.category}/${props.id}`} className="">
+          <Link to={`/articles/${props.id}`} className="">
             Read more...
           </Link>
         </Card.Body>

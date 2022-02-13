@@ -20,7 +20,7 @@ function App() {
 
         <Route element={<AboutUs/>} path='/about-us'/>
 
-        <Route element={<AllArticles/>} path='/articles/:category/:id'/>
+        <Route element={<AllArticles/>} path='/articlefilter/:category'/>
 
         <Route element={<ArticleView/>} path='/articles/:id'/>
 
