@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { Link,useParams } from "react-router-dom";
 import Avatar from "../Avatar/Avatar";
+import Share from "../Buttons/Share";
 
 
 const Template = ({ article }) => {
@@ -13,8 +14,9 @@ const Template = ({ article }) => {
   return article ? (
     <Container className="mt-2 mt-lg-4">
       <Row>
-        <Col lg={1}></Col>
-        <Col xs={12} lg={7} xl={7}>
+        <Col lg={1} > <Share /></Col>
+        <Col xs={12} lg={7}>
+
           <Avatar
             alt={article.title}
             author={article.author}

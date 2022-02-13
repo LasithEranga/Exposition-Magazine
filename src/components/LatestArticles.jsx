@@ -36,7 +36,7 @@ const LatestArticles = () => {
               }}
             ></div>
           </div>
-          <div className="text-nowrap" >
+          <div className="text-nowrap overflow-hidden" >
           <LatestArticlesSlider />
           </div>
         </div>

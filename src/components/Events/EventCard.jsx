@@ -5,24 +5,22 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import "./EventCard.css";
 
-
-function EventCard() {
+function EventCard(props) {
   return (
-   
-        <Row>
-          <Col className="bg-dark col-12  image-event">Image</Col>
-          <Col className=" col-12 ps-0 mt-1">
-            <span style={{fontWeight:"bold"}}>Hello Title</span>
+    <Col md={6} lg={6} className={`mt-3 px-0  ${props.class ? props.class : ' '}`}>
+    <Card className="rounded-0">
+      <Card.Body>
+          <Col className="bg-dark image-event">Image</Col>
+          <Col className=" ps-0 mt-1">
+            <span style={{ fontWeight: "bold" }}>{props.title? props.title : " "}</span>
             <br></br>{" "}
             <span>
-              lorem4kjnl
-              <br />
-              sdjfojsdi
-            </span>
+              {props.description?props.description: " "}
+            </span><br />
           </Col>
-         
-        </Row>
-      
+      </Card.Body>
+    </Card>
+    </Col>
   );
 }
 

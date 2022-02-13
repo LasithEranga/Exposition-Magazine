@@ -4,17 +4,16 @@ import Carousel from "react-bootstrap/Carousel";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import expertimg from "../../images/expertimg.png"
-
+import "./Competition.css"
 
 function CarouselView() {
-  const imgStyle = { height: "26rem", width: "100%" };
 
   return (
     <Card className="rounded-0 pb-3">
       <Card.Body className="px-1 expert-card-hr">
         <Carousel>
         <Carousel.Item>
-        <div style={imgStyle} className="bg-dark">
+        <div className="bg-dark  image-competition">
         <img
                 src={expertimg}
                 className="w-100 h-100"
