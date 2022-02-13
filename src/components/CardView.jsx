@@ -1,15 +1,18 @@
 import React from "react";
-import Card from 'react-bootstrap/Card';
+import Card from "react-bootstrap/Card";
+import { Link } from "react-router-dom";
 
-
-function CardView() {
+function CardView(props) {
   return (
-    <div>
-    <Card style={{  height:"10rem" }} className="me-3 ">
-      <Card.Img variant="top" src="" />
-    </Card>
-    <p style={{ fontWeight:"bold", fontSize:"1rem" }}>Deshabandu W. K. H. Wegapitiya </p>
-    </div>
+    <Link to={`/articles/${props.id}`} ><div>
+      <Card style={{ height: "10rem" }} className="me-3 ">
+        <Card.Img variant="top" src={props.image ? props.image : ""} style={{objectFit:'cover', width:'100%',height:'10rem'}} />
+      </Card>
+      <p className="text-dark" style={{ fontWeight: "bold", fontSize: "1rem" ,color:'#212529'}}>
+        { 
+        props.title ? props.title : ""}
+      </p>
+    </div></Link>
   );
 }
 

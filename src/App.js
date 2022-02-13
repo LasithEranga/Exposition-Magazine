@@ -4,30 +4,29 @@ import Header from "./components/Header";
 import AllArticles from "./Pages/CategoryView/AllArticles";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/Buttons/ScrollToTop";
-import {Routes,Route} from 'react-router-dom';
+import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import NotFound from "./Pages/NotFound";
 import AboutUs from "./Pages/AboutUs";
 import ArticleView from "./Pages/ArticleView";
-
 
 function App() {
   return (
     <React.Fragment>
       <Header />
       <Routes>
-        <Route element={<Home/>} path='/'/>
+        <Route element={<Home />} path="/" />
 
-        <Route element={<AboutUs/>} path='/about-us'/>
+        <Route element={<AboutUs />} path="/about-us" />
 
-        <Route element={<AllArticles/>} path='/articlefilter/:category'/>
+        <Route element={<AllArticles />} path="/articlefilter/:category" />
 
-        <Route element={<ArticleView/>} path='/articles/:id'/>
+        <Route element={<ArticleView />} path="/articles/:id" />
 
-        <Route element={<NotFound/>} path='*'/>
+        <Route element={<NotFound />} path="*" />
       </Routes>
-      <Footer/>
-      <ScrollToTop/>
+      <Footer />
+      <ScrollToTop />
     </React.Fragment>
   );
 }
