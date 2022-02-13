@@ -34,12 +34,12 @@ function SectionFour() {
           <Row className="px-4 px-lg-0">
             <Title>Exposition</Title>
 
-            <Card className="rounded-0">
+            <Card className="ps-lg-1 rounded-0">
               <News />
             </Card>
 
             <Title>Popular</Title>
-            <Card className="rounded-0">
+            <Card className="ps-lg-1  rounded-0">
               <News />
             </Card>
           </Row>

@@ -13,16 +13,16 @@ function BelowLanding() {
   return (
     <Container>
       <Row>
-        <Col className="col-12 col-md-3  ">
+        <Col className="col-12 col-md-5 col-lg-3  ">
           <Row className="px-3 px-md-0">
             <Title>Students' Corner </Title>
 
             <StudentsCorner />
           </Row>
         </Col>
-        <Col className="col-12 col-md-9">
+        <Col className="col-12 col-md-7 col-lg-9">
           <Row>
-            <Col className="col  mx-md-3">
+            <Col className="col ms-md-3 mx-lg-3">
               <Row className="px-3 px-md-0">
                 <Title>Experts Insights</Title>
 
@@ -30,7 +30,7 @@ function BelowLanding() {
               </Row>
             </Col>
 
-            <Col className="col-12 col-md-4  ">
+            <Col className="col-12 col-md-12 col-lg-4  mx-md-3">
               <Row className="px-3 px-md-0">
                 <Title>News</Title>
                 <News />
@@ -38,7 +38,7 @@ function BelowLanding() {
             </Col>
           </Row>
           <Row>
-            <Col className="col ms-md-3 ">
+            <Col className="col d-md-none  d-lg-flex ms-md-3 ">
               <Row className="px-3 px-md-0">
                 <Title>365 x 4 </Title>
                 <Card className="rounded-0 ps-3">
@@ -57,6 +57,25 @@ function BelowLanding() {
             </Col>
           </Row>
         </Col>
+        <Row>
+            <Col className="col d-none d-md-flex d-lg-none ms-md-3 ">
+              <Row className="px-3 px-md-0">
+                <Title>365 x 4 </Title>
+                <Card className="rounded-0 ps-3">
+                <Card.Body>
+                <Row>
+                  <Col className="col-12 col-md-6"> <TSFItem /></Col>
+                  <Col className="col-12 col-md-6"><TSFItem /></Col>
+                </Row>
+                <Row>
+                  <Col className="col-12 col-md-6"> <TSFItem /></Col>
+                  <Col className="col-12 col-md-6"><TSFItem /></Col>
+                </Row>
+                </Card.Body>
+                </Card>
+              </Row>
+            </Col>
+          </Row>
       </Row>
     </Container>
   );
