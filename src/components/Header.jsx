@@ -15,25 +15,26 @@ const Header = () => {
               {/* <Nav.Link href="/">HOME</Nav.Link> */}
               <Link className="nav-link" to='/'>HOME</Link>
               <Nav.Link href="#memory-lane">MEMORY LANE</Nav.Link>
-              <Nav.Link href="#im-news">IM NEWS</Nav.Link>
+              <Link to="/articlefilter/im-news" className="nav-link"> IM NEWS</Link>
               <NavDropdown title="SEGMENTS" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">
-                  Intereviews
+                <NavDropdown.Item>
+                 <Link to="/articlefilter/interviews" className="nav-link text-dark p-0"> Intereviews</Link>
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Student's Corner
+                <NavDropdown.Item >
+                <Link to="/articlefilter/student's-corner" className="nav-link text-dark p-0"> Student's Corner</Link>
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Expert's Insights
+                <NavDropdown.Item>
+                  
+                  <Link to="/articlefilter/expert's-insights" className="nav-link text-dark p-0"> Expert's Insights</Link>
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.4">
-                  IMSSA Events
+                <NavDropdown.Item>
+                  <Link to="/articlefilter/IMSSA-events" className="nav-link text-dark p-0">IMSSA Events</Link>
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.5">
-                  Reaserch and Development
+                <NavDropdown.Item>
+                  <Link to="/articlefilter/reaserch-and-development" className="nav-link text-dark p-0">Reaserch and Development</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.6">
-                  Miscellaneous
+                  <Link to="/articlefilter/miscellaneous" className="nav-link text-dark p-0">Miscellaneous</Link>
                 </NavDropdown.Item>
               </NavDropdown>
               <Link className="nav-link" to='/about-us'>ABOUT-US</Link>
