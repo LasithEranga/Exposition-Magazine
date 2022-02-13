@@ -8,7 +8,7 @@ const Footer = () => {
     <React.Fragment>
       <div
         className="w-100 bg-dark mt-3 d-flex flex-column flex-md-row p-4 p-md-5 "
-        style={{ height: "fit-content" }}
+        style={{ height: "fit-content",position:"relative",zIndex:"900" }}
       >
         <div className="w-100 w-md-50 h-100 justify-content-center  ps-md-5 d-flex flex-column">
           <img src={img} alt="" className="mb-2 col-12 col-md-6" />

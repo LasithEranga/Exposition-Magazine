@@ -1,14 +1,15 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Avatar from "../Avatar/Avatar";
+import Share from "../Buttons/Share";
 
 const Template = ({ article }) => {
  
   return (
     <Container className="mt-2 mt-lg-4">
       <Row>
-        <Col lg={2}></Col>
-        <Col xs={12} lg={6}>
+        <Col lg={1} > <Share /></Col>
+        <Col xs={12} lg={7}>
           <Avatar
             alt={article.title}
             author={article.author}
@@ -23,14 +24,14 @@ const Template = ({ article }) => {
         </Col>
       </Row>
       <Row>
-        <Col lg={2}></Col>
-        <Col xs={12} lg={6}>
+        <Col lg={1}></Col>
+        <Col xs={12} lg={7}>
           <img src={article.image} alt="" className="w-100 mt-2 mt-lg-3" />
         </Col>
       </Row>
       <Row>
-        <Col lg={2}></Col>
-        <Col xs={12} lg={6}>
+        <Col lg={1}></Col>
+        <Col xs={12} lg={7}>
           <p className="mt-3 mt-lg-4 fs-5">{article.content}</p>
         </Col>
       </Row>
