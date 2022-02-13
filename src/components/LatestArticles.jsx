@@ -7,7 +7,7 @@ const LatestArticles = () => {
   return (
     <Container className="px-0">
     <Row>
-      <div className="d-none d-lg-flex justify-content-start align-items-center  mt-2">
+      <div className="d-flex justify-content-start align-items-center  mt-2">
         <div
           style={{
             width: "fit-content",
