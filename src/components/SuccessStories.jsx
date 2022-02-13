@@ -2,7 +2,6 @@ import { Container, Row } from "react-bootstrap";
 import React from "react";
 import Title from "./Title";
 import stories from "../Data/SuccessStories.json";
-
 import SuccessStoriesCarousel from "./SuccessStoriesCarousel";
 
 const SuccessStories = () => {
