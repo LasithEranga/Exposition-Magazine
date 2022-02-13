@@ -1,16 +1,23 @@
 import React from "react";
-import { Navbar, Container, Nav, NavDropdown, Dropdown } from "react-bootstrap";
+import {  Container} from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
+import OffCanvas from "./Buttons/OffCanvas";
 
 const Header = () => {
   return (
     <React.Fragment>
-      <Container className="d-flex justify-content-center align-items-center py-3">
+      <Container style={{position:'relative'}} className="d-flex justify-content-center align-items-center py-3">
+      
+      <div style={{position:'absolute',left:0}}>
+      <OffCanvas placement={'start'} name={'Click'}/>
+      </div>
+      
         <Link to={"/"}>
           {" "}
-          <img src={logo} alt="" style={{ height: "4rem" }} />
+          <img src={logo} alt="" style={{ height: "3.4rem" }} />
         </Link>
+       
       </Container>
         <div className="text-center border-end-0 border-start-0 border border-2 py-3 px-3">
         <div className="text-center  overflow-auto pb-3 pb-lg-0 " style={{fontSize:"0.8rem"}} >
