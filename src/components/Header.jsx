@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Container, Nav, NavDropdown, Offcanvas } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../images/logo.png";
 
@@ -10,7 +10,7 @@ const Header = () => {
   
   return (
     
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="py-3">
+      <Navbar  collapseOnSelect expand="lg" bg="dark" variant="dark" className="">
         <Container>
             <Link to={'/'}> <img src={logo} alt="" style={{height:'3.3rem'}}/></Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -18,9 +18,10 @@ const Header = () => {
             <Nav className="ms-auto">
               {/* <Nav.Link href="/">HOME</Nav.Link> */}
               <Link className="nav-link" to='/'>HOME</Link>
+              <Link className="nav-link" to='/articlefilter'>ARTICLES</Link>
               <Link to="/articlefilter/IMSSA-events" className="nav-link ">IMSSA EVENTS</Link>
               <Link to="/articlefilter/im-news" className="nav-link"> IM NEWS</Link>
-              <NavDropdown title="SEGMENTS" id="collasible-nav-dropdown">
+              <NavDropdown title="SEGMENTS" id="collasible-nav-dropdown" >
                 
                  <Link to="/articlefilter/interviews" className="nav-link dropdown-item text-dark py-1 px-2"> Intereviews</Link>
                
@@ -40,7 +41,10 @@ const Header = () => {
             </Nav>
           </Navbar.Collapse>
         </Container>
+        
       </Navbar>
+
+      
   );
 };
 

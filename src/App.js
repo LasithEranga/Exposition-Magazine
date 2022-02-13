@@ -21,6 +21,8 @@ function App() {
 
         <Route element={<AllArticles />} path="/articlefilter/:category" />
 
+        <Route element={<AllArticles all />} path="/articlefilter" />
+
         <Route element={<ArticleView />} path="/articles/:id" />
 
         <Route element={<NotFound />} path="*" />
