@@ -1,18 +1,19 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import expertimg from "../images/expertimg.png"
-import "./FirstCarouselItem.css"
+import expertimg from "../images/expertimg.png";
+import "./FirstCarouselItem.css";
 
 function FirstCarouselItem() {
   return (
     <Carousel>
       <Carousel.Item>
         <div className="expert-insight-img">
-        <img
-                src={expertimg}
-                className="w-100 h-100 expert-insight-img"
-                style={{ objectFit: "cover" }}
-              />
+          <img
+            alt=""
+            src={expertimg}
+            className="w-100 h-100 expert-insight-img"
+            style={{ objectFit: "cover" }}
+          />
         </div>
         <Carousel.Caption>
           <h3>First slide label</h3>

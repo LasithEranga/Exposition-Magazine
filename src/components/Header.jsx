@@ -1,50 +1,65 @@
 import React from "react";
-import { Navbar, Container, Nav, NavDropdown} from "react-bootstrap";
+import { Navbar, Container, Nav, NavDropdown, Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
 
 const Header = () => {
-
-
-
-  
   return (
-    
-      <Navbar  collapseOnSelect expand="lg" bg="dark" variant="dark" className="">
-        <Container>
-            <Link to={'/'}> <img src={logo} alt="" style={{height:'3.3rem'}}/></Link>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="ms-auto">
-              {/* <Nav.Link href="/">HOME</Nav.Link> */}
-              <Link className="nav-link" to='/'>HOME</Link>
-              <Link className="nav-link" to='/articlefilter'>ARTICLES</Link>
-              <Link to="/articlefilter/IMSSA-events" className="nav-link ">IMSSA EVENTS</Link>
-              <Link to="/articlefilter/im-news" className="nav-link"> IM NEWS</Link>
-              <NavDropdown title="SEGMENTS" id="collasible-nav-dropdown" >
-                
-                 <Link to="/articlefilter/interviews" className="nav-link dropdown-item text-dark py-1 px-2"> Intereviews</Link>
-               
-                <Link to="/articlefilter/student's-corner" className="nav-link dropdown-item text-dark py-1 px-2"> Student's Corner</Link>
-                
-                  
-                  <Link to="/articlefilter/expert's-insights" className="nav-link dropdown-item text-dark py-1 px-2"> Expert's Insights</Link>
-                
-                  
-                
-                  <Link to="/articlefilter/reaserch-and-development" className="nav-link dropdown-item text-dark py-1 px-2">Reaserch and Development</Link>
-                
-                  <Link to="/articlefilter/miscellaneous" className="nav-link text-dark dropdown-item py-1 px-2">Miscellaneous</Link>
-                
-              </NavDropdown>
-              <Link className="nav-link" to='/about-us'>ABOUT-US</Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-        
-      </Navbar>
+    <React.Fragment>
+      <Container className="d-flex justify-content-center align-items-center py-3">
+        <Link to={"/"}>
+          {" "}
+          <img src={logo} alt="" style={{ height: "4rem" }} />
+        </Link>
+      </Container>
+        <div className=" d-flex justify-content-center align-items-center border-end-0 border-start-0 border border-2 py-3">
+        <div className=" d-flex justify-content-center align-items-center overflow-auto" >
+          <Link className=" text-dark px-2 " to="/">
+            HOME
+          </Link>
+          <Link className="text-dark px-2" to="/articlefilter">
+            ARTICLES
+          </Link>
+          <Link to="/articlefilter/IMSSA-events" className="text-dark px-2 text-nowrap ">
+            IMSSA EVENTS
+          </Link>
+          <Link to="/articlefilter/im-news" className="text-dark px-2 text-nowrap ">
+            IM NEWS
+          </Link>
+          <Link
+            to="/articlefilter/interviews"
+            className="text-dark px-2 text-nowrap "
+          >
+            INTERVIEWS
+          </Link>
 
-      
+          {/* <Link
+            to="/articlefilter/student's-corner"
+            className="text-dark px-2"
+          >
+            STUDENT'S CORNER
+          </Link> */}
+
+          <Link
+            to="/articlefilter/expert's-insights"
+            className="text-dark px-2 text-nowrap "
+          >
+            EXPERT'S INSIGHTS
+          </Link>
+
+          {/* <Link
+            to="/articlefilter/reaserch-and-development"
+            className="text-dark px-2"
+          >
+            REARCH AND DEVELOPMENT
+          </Link> */}
+
+          <Link className="text-dark px-2 text-nowrap " to="/about-us">
+            ABOUT-US
+          </Link>
+      </div>
+        </div>
+    </React.Fragment>
   );
 };
 

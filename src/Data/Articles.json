@@ -58,5 +58,15 @@
         "categoryColor":"bg-success",
         "date":"FEBRUARY 13,2022"
 
+    },
+    {
+        "id":"6",
+        "image":"https://wallpapersmug.com/large/79f1a6/scarlett-johansson-new-2020.jpg",
+        "title":"scarlett johansson",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nulla natus doloribus rerum labore nobis placeat libero veritatis velit veniam.",
+        "category":"interviews",
+        "categoryColor":"bg-success",
+        "date":"FEBRUARY 13,2022"
+
     }
 ]
