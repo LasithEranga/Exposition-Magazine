@@ -1,9 +1,13 @@
 import React from "react";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../images/logo.png";
 
 const Header = () => {
+
+  const location = useLocation();
+
+  
   return (
     
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="py-3">
@@ -14,7 +18,7 @@ const Header = () => {
             <Nav className="ms-auto">
               {/* <Nav.Link href="/">HOME</Nav.Link> */}
               <Link className="nav-link" to='/'>HOME</Link>
-              <Nav.Link href="#memory-lane">MEMORY LANE</Nav.Link>
+              {location.pathname === '/' ?<Nav.Link href='#memory-lane'>MEMORY LANE</Nav.Link>:<Link className="nav-link" to='/'>MEMORY LANE</Link>}
               <Link to="/articlefilter/im-news" className="nav-link"> IM NEWS</Link>
               <NavDropdown title="SEGMENTS" id="collasible-nav-dropdown">
                 

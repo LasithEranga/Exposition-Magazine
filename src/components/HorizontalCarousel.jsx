@@ -7,7 +7,6 @@ import "./dotStyle.css";
 import Title from "./Title";
 
 import ArticleList from "../Data/Articles.json";
-import { propTypes } from "react-bootstrap/esm/Image";
 
 function HorizontalView() {
   const filteredList = ArticleList.filter(
