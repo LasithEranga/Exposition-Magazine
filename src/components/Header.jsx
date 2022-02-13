@@ -5,7 +5,7 @@ import logo from "../images/logo.png";
 
 const Header = () => {
 
-  const location = useLocation();
+
 
   
   return (
@@ -18,7 +18,7 @@ const Header = () => {
             <Nav className="ms-auto">
               {/* <Nav.Link href="/">HOME</Nav.Link> */}
               <Link className="nav-link" to='/'>HOME</Link>
-              {location.pathname === '/' ?<Nav.Link href='#memory-lane'>MEMORY LANE</Nav.Link>:<Link className="nav-link" to='/'>MEMORY LANE</Link>}
+              <Link to="/articlefilter/IMSSA-events" className="nav-link ">IMSSA EVENTS</Link>
               <Link to="/articlefilter/im-news" className="nav-link"> IM NEWS</Link>
               <NavDropdown title="SEGMENTS" id="collasible-nav-dropdown">
                 
@@ -29,7 +29,7 @@ const Header = () => {
                   
                   <Link to="/articlefilter/expert's-insights" className="nav-link dropdown-item text-dark py-1 px-2"> Expert's Insights</Link>
                 
-                  <Link to="/articlefilter/IMSSA-events" className="nav-link text-dark dropdown-item py-1 px-2">IMSSA Events</Link>
+                  
                 
                   <Link to="/articlefilter/reaserch-and-development" className="nav-link dropdown-item text-dark py-1 px-2">Reaserch and Development</Link>
                 
