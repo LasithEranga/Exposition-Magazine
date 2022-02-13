@@ -5,9 +5,9 @@ import LatestArticlesSlider from "./LatestArticlesSlider";
 
 const LatestArticles = () => {
   return (
-    <Container className="px-0">
+    <Container className="px-0 overflow-hidden">
       <Row>
-        <div className="overflow-hidden d-flex justify-content-start align-items-center  my-2 ms-1">
+        <div className=" d-flex justify-content-start align-items-center  my-2 ms-1">
           <div className="d-flex text-nowrap justify-content-start align-items-center col-3 col-md-1 me-md-3 me-lg-0 col-lg-1 " style={{zIndex:"1000"}}>
             <div 
               style={{

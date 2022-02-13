@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import Template from "../components/ArticleTemplates/Template";
 
 import ArticleList from "../Data/Articles.json";
 
@@ -9,7 +10,7 @@ const ArticleView = () => {
   )[0];
   console.log(filteredArticle);
 
-  return <div></div>;
+  return <Template article={filteredArticle} />;
 };
 
 export default ArticleView;
