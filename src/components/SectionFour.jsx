@@ -4,9 +4,6 @@ import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
-import SmallCard from "./SmallCard";
-import News from "./News";
 import Title from "./Title";
 import "./SectionFour.css";
 import ExpositionCard from "./ExpositionCard";
@@ -16,7 +13,7 @@ import ExpositionCard from "./ExpositionCard";
 
 function SectionFour() {
   return (
-    <Container className="px-0 ">
+    <Container>
       <Row>
         <Col className="col-12 col-lg-9">
           <Row className="px-4 px-lg-0 me-lg-2">
