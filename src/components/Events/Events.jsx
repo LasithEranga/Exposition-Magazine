@@ -19,20 +19,28 @@ function Events() {
           </Row>
         </Col>
 
-        <Col className="col-12 col-md-4 ms-md-3">
-          <Row className="mb-3">
-            <Card className="border-0  ps-2 pt-0 border-0 rounded-0">
-              <Card.Body>
-                <EventCard />
-              </Card.Body>
-            </Card>
-          </Row>
-          <Row className="">
-            <Card className="border-0  pt-0 border-0 rounded-0">
-              <Card.Body>
-                <EventCard />
-              </Card.Body>
-            </Card>
+        <Col className="col-12 col-md-6 ms-md-3">
+          <Row className="mb-3 ">
+            <EventCard
+              title="Hackx|2021"
+              class=" mt-md-0 pe-md-2"
+              description="Inter-University Hackothan"
+            />
+            <EventCard
+              title="Rasoga|2K21"
+              class=" mt-md-0 ps-md-2"
+              description="Inter-University Hackothan"
+            />
+            <EventCard
+              title="InfoStudio|2021"
+              class=" pe-md-2"
+              description="Inter-University Hackothan"
+            />
+            <EventCard
+              title="HackxJr|2021"
+              class=" ps-md-2"
+              description="Inter-University Hackothan"
+            />
           </Row>
         </Col>
         {/* <Card className="rounded-0 mt-3">

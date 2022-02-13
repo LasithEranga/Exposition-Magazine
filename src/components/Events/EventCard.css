@@ -11,6 +11,10 @@
   }
   
   @media screen and (min-width: 768px) {
+    .image-event {
+      height: 5rem;
+  
+    }
   }
   
   @media (min-width: 992px) {
@@ -18,7 +22,7 @@
   
   @media (min-width: 1200px) {
     .image-event {
-      height: 13rem;
+      height: 10rem;
   
     }
   }

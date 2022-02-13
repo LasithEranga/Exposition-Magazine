@@ -10,6 +10,9 @@
   }
   
   @media screen and (min-width: 768px) {
+    .expo-card-hr div:nth-last-child(2) div:last-of-type hr{
+      display: none;
+    }
   }
   
   @media (min-width: 992px) {
@@ -19,6 +22,9 @@
     .image-expo {
       height: 5rem;
   
+    }
+    .expo-card-hr div:nth-last-child(2) div:last-of-type hr{
+      display: flex;
     }
   }
   
