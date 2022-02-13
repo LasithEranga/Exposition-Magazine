@@ -2,6 +2,7 @@
 .image-height {
     height: 13rem;
   }
+
   
   
   @media (min-width: 576px) {
@@ -11,6 +12,9 @@
   }
   
   @media screen and (min-width: 768px) {
+    .sm-card{
+      height: 6.39rem !important;
+    }
   }
   
   @media (min-width: 992px) {
@@ -20,6 +24,9 @@
     .image-height {
       height: 6rem;
   
+    }
+    .sm-card{
+      height: 6rem !important;
     }
   }
   

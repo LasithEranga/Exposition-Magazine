@@ -6,13 +6,18 @@ import Card from "react-bootstrap/Card";
 import "./SmallCard.css";
 
 
-function SmallCard() {
+function SmallCard(props) {
   return (
    
         <Row>
-          <Col className="bg-dark col-12 col-md-6 image-height">Image</Col>
+          <Col className={`px-0 col-12 col-md-6   ${props.class ? props.class : ' '} image-height`}>
+            <img src="https://financerewind.com/wp-content/uploads/2021/07/Melissa-Roxburgh-1-1200x1441.jpeg" alt="" 
+             className="w-100 h-100"
+                style={{ objectFit: "cover" }}
+            />
+          </Col>
           <Col className=" col-12 col-md-6">
-            <span>Hello Title</span>
+            <span style={{ fontWeight: "bold" }}>Hello Title</span>
             <br></br>{" "}
             <span>
               lorem4kjnl
