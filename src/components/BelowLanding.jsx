@@ -22,7 +22,7 @@ function BelowLanding() {
         </Col>
         <Col className="col-12 col-md-7 col-lg-9">
           <Row>
-            <Col className="col ms-md-3 mx-lg-3">
+            <Col className="col ms-md-3 ms-lg-4">
               <Row className="px-3 px-md-0">
                 <Title>Experts Insights</Title>
 
@@ -30,16 +30,16 @@ function BelowLanding() {
               </Row>
             </Col>
 
-            <Col className="col-12 col-md-12 col-lg-4  mx-md-3">
-              <Row className="px-3 px-md-0">
+            <Col className="col-12 col-md-12 col-lg-4  ps-md-4  ms-lg-3">
+              <Row className="px-3 px-md-1">
                 <Title>News</Title>
                 <News />
               </Row>
             </Col>
           </Row>
           <Row>
-            <Col className="col d-md-none  d-lg-flex ms-md-3 pe-lg-0">
-              <Row className="px-3 px-md-0  col-lg-12 ">
+            <Col className="col d-md-none  d-lg-flex ms-md-3 ms-lg-4 px-lg-0">
+              <Row className="px-3 px-md-0  col-lg-12 mx-lg-0">
                 <Title>365 x 4 </Title>
                 <Card className="rounded-0 ps-3">
                 <Card.Body>
@@ -57,8 +57,8 @@ function BelowLanding() {
             </Col>
           </Row>
         </Col>
-        <Row>
-            <Col className="col d-none d-md-flex d-lg-none ms-md-3 ">
+        <Row className="px-0 mx-0">
+            <Col className="col d-none d-md-flex d-lg-none ">
               <Row className="px-3 px-md-0">
                 <Title>365 x 4 </Title>
                 <Card className="rounded-0 ps-3">

@@ -13,13 +13,13 @@ import ExpositionCard from "./ExpositionCard";
 
 function SectionFour() {
   return (
-    <Container>
+    <Container >
       <Row>
         <Col className="col-12 col-lg-9">
           <Row className="px-4 px-lg-0 me-lg-2">
             <Title>Spirits</Title>
             <Card className="px-3 pt-1 rounded-0">
-              <Card.Body className="pb-2">
+              <Card.Body className="pb-2 px-md-0">
                 <Row className="spirit ">
                   <SpiritCard />
                   <SpiritCard />
@@ -33,8 +33,8 @@ function SectionFour() {
           <Row className="px-4 px-lg-0">
             <Title>Exposition</Title>
 
-            <Card className=" ps-lg-1 rounded-0">
-              <Row className="p-md-3 py-lg-3 d-flex expo-card-hr">
+            <Card className="pt-3 pt-md-0 ps-lg-1 rounded-0">
+              <Row className="p-lg-3 pt-md-3 py-lg-3 d-flex expo-card-hr">
                 <ExpositionCard />
                 <ExpositionCard />
                 <ExpositionCard />
@@ -43,8 +43,8 @@ function SectionFour() {
             </Card>
 
             <Title>Popular</Title>
-            <Card className="ps-lg-1  rounded-0">
-            <Row className="p-md-3 py-lg-3 d-flex expo-card-hr">
+            <Card className="pt-3 pt-md-0 ps-lg-1  rounded-0">
+            <Row className="p-lg-3 pt-md-3 py-lg-3 d-flex expo-card-hr">
                 <ExpositionCard />
                 <ExpositionCard />
                 <ExpositionCard />
