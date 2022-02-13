@@ -12,7 +12,7 @@ const Header = () => {
           <img src={logo} alt="" style={{ height: "4rem" }} />
         </Link>
       </Container>
-        <div className="d-flex justify-content-center align-items-center border border-2 py-4">
+        <div className=" d-flex justify-content-center align-items-center border-end-0 border-start-0 border border-2 py-3">
         <div className=" d-flex justify-content-center align-items-center overflow-auto" >
           <Link className=" text-dark px-2 " to="/">
             HOME
