@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 import SmallCard from "./SmallCard";
 import Card from "react-bootstrap/Card";
 import './StudentCorner.css'

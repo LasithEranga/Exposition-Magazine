@@ -4,9 +4,6 @@ import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
-import SmallCard from "./SmallCard";
-import News from "./News";
 import Title from "./Title";
 import "./SectionFour.css";
 import ExpositionCard from "./ExpositionCard";
@@ -16,13 +13,13 @@ import ExpositionCard from "./ExpositionCard";
 
 function SectionFour() {
   return (
-    <Container className="px-0 ">
+    <Container >
       <Row>
         <Col className="col-12 col-lg-9">
           <Row className="px-4 px-lg-0 me-lg-2">
             <Title>Spirits</Title>
             <Card className="px-3 pt-1 rounded-0">
-              <Card.Body className="pb-2">
+              <Card.Body className="pb-2 px-md-0">
                 <Row className="spirit ">
                   <SpiritCard />
                   <SpiritCard />
@@ -37,7 +34,7 @@ function SectionFour() {
             <Title>Exposition</Title>
 
             <Card className=" ps-lg-1 rounded-0">
-              <Row className="p-md-3 py-lg-3 d-flex expo-card-hr">
+              <Row className="p-lg-3 pt-md-3 py-lg-3 d-flex expo-card-hr">
                 <ExpositionCard />
                 <ExpositionCard />
                 <ExpositionCard />
@@ -47,7 +44,7 @@ function SectionFour() {
 
             <Title>Popular</Title>
             <Card className="ps-lg-1  rounded-0">
-            <Row className="p-md-3 py-lg-3 d-flex expo-card-hr">
+            <Row className="p-lg-3 pt-md-3 py-lg-3 d-flex expo-card-hr">
                 <ExpositionCard />
                 <ExpositionCard />
                 <ExpositionCard />
