@@ -12,3 +12,7 @@ body {
   user-select: none; 
   position: relative;
 }
+
+a{
+  text-decoration: none !important;
+}

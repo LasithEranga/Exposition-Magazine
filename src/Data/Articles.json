@@ -1,37 +1,61 @@
 [
     {
         "id":"main",
-        "image":"https://financerewind.com/wp-content/uploads/2021/07/Melissa-Roxburgh-1-1200x1441.jpeg",
-        "title":"Article One",
+        "image":"https://www.kolpaper.com/wp-content/uploads/2020/03/victoria-pedretti-desktop-wallpaper.jpg",
+        "title":"victoria pedretti",
         "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nulla natus doloribus rerum labore nobis placeat libero veritatis velit veniam.",
         "category":"interviews",
+        "categoryColor":"bg-success",
         "date":"FEBRUARY 13,2022"
 
     },
     {
         "id":"2",
-        "image":"https://financerewind.com/wp-content/uploads/2021/07/Melissa-Roxburgh-1-1200x1441.jpeg",
-        "title":"Article Two",
+        "image":"https://static.onecms.io/wp-content/uploads/sites/35/2021/11/23/Melissa-Roxburgh-ED-Journey-Manifest-Story-GettyImages-1341169064-1323663587-AdobeStock_320768018-2000.jpg",
+        "title":"Melissa Roxburgh",
         "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nulla natus doloribus rerum labore nobis placeat libero veritatis velit veniam.",
-        "category":"student-corner",
+        "category":"news",
+        "categoryColor":"bg-danger",
         "date":"FEBRUARY 13,2022"
 
     },
     {
         "id":"3",
-        "image":"https://financerewind.com/wp-content/uploads/2021/07/Melissa-Roxburgh-1-1200x1441.jpeg",
-        "title":"Article One",
+        "image":"https://4.bp.blogspot.com/-SlUYhKkfRh0/XG8DDj6zP3I/AAAAAAAACxE/yQQWlKGtmwA4_nS8lmk41Q5KOhgg8dAcgCKgBGAs/w3840-h2400-c/disha-patani-bollywood-brunette-girl-4K-245.jpg",
+        "title":"disha patani",
         "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nulla natus doloribus rerum labore nobis placeat libero veritatis velit veniam.",
-        "category":"category-one",
+        "category":"student's-corner",
+        "categoryColor":"bg-warning",
         "date":"FEBRUARY 13,2022"
 
     },
     {
         "id":"4",
-        "image":"https://financerewind.com/wp-content/uploads/2021/07/Melissa-Roxburgh-1-1200x1441.jpeg",
-        "title":"Article One",
+        "image":"https://image.kpopmap.com/2021/04/cho-yihyun-cover-artist.jpg",
+        "title":"cho yihyun",
         "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nulla natus doloribus rerum labore nobis placeat libero veritatis velit veniam.",
-        "category":"category-one",
+        "category":"expert's-insights",
+        "categoryColor":"bg-info",
+        "date":"FEBRUARY 13,2022"
+
+    },
+    {
+        "id":"5",
+        "image":"https://wallpapersmug.com/large/79f1a6/scarlett-johansson-new-2020.jpg",
+        "title":"scarlett johansson",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nulla natus doloribus rerum labore nobis placeat libero veritatis velit veniam.",
+        "category":"interviews",
+        "categoryColor":"bg-success",
+        "date":"FEBRUARY 13,2022"
+
+    },
+    {
+        "id":"6",
+        "image":"https://images.hindustantimes.com/img/2021/10/15/1600x900/350dc06c-26b3-11ec-861b-89d0f4ae1a0f_1634323082511.jpg",
+        "title":"Natasha Bharadwaj",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nulla natus doloribus rerum labore nobis placeat libero veritatis velit veniam.",
+        "category":"interviews",
+        "categoryColor":"bg-success",
         "date":"FEBRUARY 13,2022"
 
     }
