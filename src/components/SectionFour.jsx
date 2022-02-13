@@ -33,7 +33,7 @@ function SectionFour() {
           <Row className="px-4 px-lg-0">
             <Title>Exposition</Title>
 
-            <Card className=" ps-lg-1 rounded-0">
+            <Card className="pt-3 pt-md-0 ps-lg-1 rounded-0">
               <Row className="p-lg-3 pt-md-3 py-lg-3 d-flex expo-card-hr">
                 <ExpositionCard />
                 <ExpositionCard />
@@ -43,7 +43,7 @@ function SectionFour() {
             </Card>
 
             <Title>Popular</Title>
-            <Card className="ps-lg-1  rounded-0">
+            <Card className="pt-3 pt-md-0 ps-lg-1  rounded-0">
             <Row className="p-lg-3 pt-md-3 py-lg-3 d-flex expo-card-hr">
                 <ExpositionCard />
                 <ExpositionCard />
