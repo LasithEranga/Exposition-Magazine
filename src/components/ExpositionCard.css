@@ -1,10 +1,10 @@
-.image-spirit {
+.image-expo {
     height: 10rem;
   }
   
   
   @media (min-width: 576px) {
-    .image-spirit {
+    .image-expo {
         height: 10rem;
       }
   }
@@ -16,8 +16,12 @@
   }
   
   @media (min-width: 1200px) {
-    .image-spirit {
-      height: 17.05rem;
+    .image-expo {
+      height: 5rem;
   
     }
   }
+  
+.expo-card-hr div:last-of-type div:last-of-type hr{
+  display: none;
+}

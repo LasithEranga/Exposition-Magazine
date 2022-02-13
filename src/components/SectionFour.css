@@ -1,4 +1,4 @@
-.spirit div:last-of-type hr
+.spirit div:last-of-type div:last-of-type hr
 {
 display: none;
 }
