@@ -1,15 +1,18 @@
 .image-competition {
-    height: 10rem;
+    height: 5rem;
   }
   
   
   @media (min-width: 576px) {
-    .image-competition {
-        height: 10rem;
+    .image-competition  {
+        height: 5rem;
       }
   }
   
   @media screen and (min-width: 768px) {
+  }
+  .image-competition {
+    height: 7.0rem; 
   }
   
   @media (min-width: 992px) {
@@ -17,7 +20,7 @@
   
   @media (min-width: 1200px) {
     .image-competition {
-      height: 4.5rem;
+      height: 17rem;
   
     }
   }

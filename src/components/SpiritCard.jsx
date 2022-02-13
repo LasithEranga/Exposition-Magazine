@@ -19,7 +19,7 @@ function SpiritCard() {
             sdjfojsdi
           </span>
         </Col>
-        <hr className="mt-4" />
+        <hr className="mt-4 " />
 
       </Row>
     </Col>
