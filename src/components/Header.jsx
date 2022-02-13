@@ -1,6 +1,6 @@
 import React from "react";
-import { Navbar, Container, Nav, NavDropdown, Offcanvas } from "react-bootstrap";
-import { Link, useLocation } from "react-router-dom";
+import { Navbar, Container, Nav, NavDropdown} from "react-bootstrap";
+import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
 
 const Header = () => {
