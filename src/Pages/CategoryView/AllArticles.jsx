@@ -9,13 +9,12 @@ import Title from "../../components/Title";
 
 function AllArticles() {
   const params = useParams();
-  const categoryName = params.category.replace("-"," ").toUpperCase(); 
+  const categoryName = params.category.replace("-", " ").toUpperCase();
   const filteredArray = ArticleList.filter((article) => {
     return article.category === params.category;
   });
 
-
-  return (
+  return filteredArray.length > 0 ? (
     <Container>
       <Title>{categoryName}</Title>
       <Row>
@@ -32,6 +31,16 @@ function AllArticles() {
           );
         })}
       </Row>
+    </Container>
+  ) : (
+    <Container>
+      <div className="d-flex justify-content-center align-items-center flex-column" style={{height:'80vh'}}>
+        <span className="fs-2">Hmmm...</span>
+        <span className="fs-6">
+          We couldn't find any matches for{" "}
+          <span className="fw-bold">"{categoryName}"</span>!
+        </span>
+      </div>
     </Container>
   );
 }

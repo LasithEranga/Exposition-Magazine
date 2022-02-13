@@ -1,8 +1,16 @@
+import { Container } from "react-bootstrap";
+
+
+
 const NotFound = ()=>{
-    return <div className="w-100 d-flex justify-content-center align-items-center flex-column" style={{height:'90vh'}}>
-        <p className="fs-1">404</p>
-        <p className="fs-2">Page Not Found!😢</p>
+    return <Container>
+    <div className="d-flex justify-content-center align-items-center flex-column" style={{height:'80vh'}}>
+      <span className="fs-1">Hmmm...</span>
+      <span className="fs-5">
+        We couldn't find any matches!
+      </span>
     </div>
+  </Container>
 }
 
 export default NotFound;
