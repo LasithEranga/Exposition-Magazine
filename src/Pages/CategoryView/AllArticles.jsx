@@ -7,12 +7,20 @@ import ArticleCard from "./ArticleCard";
 import ArticleList from "../../Data/Articles.json";
 import Title from "../../components/Title";
 
-function AllArticles() {
+function AllArticles({all}) {
   const params = useParams();
-  const categoryName = params.category.replace("-", " ").toUpperCase();
-  const filteredArray = ArticleList.filter((article) => {
-    return article.category === params.category;
-  });
+  let categoryName;
+  let filteredArray;
+  if(all){
+    categoryName = "ALL ARTICLES";
+    filteredArray = ArticleList;
+  }else{
+    categoryName = params.category.replace("-", " ").toUpperCase();
+    filteredArray = ArticleList.filter((article) => {
+      return article.category === params.category;
+    });
+  }
+  
 
   return filteredArray.length > 0 ? (
     <Container>
@@ -27,6 +35,7 @@ function AllArticles() {
               title={article.title}
               description={article.description}
               category={article.category}
+              categoryColor= {article.categoryColor}
             />
           );
         })}
@@ -36,7 +45,7 @@ function AllArticles() {
     <Container>
       <div className="d-flex justify-content-center align-items-center flex-column" style={{height:'80vh'}}>
         <span className="fs-2">Hmmm...</span>
-        <span className="fs-6">
+        <span className="fs-6 " style={{textAlign:'center'}}>
           We couldn't find any matches for{" "}
           <span className="fw-bold">"{categoryName}"</span>!
         </span>

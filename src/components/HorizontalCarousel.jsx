@@ -6,7 +6,13 @@ import "react-multi-carousel/lib/styles.css";
 import "./dotStyle.css";
 import Title from "./Title";
 
+import ArticleList from "../Data/Articles.json";
+
 function HorizontalView() {
+  const filteredList = ArticleList.filter(
+    article=> article.category === "interviews"
+  );
+
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -36,80 +42,22 @@ function HorizontalView() {
           dotListClass="dotw"
           removeArrowOnDeviceType={["tablet", "mobile"]}
           autoPlay={true}
-          autoPlaySpeed={1000}
+          autoPlaySpeed={2000}
           infinite={true}
           showDots={true}
           responsive={responsive}
         >
-          <div>
-            <CardView />
-          </div>
-          <div>
-            <CardView />
-          </div>
-          <div>
-            <CardView />
-          </div>
-          <div>
-            <CardView />
-          </div>
-          <div>
-            <CardView />
-          </div>
-          <div>
-            <CardView />
-          </div>
-          <div>
-            <CardView />
-          </div>
-          <div>
-            <CardView />
-          </div>
+          {filteredList.map((article, index) => {
+            return (
+              <div key={index}>
+                <CardView  image={article.image} title={article.title} id={article.id}/>
+              </div>
+            );
+          })}
         </Carousel>
       </Container>
     </React.Fragment>
   );
-
-  // return (
-  //   <Container className="justify-content-center bg-light">
-  //     <Row className="px-2 pt-3">
-  //       <Carousel>
-  //         <Carousel.Item interval={1500}>
-  //         <Row className="px-2 pt-3">
-  //           <Col>
-  //             <CardView />
-  //           </Col>
-  //           <Col>
-  //             <CardView />
-  //           </Col>
-  //           <Col>
-  //             <CardView />
-  //           </Col>
-  //           <Col>
-  //             <CardView />
-  //           </Col>
-  //           </Row>
-  //         </Carousel.Item>
-  //         <Carousel.Item interval={1500}>
-  //         <Row className="px-2 pt-3">
-  //           <Col>
-  //             <CardView />
-  //           </Col>
-  //           <Col>
-  //             <CardView />
-  //           </Col>
-  //           <Col>
-  //             <CardView />
-  //           </Col>
-  //           <Col>
-  //             <CardView />
-  //           </Col>
-  //           </Row>
-  //         </Carousel.Item>
-  //       </Carousel>
-  //     </Row>
-  //   </Container>
-  // );
 }
 
 export default HorizontalView;

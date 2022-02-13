@@ -5,6 +5,7 @@
         "title":"Article One",
         "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nulla natus doloribus rerum labore nobis placeat libero veritatis velit veniam.",
         "category":"interviews",
+        "categoryColor":"bg-success",
         "date":"FEBRUARY 13,2022"
 
     },
@@ -13,7 +14,8 @@
         "image":"https://financerewind.com/wp-content/uploads/2021/07/Melissa-Roxburgh-1-1200x1441.jpeg",
         "title":"Article Two",
         "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nulla natus doloribus rerum labore nobis placeat libero veritatis velit veniam.",
-        "category":"student-corner",
+        "category":"interviews",
+        "categoryColor":"bg-success",
         "date":"FEBRUARY 13,2022"
 
     },
@@ -22,7 +24,8 @@
         "image":"https://financerewind.com/wp-content/uploads/2021/07/Melissa-Roxburgh-1-1200x1441.jpeg",
         "title":"Article One",
         "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nulla natus doloribus rerum labore nobis placeat libero veritatis velit veniam.",
-        "category":"category-one",
+        "category":"student's-corner",
+        "categoryColor":"bg-warning",
         "date":"FEBRUARY 13,2022"
 
     },
@@ -31,7 +34,8 @@
         "image":"https://financerewind.com/wp-content/uploads/2021/07/Melissa-Roxburgh-1-1200x1441.jpeg",
         "title":"Article One",
         "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nulla natus doloribus rerum labore nobis placeat libero veritatis velit veniam.",
-        "category":"category-one",
+        "category":"interviews",
+        "categoryColor":"bg-success",
         "date":"FEBRUARY 13,2022"
 
     }
