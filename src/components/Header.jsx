@@ -19,8 +19,8 @@ const Header = () => {
         </Link>
        
       </Container>
-        <div className="text-center border-end-0 border-start-0 border border-2 py-3 px-3">
-        <div className="text-center  overflow-auto pb-3 pb-lg-0 " style={{fontSize:"0.8rem"}} >
+        <div className="text-center border-end-0 border-start-0 border border-2 pt-3 pb-lg-3 px-3">
+        <div className="text-center  overflow-auto pb-3 pb-lg-0 fw-bold" style={{fontSize:"0.8rem"}} >
           <Link className=" text-dark px-2 " to="/">
             HOME
           </Link> 
