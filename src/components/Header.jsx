@@ -21,8 +21,8 @@ const Header = () => {
         </Link>
        
       </Container>
-        <div className={`text-center border-end-0 border-start-0 border border-2 pt-3 pb-lg-3 px-3 ${location.pathname.slice(0,10) === '/articles/' ? 'sticky-top' : ' ' }`} style={{backgroundColor:"#ebebeb"}}>
-        <div className="text-center  overflow-auto pb-3 pb-lg-0 " style={{fontSize:"0.9rem", fontWeight:'600'}} >
+        <div className={` text-center border-end-0 border-start-0 border border-2 pt-3 pb-lg-3 px-3 ${location.pathname.slice(0,10) === '/articles/' ? 'sticky-top' : ' ' }`} style={{backgroundColor:"#ebebeb"}}>
+        <div className="text-center overflow-auto pb-3 pb-lg-0 " style={{fontSize:"0.9rem", fontWeight:'600'}} >
           <Link className=" text-dark px-2 " to="/">
             HOME
           </Link> 
@@ -32,8 +32,8 @@ const Header = () => {
           <Link to="/articlefilter/IMSSA-events" className="text-dark px-2 text-nowrap ">
             IMSSA EVENTS
           </Link>
-          <Link to="/articlefilter/im-news" className="text-dark px-2 text-nowrap ">
-            IM NEWS
+          <Link to="/articlefilter/news" className="text-dark px-2 text-nowrap ">
+            NEWS
           </Link>
           <Link
             to="/articlefilter/interviews"
