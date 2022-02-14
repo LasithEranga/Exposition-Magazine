@@ -7,19 +7,19 @@ import { Link } from "react-router-dom";
 
 function SmallCard({ article }) {
   return article ? (
-    <Link to={`/articles/${article.id}`}>
+    
     <Row>
       <Col
         className={`px-0 col-12 col-md-6   ${
           article.categoryColor ? article.categoryColor : " "
         } image-height`}
       >
-        <img
+        <Link to={`/articles/${article.id}`}><img
           src={article.image ? article.image : ""}
           alt=""
           className="w-100 h-100"
           style={{ objectFit: "cover" }}
-        />
+        /></Link>
       </Col>
       <Col className=" col-12 col-md-6">
         {article.category && (
@@ -36,11 +36,10 @@ function SmallCard({ article }) {
             </Link>
           </span>
         )}
-        <br></br> <span className="text-dark fw-bold ">{article.title.toUpperCase()}</span>
+        <br></br> <Link to={`/articles/${article.id}`}><span className="text-dark fw-bold ">{article.title.toUpperCase()}</span></Link>
       </Col>
       <hr className="mt-3" />
     </Row>
-    </Link>
   ) : (
     <div></div>
   );

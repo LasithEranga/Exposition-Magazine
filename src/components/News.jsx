@@ -11,8 +11,8 @@ function News() {
   return (
       <Card className="border-0 ps-2 pt-0 border-0 rounded-0">
         <Card.Body className=" student-corner-container ">
-          {filteredArticles.map(article=>(
-            <SmallCard class="sm-card" article={article}/>
+          {filteredArticles.map((article,index)=>(
+            <SmallCard class="sm-card" article={article} key={index}/>
           ))}
           
           

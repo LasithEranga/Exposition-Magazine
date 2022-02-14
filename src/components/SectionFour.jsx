@@ -7,9 +7,17 @@ import Col from "react-bootstrap/Col";
 import Title from "./Title";
 import "./SectionFour.css";
 import ExpositionCard from "./ExpositionCard";
+import ArticleData from '../Data/Articles.json';
 
 //sets the section 4 view the spirit and events section
 //creates two cards and use spirit card and small card components
+
+const getPopularArticles = ()=>{
+
+return ArticleData.sort(() => 0.5 - Math.random()).slice(0, 4);
+
+}
+
 
 function SectionFour() {
   return (
@@ -35,20 +43,20 @@ function SectionFour() {
 
             <Card className="pt-3 pt-md-0 ps-lg-1 rounded-0">
               <Row className="p-lg-3 pt-md-3 py-lg-3 d-flex expo-card-hr">
+                {/* <ExpositionCard />
                 <ExpositionCard />
                 <ExpositionCard />
-                <ExpositionCard />
-                <ExpositionCard />
+                <ExpositionCard /> */}
               </Row>
             </Card>
 
             <Title>Popular</Title>
             <Card className="pt-3 pt-md-0 ps-lg-1  rounded-0">
             <Row className="p-lg-3 pt-md-3 py-lg-3 d-flex expo-card-hr">
-                <ExpositionCard />
-                <ExpositionCard />
-                <ExpositionCard />
-                <ExpositionCard />
+                
+            {getPopularArticles().map((article,index)=>{
+              return <ExpositionCard key={index} article={article}/>;
+            })}
               </Row>
             </Card>
           </Row>
