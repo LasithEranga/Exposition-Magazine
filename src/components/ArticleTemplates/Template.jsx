@@ -1,14 +1,13 @@
 import { Col, Container, Row } from "react-bootstrap";
-import { Link,useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Avatar from "../Avatar/Avatar";
 import Share from "../Buttons/Share";
 import FooterCard from "./FooterCard";
 import RelatedArticles from "./RelatedArticles";
 
-
 const Template = ({ article }) => {
-
-   const params = useParams(); 
+  window.scrollTo(0, 0);
+  const params = useParams();
   const createMarkup = () => {
     return { __html: article.content ? article.content : "" };
   };
@@ -16,9 +15,11 @@ const Template = ({ article }) => {
   return article ? (
     <Container className="mt-2 mt-lg-4">
       <Row>
-        <Col lg={1} > <Share /></Col>
+        <Col lg={1}>
+          {" "}
+          <Share />
+        </Col>
         <Col xs={12} lg={7}>
-
           <Avatar
             alt={article.title}
             author={article.author}
@@ -49,10 +50,9 @@ const Template = ({ article }) => {
             className="w-100 mt-2 mt-lg-3"
           />
         </Col>
-        <Col className="d-none d-lg-flex"> 
+        <Col className="d-none d-lg-flex">
           <RelatedArticles />
         </Col>
-
       </Row>
       <Row>
         <Col lg={1}></Col>
@@ -65,7 +65,7 @@ const Template = ({ article }) => {
             <FooterCard />
           </div>
         </Col>
-        <Col className="mt-5 d-none d-lg-flex"> 
+        <Col className="mt-5 d-none d-lg-flex">
           <RelatedArticles />
         </Col>
       </Row>
@@ -78,7 +78,7 @@ const Template = ({ article }) => {
       >
         <span className="fs-2">Hmmm...</span>
         <span className="fs-6 " style={{ textAlign: "center" }}>
-          We couldn't find any matches for 
+          We couldn't find any matches for
           <span className="fw-bold"> "article Id {params.id}"</span>!
         </span>
       </div>
