@@ -21,17 +21,18 @@ const ExpositionCard = ({ article }) => {
             {" "}
             <Link to={`/articlefilter/${article.category}`} >
               <span
+              style={{fontSize:'0.7rem'}}
                 className={`badge rounded-1 text-wrap   ${
                   article.categoryColor ? article.categoryColor : ""
                 }`}
               >
-                {article.category}
+                {article.category.toUpperCase()}
               </span>
             </Link>
           </span>
           <Link to={`/articles/${article.id}`}>
             <span className="text-dark fw-bold d-block mt-1" style={{fontSize:'0.8rem'}}>
-              {article.title?article.title.toUpperCase():''}
+              {article.title?article.title:''}
             </span>
           </Link>
         </Col>

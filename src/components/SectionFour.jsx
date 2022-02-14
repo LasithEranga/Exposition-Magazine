@@ -24,7 +24,11 @@ const editorsNote = ArticleData.filter((article) => {
   return article.title === "Editor's Note";
 })[0];
 
-console.log(editorsNote)
+const getSpirits = ArticleData.filter((article) => {
+  return article.category === "spirits";
+});
+
+console.log(editorsNote);
 
 function SectionFour() {
   return (
@@ -36,9 +40,9 @@ function SectionFour() {
             <Card className="px-3 pt-1 rounded-0">
               <Card.Body className="pb-2 px-md-0">
                 <Row className="spirit ">
-                  <SpiritCard />
-                  <SpiritCard />
-                  <SpiritCard />
+                  {getSpirits.map((article,index)=>(
+                    <SpiritCard key={index} article={article}/>
+                  ))}
                 </Row>
               </Card.Body>
             </Card>
@@ -50,10 +54,10 @@ function SectionFour() {
 
             <Card className="pt-3 pt-md-0 ps-lg-1 rounded-0">
               <Row className="p-lg-3 pt-md-3 py-lg-3 d-flex expo-card-hr">
-              {editorsNote? <ExpositionCard article={editorsNote} />:''}
+                {editorsNote ? <ExpositionCard article={editorsNote} /> : ""}
                 {filteredData.length > 0
-                  ? filteredData.map((article,index) => {
-                      return <ExpositionCard article={article} key={index}/>;
+                  ? filteredData.map((article, index) => {
+                      return <ExpositionCard article={article} key={index} />;
                     })
                   : ""}
               </Row>
