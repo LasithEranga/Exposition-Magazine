@@ -9,6 +9,7 @@ import Home from "./Pages/Home";
 import NotFound from "./Pages/NotFound";
 import AboutUs from "./Pages/AboutUs";
 import ArticleView from "./Pages/ArticleView";
+import DemoBook from "./Pages/ThreeDView";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         <Route element={<Home />} path="/" />
 
         <Route element={<AboutUs />} path="/about-us" />
+
+        <Route element={<DemoBook />} path="/3d-view" />
 
         <Route element={<AllArticles />} path="/articlefilter/:category" />
 

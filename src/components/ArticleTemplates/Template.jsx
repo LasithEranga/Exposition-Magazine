@@ -2,6 +2,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Link,useParams } from "react-router-dom";
 import Avatar from "../Avatar/Avatar";
 import Share from "../Buttons/Share";
+import FooterCard from "./FooterCard";
+import RelatedArticles from "./RelatedArticles";
 
 
 const Template = ({ article }) => {
@@ -47,6 +49,10 @@ const Template = ({ article }) => {
             className="w-100 mt-2 mt-lg-3"
           />
         </Col>
+        <Col className="d-none d-lg-flex"> 
+          <RelatedArticles />
+        </Col>
+
       </Row>
       <Row>
         <Col lg={1}></Col>
@@ -55,6 +61,12 @@ const Template = ({ article }) => {
             dangerouslySetInnerHTML={createMarkup()}
             className="mt-3 mt-lg-4 fs-5"
           ></div>
+          <div>
+            <FooterCard />
+          </div>
+        </Col>
+        <Col className="mt-5 d-none d-lg-flex"> 
+          <RelatedArticles />
         </Col>
       </Row>
     </Container>
