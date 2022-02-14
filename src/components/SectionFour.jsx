@@ -8,7 +8,7 @@ import Title from "./Title";
 import "./SectionFour.css";
 import ExpositionCard from "./ExpositionCard";
 
-//sets the section 4 view the spirit and events section
+//sets the section 4 view, the spirit and events section
 //creates two cards and use spirit card and small card components
 
 function SectionFour() {
