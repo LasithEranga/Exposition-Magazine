@@ -31,6 +31,8 @@ function TSFItem({ article }) {
         <Link to={`/articles/${article.id}`}>
           <span className="text-dark fs-4"  style={{ fontWeight: "bold" }}> {article.title} </span>
         </Link>
+        <br></br>{" "}
+        {article.quote}
       </Col>
     </Row>
   );

@@ -27,6 +27,7 @@ function SmallCard({ article }) {
             {" "}
             <Link to={`/articlefilter/${article.category}`} className="p-0">
               <span
+              
                 className={`badge rounded-1 text-wrap   ${
                   article.categoryColor ? article.categoryColor: ""
                 }`}
@@ -36,7 +37,7 @@ function SmallCard({ article }) {
             </Link>
           </span>
         )}
-        <br></br> <Link to={`/articles/${article.id}`}><span className="text-dark fw-bold ">{article.title.toUpperCase()}</span></Link>
+        <br></br> <Link to={`/articles/${article.id}`}><span style={{fontSize:'0.8rem'}} className="text-dark fw-bold ">{article.title.toUpperCase()}</span></Link>
       </Col>
       <hr className="mt-3" />
     </Row>
