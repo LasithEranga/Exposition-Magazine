@@ -3,26 +3,36 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./TSFItem.css";
+import { Link } from "react-router-dom";
 
-function TSFItem() {
+function TSFItem({ article }) {
   return (
     <Row className="py-1 py-md-2">
       <Col className="px-0 col-12 col-md-5 image-tsf">
-        <img
-          src="https://www.kolpaper.com/wp-content/uploads/2020/03/victoria-pedretti-desktop-wallpaper.jpg"
-          alt=""
-          className="w-100 h-100"
-          style={{ objectFit: "cover" }}
-        />
+        <Link to={`/articles/${article.id}`}>
+          <img
+            src={article.image}
+            alt=""
+            className="w-100 h-100"
+            style={{ objectFit: "cover" }}
+          />
+        </Link>
       </Col>
       <Col className="px-0 ps-md-3 col-12 col-md-7 mb-3">
-        <span style={{ fontWeight: "bold" }}> Djskhfjks skdjfhjk </span>
+        <Link to={`/articlefilter/${article.category}`}>
+          <span
+            style={{ fontSize: "0.7rem" }}
+            className={`badge text-wrap  ${article.categoryColor}`}
+          >
+            {article.category.toUpperCase()}
+          </span>
+        </Link>
         <br></br>{" "}
-        <span>
-          lorem4kjnl
-          <br />
-          sdjfojsdi
-        </span>
+        <Link to={`/articles/${article.id}`}>
+          <span className="text-dark fs-4"  style={{ fontWeight: "bold" }}> {article.title} </span>
+        </Link>
+        <br></br>{" "}
+        {article.quote}
       </Col>
     </Row>
   );

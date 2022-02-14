@@ -8,17 +8,22 @@ import ArticleList from "../../Data/Articles.json";
 import Title from "../../components/Title";
 
 function AllArticles({all}) {
+
+  window.scrollTo(0, 0);
   const params = useParams();
   let categoryName;
   let filteredArray;
+
   if(all){
     categoryName = "ALL ARTICLES";
     filteredArray = ArticleList;
+    filteredArray.sort(() => 0.5 - Math.random());
   }else{
     categoryName = params.category.replace("-", " ").toUpperCase();
     filteredArray = ArticleList.filter((article) => {
       return article.category === params.category;
     });
+    filteredArray.sort(() => 0.5 - Math.random());
   }
   
 
