@@ -16,10 +16,10 @@ const ExpositionCard = ({ article }) => {
             alt=""
           /></Link>
         </Col>
-        <Col lg={6} className=" ">
+        <Col lg={6} className=" pt-2">
           <span style={{ fontWeight: "bold " }}>
             {" "}
-            <Link to={`/articlefilter/${article.category}`} className="p-0">
+            <Link to={`/articlefilter/${article.category}`} >
               <span
                 className={`badge rounded-1 text-wrap   ${
                   article.categoryColor ? article.categoryColor : ""
@@ -30,8 +30,8 @@ const ExpositionCard = ({ article }) => {
             </Link>
           </span>
           <Link to={`/articles/${article.id}`}>
-            <span className="text-dark fw-bold ">
-              {article.title.toUpperCase()}
+            <span className="text-dark fw-bold d-block mt-1" style={{fontSize:'0.8rem'}}>
+              {article.title?article.title.toUpperCase():''}
             </span>
           </Link>
         </Col>
