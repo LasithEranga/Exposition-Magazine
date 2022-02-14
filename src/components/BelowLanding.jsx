@@ -8,6 +8,13 @@ import FirstCarousel from "./FirstCarousel";
 import Title from "./Title";
 import News from "./News";
 import TSFItem from "./TSFItem";
+import ArticleList from "../Data/Articles.json";
+
+const getTSF = () => {
+  return ArticleList.filter((article) => {
+    return article.category === "365x4";
+  });
+};
 
 function BelowLanding() {
   return (
@@ -42,40 +49,35 @@ function BelowLanding() {
               <Row className="px-3 px-md-0  col-lg-12 mx-lg-0">
                 <Title>365 x 4 </Title>
                 <Card className="rounded-0 ps-3">
-                <Card.Body>
-                <Row>
-                  <Col className="col-12 col-md-6"> <TSFItem /></Col>
-                  <Col className="col-12 col-md-6"><TSFItem /></Col>
-                </Row>
-                <Row>
-                  <Col className="col-12 col-md-6"> <TSFItem /></Col>
-                  <Col className="col-12 col-md-6"><TSFItem /></Col>
-                </Row>
-                </Card.Body>
+                  <Card.Body>
+                    <Row>
+                      {getTSF().map((article, index) => {
+                        return <Col sm={12} lg={6} key={index} ><TSFItem article={article}/></Col>;
+                      })}
+                    </Row>
+                  </Card.Body>
                 </Card>
               </Row>
             </Col>
           </Row>
         </Col>
         <Row className="px-0 mx-0">
-            <Col className="col d-none d-md-flex d-lg-none ">
-              <Row className="px-3 px-md-0">
-                <Title>365 x 4 </Title>
-                <Card className="rounded-0 ps-3">
+          <Col className="col d-none d-md-flex d-lg-none ">
+            <Row className="px-3 px-md-0">
+              <Title>365 x 4 </Title>
+              <Card className="rounded-0 ps-3 ">
                 <Card.Body>
-                <Row>
-                  <Col className="col-12 col-md-6"> <TSFItem /></Col>
-                  <Col className="col-12 col-md-6"><TSFItem /></Col>
-                </Row>
-                <Row>
-                  <Col className="col-12 col-md-6"> <TSFItem /></Col>
-                  <Col className="col-12 col-md-6"><TSFItem /></Col>
-                </Row>
+                  <Row>
+                  {getTSF().map((article, index) => {
+                        return <Col key={index}  className="col-12 col-md-6"><TSFItem article={article}/></Col>;
+                      })}
+
+                  </Row>
                 </Card.Body>
-                </Card>
-              </Row>
-            </Col>
-          </Row>
+              </Card>
+            </Row>
+          </Col>
+        </Row>
       </Row>
     </Container>
   );

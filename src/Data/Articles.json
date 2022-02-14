@@ -80,10 +80,10 @@
     {
         "id": "7",
         "image": "https://wallpapersmug.com/large/79f1a6/scarlett-johansson-new-2020.jpg",
-        "title": "scarlett johansson",
+        "title": "365x1",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nulla natus doloribus rerum labore nobis placeat libero veritatis velit veniam.",
-        "category": "interviews",
-        "categoryColor": "bg-success",
+        "category": "365x4",
+        "categoryColor": "bg-danger",
         "date": "FEB 13,2022",
         "authorImage": "https://wallpapersmug.com/large/79f1a6/scarlett-johansson-new-2020.jpg",
         "author": "scarlett johansson",
@@ -114,5 +114,38 @@
         "author": "Melissa Roxburgh",
         "content":"<h2>Educators are<span style=\"background-color: rgb(255, 255, 0);\"><font color=\"#000000\"> finding themselves under the microscope</font></span></h2><span style=\"background-color: rgb(255, 255, 0);\"><font color=\"#000000\"> </font></span><p><span style=\"background-color: rgb(255, 255, 0);\"><font color=\"#000000\">The number of teachers who are preoccupied wit</font></span>h those uncertainties could soon grow. </p><p><span style=\"background-color: rgb(255, 255, 0);\"><font color=\"#000000\">This year, Republicans in at least 10 states are considering <a class=\"a-link\" href=\"https://www.edweek.org/policy-politics/heres-the-long-list-of-topics-republicans-want-banned-from-the-classroom/2022/02\">requiring schools to publish lists</a> of all the books, reading materials, and other activities teachers use. Some proposals would allow parents to review materials before they are added to lessons or the school library, or to opt their children out of certain activities</font></span>. </p><p>Such proposals build on last year’s <a class=\"a-link\" href=\"https://www.edweek.org/policy-politics/map-where-critical-race-theory-is-under-attack/2021/06\">explosion of political pushback</a> against the teaching of what their sponsors have deemed “divisive concepts” that prompted 14 states to enact bans or restrictions on how schools address topics like racism and sexism. And beyond curriculum, one bill in Arizona would allow the state to <a class=\"a-link\" href=\"https://tucson.com/news/state-and-regional/govt-and-politics…om-parents/article_432c7416-7df9-11ec-8041-a758bafa88a6.html\" target=\"_blank\">punish teachers</a> who withhold students’ confidences—like a disclosure that a student is gay—from their parents.</p><p>At the same time, through approaches like Youngkin’s tip line, elected officials are expressing greater interest in hearing concerns directly from the public about reading materials, academic content, or teaching practices that they find objectionable. A bill in the South Carolina legislature introduced by a GOP lawmaker on Feb. 7, for example, <a class=\"a-link\" href=\"https://www.newsandsentinel.com/news/local-news/2022/02/fall…-over-anti-critical-race-theory-bill-in-west-virginia-house/\" target=\"_blank\">would create a similar reporting system</a> focused on allegations of schools teaching critical race theory.</p><p><img style=\"width: 25%;\" src=\"https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Icon_White_BG.max-500x500.jpg\"><br></p><p>A pattern could be emerging: Elected leaders push for schools to share exhaustive details of their work, while encouraging parents to share detailed concerns or complaints about educators. Those same elected leaders may then seek more disclosures from—and potentially new restrictions on—schools. </p>",
         "readTime": "12 min"
+    },{
+        "id": "10",
+        "image": "https://wallpapersmug.com/large/79f1a6/scarlett-johansson-new-2020.jpg",
+        "title": "365x2",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nulla natus doloribus rerum labore nobis placeat libero veritatis velit veniam.",
+        "category": "365x4",
+        "categoryColor": "bg-danger",
+        "date": "FEB 13,2022",
+        "authorImage": "https://wallpapersmug.com/large/79f1a6/scarlett-johansson-new-2020.jpg",
+        "author": "scarlett johansson",
+        "readTime": "8 min"
+    },{
+        "id": "11",
+        "image": "https://wallpapersmug.com/large/79f1a6/scarlett-johansson-new-2020.jpg",
+        "title": "365x3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nulla natus doloribus rerum labore nobis placeat libero veritatis velit veniam.",
+        "category": "365x4",
+        "categoryColor": "bg-danger",
+        "date": "FEB 13,2022",
+        "authorImage": "https://wallpapersmug.com/large/79f1a6/scarlett-johansson-new-2020.jpg",
+        "author": "scarlett johansson",
+        "readTime": "8 min"
+    },{
+        "id": "12",
+        "image": "https://wallpapersmug.com/large/79f1a6/scarlett-johansson-new-2020.jpg",
+        "title": "365x4",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nulla natus doloribus rerum labore nobis placeat libero veritatis velit veniam.",
+        "category": "365x4",
+        "categoryColor": "bg-danger",
+        "date": "FEB 13,2022",
+        "authorImage": "https://wallpapersmug.com/large/79f1a6/scarlett-johansson-new-2020.jpg",
+        "author": "scarlett johansson",
+        "readTime": "8 min"
     }
 ]
