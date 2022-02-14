@@ -7,12 +7,12 @@ function NextArticles() {
   return (
     <div>
       <Row>
-        <Col>
+        <Col className=" d-md-block col-12">
             <PreviousArticleCard />
         </Col>
-        <Col>
+        <Col className=" d-md-block col-12">
           
-                <NextArticleCard />
+            <NextArticleCard />
           
         </Col>
       </Row>

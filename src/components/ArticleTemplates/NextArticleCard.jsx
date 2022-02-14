@@ -6,11 +6,11 @@ import { GrNext } from 'react-icons/gr';
 function NextArticleCard(){
 
     return (<div>
-    <Row className="justify-content-center d-flex align-items-center next-article-arrow">
-            <Col sm={7} className="text-end fw-bold" >sdkjfhjks sdkjfkdjskj sdkfhkjds</Col>
-            <Col sm={3} className="bg-dark h-100">image</Col>
-            <Col sm={2} className="bg-light h-100 justify-content-center d-flex align-items-center "><GrNext  size={20}/></Col>
-          </Row>
+        <Row className="justify-content-center d-flex align-items-center next-article-arrow mt-4 ">
+            <Col  className="text-end fw-bold" ><span style={{fontWeight:"400"}}>Next Article</span> <br/>sdkjfhjks sdkjfkdjskj sdkfhkjds</Col>
+            <Col  className="col-3 col-md-2 bg-dark h-100">image</Col>
+            <Col  className="col-1 bg-light h-100 justify-content-center d-flex align-items-center  pe-2 me-2"><GrNext  size={20}/></Col>
+        </Row>
         
     </div>);
 }
