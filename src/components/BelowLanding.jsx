@@ -69,12 +69,14 @@ function BelowLanding() {
               <Title>365 x 4 </Title>
               <Card className="rounded-0 ps-3 ">
                 <Card.Body>
+
                   <Row>
                   {getTSF().map((article, index) => {
                         return <Col key={index}  className="col-12 col-md-6"><TSFItem article={article}/></Col>;
                       })}
 
                   </Row>
+
                 </Card.Body>
               </Card>
             </Row>

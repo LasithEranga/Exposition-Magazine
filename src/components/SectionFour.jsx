@@ -9,7 +9,7 @@ import "./SectionFour.css";
 import ExpositionCard from "./ExpositionCard";
 import ArticleData from "../Data/Articles.json";
 
-//sets the section 4 view the spirit and events section
+//sets the section 4 view, the spirit and events section
 //creates two cards and use spirit card and small card components
 
 const getPopularArticles = () => {
