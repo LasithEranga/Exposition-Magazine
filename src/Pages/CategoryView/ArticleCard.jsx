@@ -15,9 +15,9 @@ function ArticleCard(props) {
           src={props.image}
         />
         <Card.Body>
-          <div className="d-flex felx-column justify-content-between">
+          <div className="d-flex felx-column justify-content-between ">
           <Card.Title className="fw-bold">{props.title} </Card.Title>
-          <Link to={`/articlefilter/${props.category}`}><span className={`badge text-wrap d-flex align-items-center ${props.categoryColor}`} >{props.category}</span></Link>
+          <Link to={`/articlefilter/${props.category}`}><span style={{fontSize:'0.7rem'}} className={`badge text-wrap d-flex align-items-center ${props.categoryColor}`} >{props.category.toUpperCase()}</span></Link>
           </div>
           <Card.Text className="text-muted" style={{ textAlign: "justify" }}>
             {props.description}
