@@ -3,7 +3,6 @@ import Card from "react-bootstrap/Card";
 import Carousel from "react-bootstrap/Carousel";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import expertimg from "../../images/expertimg.png";
 import "./Competition.css";
 
 function CarouselView() {

@@ -8,19 +8,26 @@ function ArticleCard(props) {
   return (
     <Col xs={12} md={6} lg={4}>
       <Card style={{ width: "100%" }} className="my-2">
-        <Card.Img
+      <Link to={`/articles/${props.id}`} className=""><Card.Img
           className="p-3 pb-0"
           style={{ height: "13rem", objectFit: "cover" }}
           variant="top"
           src={props.image}
-        />
+        /></Link>
         <Card.Body>
           <div className="d-flex felx-column justify-content-between ">
-          <Card.Title className="fw-bold">{props.title} </Card.Title>
-          <Link to={`/articlefilter/${props.category}`}><span style={{fontSize:'0.7rem'}} className={`badge text-wrap d-flex align-items-center ${props.categoryColor}`} >{props.category.toUpperCase()}</span></Link>
+            <Card.Title className="fw-bold">{props.title} </Card.Title>
+            <Link to={`/articlefilter/${props.category}`}>
+              <span
+                style={{ fontSize: "0.7rem" }}
+                className={`badge text-wrap d-flex align-items-center ${props.categoryColor}`}
+              >
+                {props.category.toUpperCase()}
+              </span>
+            </Link>
           </div>
           <Card.Text className="text-muted" style={{ textAlign: "justify" }}>
-            {props.description}
+          <Link to={`/articles/${props.id}`} className="text-dark"> {props.description}</Link>
           </Card.Text>
           <Link to={`/articles/${props.id}`} className="">
             Read more...
@@ -28,7 +35,6 @@ function ArticleCard(props) {
         </Card.Body>
       </Card>
     </Col>
-    
   );
 }
 
