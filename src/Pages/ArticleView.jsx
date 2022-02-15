@@ -11,8 +11,9 @@ const ArticleView = () => {
   const filteredArticle = ArticleList.filter(
     (article) => article.id === params.id
   )[0];
+  
 
- const otherArticles = RelatedArticles(filteredArticle.id,filteredArticle.category);
+ const otherArticles = RelatedArticles(filteredArticle);
 
   return (
     <ArticleDataContext.Provider value={{filteredArticle, ...otherArticles}}>
