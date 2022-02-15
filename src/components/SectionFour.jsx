@@ -35,7 +35,7 @@ function SectionFour() {
     <Container>
       <Row>
         <Col className="col-12 col-lg-9">
-          <Row className="px-4 px-lg-0 me-lg-2">
+          <Row className="px-3 px-lg-0 me-lg-2">
             <Title>Spirits</Title>
             <Card className="px-3 pt-1 rounded-0">
               <Card.Body className="pb-2 px-md-0">
@@ -49,11 +49,11 @@ function SectionFour() {
           </Row>
         </Col>
         <Col className="col-12 col-lg-3 ">
-          <Row className="px-4 px-lg-0">
+          <Row className="px-3 px-lg-0">
             <Title>Exposition</Title>
 
             <Card className="pt-3 pt-md-0 ps-lg-1 rounded-0">
-              <Row className="p-lg-3 pt-md-3 py-lg-3 d-flex expo-card-hr">
+              <Row className="p-lg-3 pt-md-3 py-lg-3 d-flex expo-card-hr pb-md-3">
                 {editorsNote ? <ExpositionCard article={editorsNote} /> : ""}
                 {filteredData.length > 0
                   ? filteredData.map((article, index) => {
@@ -65,7 +65,7 @@ function SectionFour() {
 
             <Title>Popular</Title>
             <Card className="pt-3 pt-md-0 ps-lg-1  rounded-0">
-              <Row className="p-lg-3 pt-md-3 py-lg-3 d-flex expo-card-hr">
+              <Row className="p-lg-3 pt-md-3 py-lg-3 d-flex expo-card-hr pb-md-3">
                 {getPopularArticles().map((article, index) => {
                   return <ExpositionCard key={index} article={article} />;
                 })}
