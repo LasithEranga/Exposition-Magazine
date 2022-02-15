@@ -1,7 +1,11 @@
 
 .image-height {
     height: 13rem;
+
   }
+.stu-corner-text{
+  font-size: 1.2rem;
+}
 
   
   
@@ -15,6 +19,9 @@
     .sm-card{
       height: 6.39rem !important;
     }
+    .stu-corner-text{
+      font-size: 0.8rem;
+    }
   }
   
   @media (min-width: 992px) {
@@ -27,6 +34,9 @@
     }
     .sm-card{
       height: 6rem !important;
+    }
+    .stu-corner-text{
+      font-size: 0.8rem;
     }
   }
   

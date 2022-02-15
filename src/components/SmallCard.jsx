@@ -21,23 +21,22 @@ function SmallCard({ article }) {
           style={{ objectFit: "cover" }}
         /></Link>
       </Col>
-      <Col className=" col-12 col-md-6">
+      <Col className=" col-12 col-md-6 ps-0 ps-md-2">
         {article.category && (
-          <span style={{ fontWeight: "bold" }}>
-            {" "}
-            <Link to={`/articlefilter/${article.category}`} className="p-0">
+          <Row className="">
+            <Link to={`/articlefilter/${article.category}`} className="">
               <span
-              
-                className={`badge rounded-1 text-wrap   ${
+                style={{fontSize:'0.6rem'}}
+                className={`badge rounded-1 text-nowrap  ${
                   article.categoryColor ? article.categoryColor: ""
                 }`}
               >
-                {article.category}
+                {article.category.toUpperCase()}
               </span>
             </Link>
-          </span>
+            </Row>
         )}
-        <br></br> <Link to={`/articles/${article.id}`}><span style={{fontSize:'0.8rem'}} className="text-dark fw-bold ">{article.title.toUpperCase()}</span></Link>
+        <Link to={`/articles/${article.id}`}><span style={{}} className="text-dark fw-bold stu-corner-text">{article.title.toUpperCase()}</span></Link>
       </Col>
       <hr className="mt-3" />
     </Row>
