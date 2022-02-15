@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 const ExpositionCard = ({ article }) => {
   return (
     <Col md={6} lg={12} className="">
-      <Row className="mb-3 mb-lg-0 mx-1 mx-lg-0">
-        <Col lg={6} className=" image-expo ">
+      <Row className="mb-3 mb-lg-0 mx-1 mx-lg-0 ">
+        <Col lg={6} className=" image-expo px-lg-0">
         <Link to={`/articles/${article.id}`}> <img
             src={article.image}
             className="w-100 h-100"
@@ -16,7 +16,7 @@ const ExpositionCard = ({ article }) => {
             alt=""
           /></Link>
         </Col>
-        <Col lg={6} className=" pt-2">
+        <Col lg={6} className=" pt-2 pt-lg-0">
           <span style={{ fontWeight: "bold " }}>
             {" "}
             <Link to={`/articlefilter/${article.category}`} >

@@ -4,12 +4,12 @@ import Col from "react-bootstrap/Col";
 import "./SpiritCard.css";
 import { Link } from "react-router-dom";
 
-function SpiritCard({ article }) {
+function SpiritCard({article}) {
   return (
-    <Col md={6} lg={12} className="">
-      <Row className="mb-3 mx-md-0">
+    <Col md={6} lg={12} className={`px-0`}>
+      <Row className="mb-3 mx-md-0 ">
         
-        <Col lg={6} className="image-spirit">
+        <Col lg={6} className="image-spirit pb-3 pb-lg-0">
           
           <Link to={`/articles/${article.id}`}>
             <img
