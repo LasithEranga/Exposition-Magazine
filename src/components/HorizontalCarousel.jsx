@@ -8,10 +8,12 @@ import Title from "./Title";
 
 import ArticleList from "../Data/Articles.json";
 
+const filteredList = ArticleList.filter(
+  article=> article.category === "interviews"
+);
+
 function HorizontalView() {
-  const filteredList = ArticleList.filter(
-    article=> article.category === "interviews"
-  );
+  
 
   const responsive = {
     desktop: {
