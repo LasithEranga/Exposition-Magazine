@@ -1,13 +1,18 @@
+import { useContext } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link, useParams } from "react-router-dom";
 import Avatar from "../Avatar/Avatar";
 import Share from "../Buttons/Share";
 import FooterCard from "./FooterCard";
 import RelatedArticles from "./RelatedArticles";
+import ArticleDataContext from "../../context/ArticleDataContext";
 
-const Template = ({ article }) => {
+const Template = () => {
   window.scrollTo(0, 0);
+
   const params = useParams();
+  const article = useContext(ArticleDataContext);
+
   const createMarkup = () => {
     return { __html: article.content ? article.content : "" };
   };
@@ -20,13 +25,7 @@ const Template = ({ article }) => {
           <Share />
         </Col>
         <Col xs={12} lg={7}>
-          <Avatar
-            alt={article.title}
-            author={article.author}
-            authorImage={article.authorImage}
-            date={article.date}
-            readTime={article.readTime}
-          />
+          <Avatar />
           <h2 className="mt-4 fw-bold">{article.title ? article.title : ""}</h2>
           <div style={{ width: "fit-content" }}>
             <Link
