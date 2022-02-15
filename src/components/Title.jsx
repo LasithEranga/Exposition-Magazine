@@ -6,7 +6,7 @@ const Title = (props) => {
       <div
         style={{
           width: "3rem",
-          borderBottom:"3px solid #F2B900"
+          borderBottom:"3px solid #ffc107"
         }}
       ></div>
       <div

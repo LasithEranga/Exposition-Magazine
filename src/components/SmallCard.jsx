@@ -21,7 +21,7 @@ function SmallCard({ article }) {
           style={{ objectFit: "cover" }}
         /></Link>
       </Col>
-      <Col className=" col-12 col-md-6 ps-0 ps-lg-2">
+      <Col className=" col-12 col-md-6 ps-0 ps-md-2">
         {article.category && (
           <Row className="">
             <Link to={`/articlefilter/${article.category}`} className="">
