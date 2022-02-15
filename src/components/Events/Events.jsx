@@ -2,12 +2,13 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
 import Title from "../Title";
-import TSFItem from "../TSFItem";
 import EventCard from "./EventCard";
 import CarouselView from "./CarouselView";
+import ArticleData from '../../Data/Articles.json';
 
+const events = ArticleData.filter(article=>article.category === `events`);
+const edifyEvent = events.filter(article=>article.title === `Edify | 2022`);
 function Events() {
   return (
     <Container className="px-md-0">
@@ -15,32 +16,23 @@ function Events() {
       <Row className="mx-0">
         <Col className="col">
           <Row>
-            <CarouselView />
+            <CarouselView article={edifyEvent[0]}/>
           </Row>
         </Col>
 
         <Col className="col-12 col-md-6 ms-md-3">
           <Row className="mb-3 ">
-            <EventCard
-              title="Hackx|2021"
-              class=" mt-md-0 pe-md-2"
-              description="Inter-University Hackothan"
+          {events.map((event,index)=>(
+            event.title !== 'Edify | 2022' && 
+              <EventCard
+              key={index}
+              title={event.title}
+              class=" mt-md-0 pe-md-2 p-1"
+              description={event.description}
+              image={event.image}
+              id={event.id}
             />
-            <EventCard
-              title="Rasoga|2K21"
-              class=" mt-md-0 ps-md-2"
-              description="Inter-University Hackothan"
-            />
-            <EventCard
-              title="InfoStudio|2021"
-              class=" pe-md-2"
-              description="Inter-University Hackothan"
-            />
-            <EventCard
-              title="HackxJr|2021"
-              class=" ps-md-2"
-              description="Inter-University Hackothan"
-            />
+            ))}
           </Row>
         </Col>
         {/* <Card className="rounded-0 mt-3">
