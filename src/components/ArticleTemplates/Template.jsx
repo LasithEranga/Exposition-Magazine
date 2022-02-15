@@ -62,7 +62,7 @@ const Template = ({ article }) => {
             className="mt-3 mt-lg-4 fs-5"
           ></div>
           <div>
-            <FooterCard />
+            <FooterCard  author={article.author} authorImage={article.authorImage} authorPosition={article.authorPosition}/>
           </div>
         </Col>
         <Col className="mt-5 d-none d-lg-flex">
