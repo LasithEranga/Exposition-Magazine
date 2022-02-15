@@ -22,13 +22,6 @@ const RetaledArticles = (id,category)=>{
 
 
 
-console.log({
-    nonRelatedArticles,
-    relatedArticles,
-    nextArticle,
-    previousArticle
- })
-
  return{
     nonRelatedArticles,
     relatedArticles,

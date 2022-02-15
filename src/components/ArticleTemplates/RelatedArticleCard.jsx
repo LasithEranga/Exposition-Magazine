@@ -13,11 +13,11 @@ function RelatedArticleCard(props) {
         <Row>
           <Link to={`/articlefilter/${props.article.category}`} className="p-0">
             <span
-              className={`badge rounded-1 text-wrap   ${
+              className={`badge rounded-1 text-nowrap   ${
                 props.article.categoryColor ? props.article.categoryColor : ""
               }`}
             >
-              {props.article.category ? props.article.category : ""}
+              {props.article.category ? props.article.category.toUpperCase() : ""}
             </span>
           </Link>
         </Row>

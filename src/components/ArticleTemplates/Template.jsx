@@ -35,7 +35,7 @@ const Template = () => {
               <span
                 className={`badge text-wrap d-flex align-items-center ${article.categoryColor}`}
               >
-                {article.category}
+                {article.category.toUpperCase()}
               </span>
             </Link>
           </div>
