@@ -14,7 +14,9 @@ const Avatar = ({  alt, author, authorImage }) => {
         />
         <div className="d-flex flex-column ps-3">
           <span className=" fw-bold">{author} Andrew Ujifusa</span>
-          <span className="fs-6">Assistant Editor,  Education Week</span>
+          <span className="fs-6 text-secondary">Undergraduate - Level 4</span>
+          <span className="fs-6 text-secondary">Department of Industrial Management</span>
+          <span className="fs-6 text-secondary">University of Kelaniya. </span>
         </div>
       </div>
     );
