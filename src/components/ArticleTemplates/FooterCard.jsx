@@ -2,13 +2,8 @@ import React from "react";
 import { Col } from "react-bootstrap";
 import FooterAvatar from "../Avatar/FooterAvatar";
 import NextArticles from "./NextArticles";
-import { useContext } from "react";
-import ArticleDataContext from "../../context/ArticleDataContext";
 
 function FooterCard() {
-  const { alt, author, authorImage, authorPosition } =
-    useContext(ArticleDataContext);
-
   return (
     <div>
       <Col

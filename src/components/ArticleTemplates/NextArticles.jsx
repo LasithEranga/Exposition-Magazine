@@ -4,6 +4,7 @@ import NextArticleCard from "./NextArticleCard";
 import PreviousArticleCard from "./PreviousArticleCard";
 
 function NextArticles() {
+  
   return (
     <div>
       <Row>

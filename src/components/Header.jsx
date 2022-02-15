@@ -1,12 +1,11 @@
 import React from "react";
-import {  Button, Container} from "react-bootstrap";
+import { Container} from "react-bootstrap";
 import { Link,useLocation } from "react-router-dom";
 import logo from "../images/logo.png";
 import OffCanvas from "./Buttons/OffCanvas";
 
 const Header = () => {
   const location = useLocation();
-  console.log(location.pathname.slice(0,10))
   return (
     <React.Fragment>
       <Container style={{position:'relative'}} className="d-flex justify-content-center align-items-center py-3">
