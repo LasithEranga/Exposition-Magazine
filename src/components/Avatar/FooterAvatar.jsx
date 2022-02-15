@@ -1,5 +1,9 @@
+import { useContext } from "react";
+import ArticleDataContext from "../../context/ArticleDataContext";
 
-const Avatar = ({  alt, author, authorImage ,authorPosition}) => {
+const Avatar = () => {
+
+  const {  alt, author, authorImage ,authorPosition} = useContext(ArticleDataContext);
     return (
       <div className="d-flex align-items-center my-2">
         <img
