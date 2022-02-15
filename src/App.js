@@ -10,28 +10,37 @@ import NotFound from "./Pages/NotFound";
 import AboutUs from "./Pages/AboutUs";
 import ArticleView from "./Pages/ArticleView";
 import DemoBook from "./Pages/ThreeDView";
+import useTime from "./hooks/useTime";
+import LoadingSpinner from "./components/LoadingSpinner/LoadingSpinner";
 
 function App() {
+  const delay = useTime(3000);
+
   return (
     <React.Fragment>
-      <Header />
-      <Routes>
-        <Route element={<Home />} path="/" />
+      {delay && (
+        <React.Fragment>
+          <Header />
+          <Routes>
+            <Route element={<Home />} path="/" />
 
-        <Route element={<AboutUs />} path="/about-us" />
+            <Route element={<AboutUs />} path="/about-us" />
 
-        <Route element={<DemoBook />} path="/3d-view" />
+            <Route element={<DemoBook />} path="/3d-view" />
 
-        <Route element={<AllArticles />} path="/articlefilter/:category" />
+            <Route element={<AllArticles />} path="/articlefilter/:category" />
 
-        <Route element={<AllArticles all />} path="/articlefilter" />
+            <Route element={<AllArticles all />} path="/articlefilter" />
 
-        <Route element={<ArticleView />} path="/articles/:id" />
+            <Route element={<ArticleView />} path="/articles/:id" />
 
-        <Route element={<NotFound />} path="*" />
-      </Routes>
-      <Footer />
-      <ScrollToTop />
+            <Route element={<NotFound />} path="*" />
+          </Routes>
+          <Footer />
+          <ScrollToTop />
+        </React.Fragment>
+      )}
+      {!delay && <LoadingSpinner />}
     </React.Fragment>
   );
 }

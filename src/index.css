@@ -17,6 +17,4 @@ a{
   text-decoration: none !important;
 }
 
-.backdrop{
-  backdrop-filter: saturate(180%) blur(10px);
-}
+
