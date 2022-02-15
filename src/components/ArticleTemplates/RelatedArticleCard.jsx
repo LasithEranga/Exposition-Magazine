@@ -11,24 +11,36 @@ function RelatedArticleCard(props) {
     >
       <Col lg={8}>
         <Row>
-          <Link to={`/articlefilter/${props.category}`} className="p-0">
+          <Link to={`/articlefilter/${props.article.category}`} className="p-0">
             <span
               className={`badge rounded-1 text-wrap   ${
-                props.categoryColor ? "" : "bg-warning"
+                props.article.categoryColor ? props.article.categoryColor : ""
               }`}
             >
-              {props.category ? " " : "Student Corner"}
+              {props.article.category ? props.article.category : ""}
             </span>
           </Link>
         </Row>
         <Row>
-          <span className="px-0 fw-bold">
-            When Banned Books Unlock the Secrets of My Universe
-          </span>
+          <Link to={`/articles/${props.article.id}`} className="p-0">
+            <span className="px-0 fw-bold text-black">{props.article.title}</span>
+          </Link>
         </Row>
       </Col>
-      <Col className="bg-dark">Image</Col>
-      <Row style={{ color: "#8d9498" }}>author + read time When Banned </Row>
+      <Col className="">
+        {" "}
+        <Link to={`/articles/${props.article.id}`} className="p-0">
+          <img
+            src={props.article.image}
+            className="w-100 h-100"
+            alt=""
+            style={{ objectFit: "cover" }}
+          />
+        </Link>
+      </Col>
+      <Row style={{ color: "#8d9498" }}>
+        {props.article.author} + {props.article.readTime}{" "}
+      </Row>
     </Row>
   );
 }

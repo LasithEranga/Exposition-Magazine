@@ -1,15 +1,30 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Row } from "react-bootstrap";
+import ArticleDataContext from "../../context/ArticleDataContext";
 import RelatedArticleCard from "./RelatedArticleCard";
 
-function RelatedArticles() {
+function RelatedArticles(props) {
+
+  const articles = useContext(ArticleDataContext);
+  let relatedArticles = props.related?articles.relatedArticles : articles.nonRelatedArticles;
+
+  
+
   return (
     <div>
-      <p className="text-center " style={{fontWeight:"600"}}>When Banned Books </p>
+      <p className="text-center " style={{ fontWeight: "600" }}>
+     { props.related?"Articles from the same category":"You may interested in"}
+      </p>
       <Row className="ps-5">
-        <RelatedArticleCard class="border border-bottom-3 border-top-2 py-2"/>
-        <RelatedArticleCard class="py-2"/>
-        <RelatedArticleCard class="border border-bottom-0 border-top-2 py-2" />
+        {relatedArticles.map((article, index) => {
+          return (
+            <RelatedArticleCard
+              key={index}
+              article={article}
+              class="border border-bottom-3 border-top-2 py-2"
+            />
+          );
+        })}
       </Row>
     </div>
   );
