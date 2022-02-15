@@ -17,23 +17,23 @@ const RetaledArticles = (id,category)=>{
         nonRelatedArticles = nonRelatedArticles.slice(0,2);
     }
 
-    const nextArticleId = shuffled.length;
-    const previousArticleId = shuffled.length - 1;
+    const nextArticle = shuffled[shuffled.length-1];
+    const previousArticle = shuffled[shuffled.length - 2];
 
 
 
 console.log({
     nonRelatedArticles,
     relatedArticles,
-    nextArticleId,
-    previousArticleId
+    nextArticle,
+    previousArticle
  })
 
  return{
     nonRelatedArticles,
     relatedArticles,
-    nextArticleId,
-    previousArticleId
+    nextArticle,
+    previousArticle
  }
 
 

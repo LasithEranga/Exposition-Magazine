@@ -13,7 +13,7 @@ function RelatedArticles(props) {
   return (
     <div>
       <p className="text-center " style={{ fontWeight: "600" }}>
-     { props.related?"Articles from the same category":"You may interested in"}
+     { relatedArticles.length>0 ? (props.related?"Articles from the same category":"You may interested in"):''}
       </p>
       <Row className="ps-5">
         {relatedArticles.map((article, index) => {
