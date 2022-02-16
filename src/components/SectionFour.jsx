@@ -28,7 +28,7 @@ const getSpirits = ArticleData.filter((article) => {
   return article.category === "spirits";
 });
 
-console.log(editorsNote);
+
 
 function SectionFour() {
   return (

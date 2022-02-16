@@ -3,7 +3,7 @@ import ArticleDataContext from "../../context/ArticleDataContext";
 
 const Avatar = () => {
 
-  const {  alt, author, authorImage, date,readTime } = useContext(ArticleDataContext);
+  const {  alt, author, authorImage, date,readTime } = useContext(ArticleDataContext).filteredArticle;
   return (
     <div className="d-flex align-items-center my-2">
       <img

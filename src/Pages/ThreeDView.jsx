@@ -1,21 +1,21 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import HTMLFlipBook from "react-pageflip";
-import er from "./er.png";
 
-const PageCover = React.forwardRef((props, ref) => {
-  return (
-    <div className="page page-cover" data-density="hard">
-      <div className="page-content">
-        <h2>{props.children}</h2>
-      </div>
-    </div>
-  );
-});
+// const PageCover = React.forwardRef((props, ref) => {
+//   return (
+//     <div className="page page-cover" data-density="hard">
+//       <div className="page-content">
+//         <h2>{props.children}</h2>
+//       </div>
+//     </div>
+//   );
+// });
 const Page = React.forwardRef((props, ref) => {
   return (
     <div className="demoPage" ref={ref}>
       <img
+        alt=""
         src={
           "https://4.bp.blogspot.com/-SlUYhKkfRh0/XG8DDj6zP3I/AAAAAAAACxE/yQQWlKGtmwA4_nS8lmk41Q5KOhgg8dAcgCKgBGAs/w3840-h2400-c/disha-patani-bollywood-brunette-girl-4K-245.jpg"
         }
@@ -39,12 +39,11 @@ function DemoBook(props) {
         minHeight={400}
         maxHeight={1533}
       >
-      <Page>dsfds</Page>
-      <Page>dsfds</Page>
-      <Page>dsfds</Page>
-      <Page>dsfds</Page>
-      <Page>dsfds</Page>
-        
+        <Page>dsfds</Page>
+        <Page>dsfds</Page>
+        <Page>dsfds</Page>
+        <Page>dsfds</Page>
+        <Page>dsfds</Page>
       </HTMLFlipBook>
     </Container>
   );

@@ -1,45 +1,47 @@
 .image-expo {
-    height: 10rem;
-  }
-.exposition-title{
+  height: 10rem;
+}
+.exposition-title {
   font-size: 1.3rem;
 }
-  
-  @media (min-width: 576px) {
-    .image-expo {
-        height: 10rem;
-      }
+
+@media (min-width: 576px) {
+  .image-expo {
+    height: 10rem;
   }
-  
-  @media screen and (min-width: 768px) {
-    .expo-card-hr div:nth-last-child(2) div:last-of-type hr{
-      display: none;
-    }
-    .expo-card-border:nth-child(odd) {
-      border: 1px solid rgb(233, 209, 209);
-      border-left: 0;
-      border-top: 0;
-      border-bottom: 0;
-    }
-    
+}
+
+@media screen and (min-width: 768px) {
+  .expo-card-hr div:nth-last-child(2) div:last-of-type hr {
+    display: none;
   }
-  
-  @media (min-width: 992px) {
+  .expo-card-border:nth-child(odd) {
+    border: 1px solid rgb(233, 209, 209);
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
   }
-  
-  @media (min-width: 1200px) {
-    .image-expo {
-      height: 5rem;
-  
-    }
-    .expo-card-hr div:nth-last-child(2) div:last-of-type hr{
-      display: flex;
-    }
-    .exposition-title{
-      font-size: 0.9rem;
-    }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+  .expo-card-border:nth-child(odd) {
+    border:0;
   }
-  
-.expo-card-hr div:last-of-type div:last-of-type hr{
+
+  .image-expo {
+    height: 5rem;
+  }
+  .expo-card-hr div:nth-last-child(2) div:last-of-type hr {
+    display: flex;
+  }
+  .exposition-title {
+    font-size: 0.9rem;
+  }
+}
+
+.expo-card-hr div:last-of-type div:last-of-type hr {
   display: none;
 }

@@ -10,8 +10,9 @@ import ArticleDataContext from "../../context/ArticleDataContext";
 const Template = () => {
   window.scrollTo(0, 0);
 
+
   const params = useParams();
-  const article = useContext(ArticleDataContext);
+  const article = useContext(ArticleDataContext).filteredArticle;
 
   const createMarkup = () => {
     return { __html: article.content ? article.content : "" };
@@ -34,7 +35,7 @@ const Template = () => {
               <span
                 className={`badge text-wrap d-flex align-items-center ${article.categoryColor}`}
               >
-                {article.category}
+                {article.category.toUpperCase()}
               </span>
             </Link>
           </div>
@@ -50,7 +51,7 @@ const Template = () => {
           />
         </Col>
         <Col className="d-none d-lg-flex">
-          <RelatedArticles />
+          <RelatedArticles related/>
         </Col>
       </Row>
       <Row>

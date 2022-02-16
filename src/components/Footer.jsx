@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="w-100 w-md-50 h-100 justify-content-center  ps-md-5 d-flex flex-column">
           <img src={img} alt="" className="mb-2 col-12 col-md-6" />
           <p
-            className="text-light fw-light text-wrap mb-2 col-12 col-md-6"
+            className="text-light fw-light text-wrap mb-2 col-12 col-md-9 col-lg-7"
             style={{ textAlign: "justify" }}
           >
             Exposition Magazine, most outstanding magazine of the year to bridge
@@ -28,7 +28,7 @@ const Footer = () => {
           />
         </div>
         <div className="w-100 w-md-50 h-100 d-flex justify-content-center flex-column ">
-          <div className="p-2 pt-5 pt-md-0 p-md-5">
+          <div className="pt-5 pt-md-0 p-md-5">
             <div className="fs-4 text-start" style={{ color: "#C49706" }}>
               Contact Us
             </div>
@@ -40,7 +40,7 @@ const Footer = () => {
               <span>Kelaniya,</span>
               <span>Sri Lanka</span>
               <br />
-              <span>Phone: +94 (0) 112 903 282</span>
+              <span>Phone: +94 112 903 282</span>
               <span>Email: info@exposition.lk</span>
               <div
                 className="pt-2 d-flex  align-items-center"
@@ -70,8 +70,8 @@ const Footer = () => {
         </div>
       </div>
       <div
-        className="w-100 text-light fw-light d-flex align-items-center justify-content-center"
-        style={{ height: "4rem", backgroundColor: "#151515" }}
+        className="w-100  fw-light d-flex align-items-center justify-content-center"
+        style={{ height: "4rem", backgroundColor: "#151515" ,color:"#99A1B9"}}
       >
         All Rights Reserved © {new Date().getFullYear()} | Exposition
       </div>
