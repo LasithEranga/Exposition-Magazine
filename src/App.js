@@ -14,7 +14,7 @@ import useTime from "./hooks/useTime";
 import LoadingSpinner from "./components/LoadingSpinner/LoadingSpinner";
 
 function App() {
-  const delay = useTime(3000);
+  const delay = useTime(2000);
 
   return (
     <React.Fragment>
