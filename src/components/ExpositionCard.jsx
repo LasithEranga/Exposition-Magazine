@@ -1,3 +1,4 @@
+import _ from "lodash";
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -31,8 +32,8 @@ const ExpositionCard = ({ article }) => {
             </Link>
           </span>
           <Link to={`/articles/${article.id}`}>
-            <span className="text-dark fw-bold d-block mt-1 exposition-title" >
-              {article.title?article.title:''}
+            <span  className="text-dark fw-bold d-block mt-1 exposition-title " >
+              { _.truncate(article.title.toUpperCase(), { length: "50" })}
             </span>
           </Link>
         </Col>

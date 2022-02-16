@@ -4,25 +4,32 @@ import Carousel from "react-bootstrap/Carousel";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./Competition.css";
+import { Link } from "react-router-dom";
 
-function CarouselView() {
+function CarouselView({ article }) {
   return (
     <Card className="rounded-0 pb-3">
       <Card.Body className="px-1 expert-card-hr">
-        <Carousel>
+        <Carousel controls={false} indicators={false}>
           <Carousel.Item>
-            <div className="bg-dark  image-competition">
+            <div className=" image-competition">
               <img
-                src={"https://static.onecms.io/wp-content/uploads/sites/35/2021/11/23/Melissa-Roxburgh-ED-Journey-Manifest-Story-GettyImages-1341169064-1323663587-AdobeStock_320768018-2000.jpg"}
+                src={"https://magazine.exposition.lk/images/edify.png"}
                 className="w-100 h-100"
                 style={{ objectFit: "cover" }}
                 alt=""
               />
             </div>
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className=" image-competition">
+              <img
+                src={"https://magazine.exposition.lk/images/edify.png"}
+                className="w-100 h-100"
+                style={{ objectFit: "cover" }}
+                alt=""
+              />
+            </div>
           </Carousel.Item>
         </Carousel>
 
@@ -30,11 +37,10 @@ function CarouselView() {
         <Row>
           <div className="d-flex mt-1">
             <Col className=" col-12 ms-lg-3 pb-5">
-              <h4>iChair: A Smart Chair as a Companion </h4>
-              <span>
-                Dr. Janaka Wijekoon (Visiting Lecturer - Department of
-                Industrial Management, University of Kelaniya
-              </span>
+              <Link to={`/articles/${article?article.id:''}`}>
+                <h4 className="text-dark">{article ? article.title : ""} </h4>
+                <span className="text-dark">{article ? article.description : ""}</span>
+              </Link>
             </Col>
           </div>
           <div></div>

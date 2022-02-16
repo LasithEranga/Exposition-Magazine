@@ -39,7 +39,7 @@ function RelatedArticleCard(props) {
         </Link>
       </Col>
       <Row style={{ color: "#8d9498" }}>
-        {props.article.author} + {props.article.readTime}{" "}
+        {props.article.author} . {props.article.readTime}{" read"}
       </Row>
     </Row>
   );

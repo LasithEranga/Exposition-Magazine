@@ -11,6 +11,8 @@ import Events from "../components/Events/Events";
 import Team from "../components/Team";
 
 const Home = () => {
+
+  window.scrollTo(0,0)
   return (
     <React.Fragment>
       <LatestArticles/>
