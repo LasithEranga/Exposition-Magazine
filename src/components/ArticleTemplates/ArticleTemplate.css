@@ -17,6 +17,7 @@
   @media screen and (min-width: 768px) {
     .note-float-left{
         width: 50%!important;
+        padding: 0px 20px 0px 0px!important;
     }
     .note-float-right{
         width: 50%!important;
@@ -29,6 +30,7 @@
   @media (min-width: 1200px) {
     .note-float-left{
         width: 25%!important;
+        padding: 0px 20px 0px 0px!important;
     }
     .note-float-right{
         width: 25%!important;
