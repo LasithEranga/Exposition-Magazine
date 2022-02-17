@@ -10,11 +10,13 @@ import Events from "../components/Events/Events";
 import Team from "../components/Team";
 
 
+
+
 const Home = () => {
 
   window.scrollTo(0,0)
   return (
-    <React.Fragment>
+    <React.Fragment >
       <LatestArticles/>
       <MainImage/>
 
@@ -30,7 +32,7 @@ const Home = () => {
       <div className="mt-4">
         <SectionFive/>
       </div>
-      <div className="mt-4">
+      <div className="mt-4" >
         <MemoryLane/>
       </div>
       <div className="mt-4">

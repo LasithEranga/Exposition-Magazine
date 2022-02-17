@@ -23,7 +23,7 @@ const getTSF = () => {
 function BelowLanding() {
   return (
     <Container>
-      <Row>
+      <Row >
         <Col className="col-12 col-md-5 col-lg-3  ">
           <Row className="px-3 px-md-0">
             <Title>Students' Corner </Title>
