@@ -4,19 +4,19 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./ExpositionCard.css";
 import { Link } from "react-router-dom";
-
+import { motion } from "framer-motion";
 const ExpositionCard = ({ article }) => {
 
  
 
   return (
     <Col md={6} lg={12} className="expo-card-border">
-      <Row className="mb-3 mb-lg-0 mx-1 mx-lg-0 ">
+      <Row className="mb-3 mb-lg-0 mx-1 mx-lg-0 " as={motion.div} whileHover={{scale:1.03}}>
         <Col lg={6} className=" image-expo px-lg-0 px-0">
           <Link to={`/articles/${article.id}`}>
             {" "}
             <img
-              loading="lazy"
+            loading="lazy"
               src={article.image}
               className="w-100 h-100"
               style={{ objectFit: "cover" }}
@@ -43,6 +43,11 @@ const ExpositionCard = ({ article }) => {
               {_.truncate(article.title.toUpperCase(), { length: 20 })}
             </span>
           </Link>
+          <Link to={`/articles/${article.id}`}>
+          <p className="text-dark stu-corner-text pt-1 d-md-none">
+            {article.description}
+          </p>
+        </Link>
         </Col>
         <hr className="my-3" />
       </Row>

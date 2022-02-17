@@ -6,15 +6,17 @@ import MainImage from "../components/MainImage";
 import MemoryLane from "../components/MemoryLane";
 import SectionFive from "../components/SectionFive";
 import SectionFour from "../components/SectionFour";
-import SuccessStories from "../components/SuccessStories";
 import Events from "../components/Events/Events";
 import Team from "../components/Team";
+
+
+
 
 const Home = () => {
 
   window.scrollTo(0,0)
   return (
-    <React.Fragment>
+    <React.Fragment >
       <LatestArticles/>
       <MainImage/>
 
@@ -24,15 +26,13 @@ const Home = () => {
       <div className="mt-4">
         <BelowLanding/>
       </div>
-
-      {/* <SuccessStories/> */}
       <div className="mt-4">
         <SectionFour/>
       </div>
-      <div className="mt-4">
+      {/* <div className="mt-4">
         <SectionFive/>
-      </div>
-      <div className="mt-4">
+      </div> */}
+      <div className="mt-4" >
         <MemoryLane/>
       </div>
       <div className="mt-4">

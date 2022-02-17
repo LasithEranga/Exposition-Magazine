@@ -8,10 +8,15 @@ const Footer = () => {
     <React.Fragment>
       <div
         className="w-100 bg-dark mt-3 d-flex flex-column flex-md-row p-4 p-md-5 "
-        style={{ height: "fit-content",position:"relative",zIndex:"900" }}
+        style={{ height: "fit-content", position: "relative", zIndex: "900" }}
       >
         <div className="w-100 w-md-50 h-100 justify-content-center  ps-md-5 d-flex flex-column">
-          <img src={img} alt="" className="mb-2 col-12 col-md-6" />
+          <img
+            loading="lazy"
+            src={img}
+            alt=""
+            className="mb-2 col-12 col-md-6"
+          />
           <p
             className="text-light fw-light text-wrap mb-2 col-12 col-md-9 col-lg-7"
             style={{ textAlign: "justify" }}
@@ -22,6 +27,7 @@ const Footer = () => {
             undergraduates to the Cooperate World.
           </p>
           <img
+            loading="lazy"
             src={dimLogo}
             alt=""
             className="mb-2 mt-3 mb-2 col-12 col-md-6"
@@ -71,7 +77,7 @@ const Footer = () => {
       </div>
       <div
         className="w-100  fw-light d-flex align-items-center justify-content-center"
-        style={{ height: "4rem", backgroundColor: "#151515" ,color:"#99A1B9"}}
+        style={{ height: "4rem", backgroundColor: "#151515", color: "#99A1B9" }}
       >
         All Rights Reserved © {new Date().getFullYear()} | Exposition
       </div>

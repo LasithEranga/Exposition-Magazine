@@ -15,18 +15,6 @@ function CarouselView({ article }) {
             <div className=" image-competition">
               <img
                 loading="lazy"
-                src={"https://magazine.exposition.lk/images/edify.png"}
-                className="w-100 h-100"
-                style={{ objectFit: "cover" }}
-                alt=""
-              />
-            </div>
-          </Carousel.Item>
-
-          <Carousel.Item interval={2000}>
-            <div className=" image-competition">
-              <img
-                loading="lazy"
                 src={"https://magazine.exposition.lk/images/edify_winners.jpg"}
                 className="w-100 h-100"
                 style={{ objectFit: "cover" }}
@@ -38,6 +26,7 @@ function CarouselView({ article }) {
 
         <Row>
           <div className="d-flex mt-2 pt-1">
+
             <Col className=" col-12 ms-lg-3 pb-1 pb-lg-3 pb-xxl-4">
             <Link to={`/articlefilter/${article.category}`}>
               <span
@@ -48,6 +37,7 @@ function CarouselView({ article }) {
                 {article.category.toUpperCase()}
               </span>
             </Link>
+
               <Link to={`/articles/${article ? article.id : ""}`}>
                 <h4 className="text-dark">{article ? article.title : ""} </h4>
                 <span className="text-dark">

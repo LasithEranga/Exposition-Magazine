@@ -2,9 +2,10 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import { Col, Row } from "react-bootstrap";
 import "./FirstCarouselItem.css";
-
+import { motion } from "framer-motion";
 import ArticleList from "../Data/Articles.json";
 import { Link } from "react-router-dom";
+
 
 let expertInsight = ArticleList.filter(
   (article) => article.category === `expert's-insights`
@@ -12,7 +13,7 @@ let expertInsight = ArticleList.filter(
 
 function FirstCarousel() {
   return (
-    <Card className="rounded-0">
+    <Card className="rounded-0" as={motion.div} whileHover={{scale:1.03}}>
       {expertInsight && expertInsight.length > 0 && (
         <Link to={`/articles/${expertInsight[0].id}`}>
           <Card.Body className="px-1 expert-card-hr">

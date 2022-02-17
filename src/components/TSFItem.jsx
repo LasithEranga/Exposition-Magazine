@@ -4,10 +4,11 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./TSFItem.css";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function TSFItem({ article }) {
   return (
-    <Row className="py-1 py-md-2">
+    <Row className="py-1 py-md-2" as={motion.div} whileHover={{scale:1.02}}>
       <Col className="px-0 col-12 col-md-5 image-tsf">
         <Link to={`/articles/${article.id}`}>
           <img
@@ -30,10 +31,12 @@ function TSFItem({ article }) {
         </Link>
         <br></br>{" "}
         <Link to={`/articles/${article.id}`}>
-          <span className="text-dark fs-4"  style={{ fontWeight: "bold" }}> {article.title} </span>
+          <span className="text-dark fs-4" style={{ fontWeight: "bold" }}>
+            {" "}
+            {article.title}{" "}
+          </span>
         </Link>
-        <br></br>{" "}
-        {article.quote}
+        <br></br> {article.quote}
       </Col>
     </Row>
   );
