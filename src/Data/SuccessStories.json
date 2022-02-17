@@ -1,22 +1,30 @@
 [
     {
-        "image":"",
-        "alt":"Melissa Image",
-        "name" :"Melissa-Roxburgh",
-        "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam placeat fuga eum in, quas error dolore, eius voluptates officiis sapiente ipsam hic quis, minus dolores ea ullam quaerat quos saepe tempore. Libero neque amet, eum doloribus perspiciatis, ad nemo tenetur nihil modi repudiandae praesentium nam numquam nesciunt tempore, laborum aperiam!"
+        "image":"https://magazine.exposition.lk/images/365x2.jpg",
+        "alt":"Nawoda Jayasinghe",
+        "name" :"Nawoda Jayasinghe",
+        "content":"I was an IT enthusiast when I first joined the department. However, in the past two years, I learned that learning a combination of IT and management is a unique experience that we can gain. Especially having management knowledge and expertise when working in an organization is a distinct advantage."
+        
     },
 
     {
-        "image":"",
-        "alt":"Disha Patani",
-        "name" :"Disha Patani",
-        "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam placeat fuga eum in, quas error dolore, eius voluptates officiis sapiente ipsam hic quis, minus dolores ea ullam quaerat quos saepe tempore. Libero neque amet, eum doloribus perspiciatis, ad nemo tenetur nihil modi repudiandae praesentium nam numquam nesciunt tempore, laborum aperiam!"
+        "image":"https://magazine.exposition.lk/images/365x1.jpg",
+        "alt":"K.A.D. Nethara Chamodya",
+        "name" :"K.A.D. Nethara Chamodya",
+        "content":"I used to be the student who only participated in an event or talked in the class only if necessary. But after becoming a student of the Department of Industrial Management, I changed so much, and I am astounded by it. I have participated in each event organized by our department "
     },
 
     {
-        "image":"",
-        "alt":"Victoria Pedretti",
-        "name" :"Victoria Pedretti",
-        "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam placeat fuga eum in, quas error dolore, eius voluptates officiis sapiente ipsam hic quis, minus dolores ea ullam quaerat quos saepe tempore. Libero neque amet, eum doloribus perspiciatis, ad nemo tenetur nihil modi repudiandae praesentium nam numquam nesciunt tempore, laborum aperiam!"
+        "image":"https://magazine.exposition.lk/images/365x3.jpg",
+        "alt":"Malinga Herath",
+        "name" :"Malinga Herath",
+        "content":"University is a place full of experiences & opportunities. Sometimes it can be hard to know which way to look at first. The best place to start was the basics, which motivated me and added some value. I was able to manage work through complicated situations with good time management. "
+    },
+    
+    {
+        "image":"https://magazine.exposition.lk/images/365x4.jpg",
+        "alt":"Tharindu Priyaharshana",
+        "name" :"Tharindu Priyaharshana",
+        "content":"I had my third-year internship in a plant where many people were infected with covid-19. Therefore, I had several issues in the internship, but regardless of the difficulties, eventually, I completed my internship and made it to level 4. The fourth year is an enormous opportunity for us. "
     }
 ]

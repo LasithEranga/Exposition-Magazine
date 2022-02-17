@@ -85,7 +85,7 @@ const OffCanvas = ({ name, ...props }) => {
             </Link>
             <Link
               onClick={LinkHandler}
-              to="/articlefilter/expert's insights"
+              to="/articlefilter/expert's-insights"
               className="text-dark px-2 text-nowrap "
             >
               EXPERT'S INSIGHTS

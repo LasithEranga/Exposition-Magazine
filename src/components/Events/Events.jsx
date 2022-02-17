@@ -8,7 +8,7 @@ import CarouselView from "./CarouselView";
 import ArticleData from '../../Data/Articles.json';
 
 const events = ArticleData.filter(article=>article.category === `events`);
-const edifyEvent = events.filter(article=>article.title === `Edify | 2022`);
+const edifyEvent = ArticleData.filter(article=>article.category === `Edify Winner`);
 function Events() {
   return (
     <Container className="px-md-0">

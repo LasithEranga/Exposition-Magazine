@@ -10,6 +10,8 @@ import News from "./News";
 import TSFItem from "./TSFItem";
 import ArticleList from "../Data/Articles.json";
 
+import SuccessStories from './SuccessStories';
+
 const getTSF = () => {
   return ArticleList.filter((article) => {
     return article.category === "365x4";
@@ -47,8 +49,8 @@ function BelowLanding() {
             </Col>
           </Row>
           <Row>
-            <Col className="col d-md-none  d-lg-flex ms-md-3 ms-lg-4 px-lg-0">
-              <Row className="px-3 px-md-0  col-lg-12 mx-lg-0">
+            <Col className="col d-none  d-lg-flex ms-md-3 ms-lg-4 px-lg-0">
+              <Row className="px-3 px-lg-0 px-md-0  col-lg-12 mx-lg-0">
                 <Title>365 x 4 </Title>
                 <Card className="rounded-0 ps-3">
                   <Card.Body>
@@ -63,10 +65,10 @@ function BelowLanding() {
             </Col>
           </Row>
         </Col>
-        <Row className="px-0 mx-0">
-          <Col className="col d-none d-md-flex d-lg-none ">
-            <Row className="px-3 px-md-0">
-              <Title>365 x 4 </Title>
+        <Row className="px-3 px-md-0 mx-0 d-flex d-md-flex d-lg-none">
+          {/* <Col className="col d-flex d-md-flex d-lg-none "> */}
+            {/* <Row className=" px-md-0"> */}
+              {/* <Title>365 x 4 </Title>
               <Card className="rounded-0 ps-3 ">
                 <Card.Body>
 
@@ -78,10 +80,11 @@ function BelowLanding() {
                   </Row>
 
                 </Card.Body>
-              </Card>
+              </Card> */}
+              <SuccessStories/>
             </Row>
-          </Col>
-        </Row>
+          {/* </Col> */}
+        {/* </Row> */}
       </Row>
     </Container>
   );

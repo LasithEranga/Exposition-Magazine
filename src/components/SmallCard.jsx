@@ -24,7 +24,7 @@ function SmallCard({ article }) {
           <Row className="">
             <Link to={`/articlefilter/${article.category}`} className="">
               <span
-                className={`badge rounded-1 text-nowrap  ${
+                className={`badge rounded-1 text-nowrap mt-3 mt-lg-0 ${
                   article.categoryColor ? article.categoryColor : ""
                 }`}
               >

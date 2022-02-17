@@ -17,11 +17,11 @@ const getPopularArticles = () => {
 };
 
 const filteredData = ArticleData.filter((article) => {
-  return article.category === "miscellaneous";
+  return article.category === "miscellaneous" && article.title !== "EDITOR’S NOTE";
 });
 
 const editorsNote = ArticleData.filter((article) => {
-  return article.title === "Editor's Note";
+  return article.title === "EDITOR’S NOTE";
 })[0];
 
 const getSpirits = ArticleData.filter((article) => {
@@ -67,7 +67,7 @@ function SectionFour() {
             <Card className="pt-3 pt-md-0 ps-lg-1  rounded-0">
               <Row className="p-lg-3 pt-md-3 py-lg-3 d-flex expo-card-hr pb-md-3">
                 {getPopularArticles().map((article, index) => {
-                  return <ExpositionCard key={index} article={article} />;
+                  return <ExpositionCard  key={index} article={article} />;
                 })}
               </Row>
             </Card>

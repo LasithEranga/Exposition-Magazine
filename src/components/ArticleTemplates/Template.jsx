@@ -8,9 +8,7 @@ import RelatedArticles from "./RelatedArticles";
 import ArticleDataContext from "../../context/ArticleDataContext";
 
 const Template = () => {
-  setTimeout(()=>{window.scrollTo(0, 0);},500);
-  
-
+  window.scrollTo(0, 0);
 
   const params = useParams();
   const article = useContext(ArticleDataContext).filteredArticle;
@@ -52,7 +50,7 @@ const Template = () => {
           />
         </Col>
         <Col className="d-none d-lg-flex">
-          <RelatedArticles related/>
+          <RelatedArticles related />
         </Col>
       </Row>
       <Row>
