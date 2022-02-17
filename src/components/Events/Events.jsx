@@ -31,6 +31,7 @@ function Events() {
               description={event.description}
               image={event.image}
               id={event.id}
+              quote = {event.quote}
             />
             ))}
           </Row>

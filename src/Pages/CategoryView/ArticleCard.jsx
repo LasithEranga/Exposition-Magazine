@@ -3,6 +3,7 @@ import { Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
 import "./AllArticles.css";
+import truncate from "lodash/truncate";
 
 function ArticleCard(props) {
   return (
@@ -27,7 +28,7 @@ function ArticleCard(props) {
             </Link>
           </div>
           <Card.Text className="text-muted" style={{ textAlign: "justify" }}>
-          <Link to={`/articles/${props.id}`} className="text-dark"> {props.description}</Link>
+          <Link to={`/articles/${props.id}`} className="text-dark"> { truncate(props.description,{length:200})}</Link>
           </Card.Text>
           <Link to={`/articles/${props.id}`} className="">
             Read more...

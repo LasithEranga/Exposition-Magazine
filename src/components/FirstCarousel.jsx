@@ -25,12 +25,13 @@ function FirstCarousel() {
                 style={{ objectFit: "cover" }}
               />
             </div>
-            <div className="mb-5"></div>
+            <div className="mb-2"></div>
             <Row>
               <div className="d-flex mt-1 ">
-                <Col className=" col-12 pb-5 text-dark">
+                <Col className=" col-12 pb-2 text-dark">
                   <h4>{expertInsight[0].title}</h4>
-                  <span className="text-secondary">{expertInsight[0].description}</span>
+                  <h6 className="d-block d-md-none d-lg-block">{expertInsight[0].quote}</h6>
+                  <span className="text-secondary ">{expertInsight[0].description}</span>
                 </Col>
               </div>
               <div></div>

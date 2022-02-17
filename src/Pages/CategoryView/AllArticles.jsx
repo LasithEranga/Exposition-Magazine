@@ -18,6 +18,7 @@ function AllArticles({all}) {
     categoryName = "ALL ARTICLES";
     filteredArray = ArticleList;
     filteredArray.sort(() => 0.5 - Math.random());
+    
   }else{
     categoryName = params.category.replace("-", " ").toUpperCase();
     filteredArray = ArticleList.filter((article) => {
