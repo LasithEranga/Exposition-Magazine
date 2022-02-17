@@ -12,7 +12,7 @@ function SmallCard({ article }) {
       <Col className={`px-0 col-12 col-md-6  image-height`}>
         <Link to={`/articles/${article.id}`}>
           <img
-            loading="lazy"
+          loading="lazy"
             src={article.image ? article.image : ""}
             alt=""
             className="w-100 h-100"

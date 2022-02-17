@@ -16,7 +16,7 @@ const ExpositionCard = ({ article }) => {
           <Link to={`/articles/${article.id}`}>
             {" "}
             <img
-              loading="lazy"
+            loading="lazy"
               src={article.image}
               className="w-100 h-100"
               style={{ objectFit: "cover" }}

@@ -15,7 +15,7 @@ const SuccessStoryCarousel = ({ stories }) => {
             <Carousel.Item key={index} interval={1000}>
               <div className=" bg-dark w-100 " style={{ height: "38rem" }}>
                 <img
-                  loading="lazy"
+                loading="lazy"
                   src={story.image ? story.image : ""}
                   alt={story.alt ? story.alt : ""}
                   className="w-100 h-100"
@@ -35,13 +35,13 @@ const SuccessStoryCarousel = ({ stories }) => {
                 }}
               >
                 <img
-                  loading="lazy"
                   style={{
                     width: "15rem",
                     height: "15rem",
                     borderRadius: "15rem",
                     objectFit: "cover",
                   }}
+                  loading="lazy"
                   src={story.image ? story.image : ""}
                   alt={story.alt ? story.alt : ""}
                 />

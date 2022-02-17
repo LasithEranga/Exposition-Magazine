@@ -9,12 +9,12 @@ import Home from "./Pages/Home";
 import NotFound from "./Pages/NotFound";
 import AboutUs from "./Pages/AboutUs";
 import ArticleView from "./Pages/ArticleView";
-import DemoBook from "./Pages/ThreeDView";
+// import DemoBook from "./Pages/ThreeDView";
 import useTime from "./hooks/useTime";
 import LoadingSpinner from "./components/LoadingSpinner/LoadingSpinner";
 
 function App() {
-  const delay = useTime(2000);
+  const delay = useTime(10000);
 
   return (
     <React.Fragment>
@@ -26,7 +26,7 @@ function App() {
 
             <Route element={<AboutUs />} path="/about-us" />
 
-            <Route element={<DemoBook />} path="/3d-view" />
+            {/* <Route element={<DemoBook />} path="/3d-view" /> */}
 
             <Route element={<AllArticles />} path="/articlefilter/:category" />
 

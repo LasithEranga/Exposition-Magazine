@@ -12,6 +12,7 @@ function ArticleCard(props) {
       <Card as={motion.div}  whileHover={{scale:1.05}} style={{ width: "100%" }} className="my-2">
         <Link to={`/articles/${props.id}`} className="">
           <Card.Img
+          loading="lazy"
             className="p-3 pb-0"
             style={{ height: "13rem", objectFit: "cover" }}
             variant="top"

@@ -6,7 +6,6 @@ const Avatar = () => {
     alt,
     author,
     authorImage,
-    authorPosition,
     authorPositionOne,
     authorPositionTwo,
     authorPositionThree,
@@ -14,6 +13,7 @@ const Avatar = () => {
   return (
     <div className="d-flex align-items-center my-2">
       <img
+      loading="lazy"
         src={authorImage}
         alt={alt}
         style={{

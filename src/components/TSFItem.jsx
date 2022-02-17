@@ -12,7 +12,7 @@ function TSFItem({ article }) {
       <Col className="px-0 col-12 col-md-5 image-tsf">
         <Link to={`/articles/${article.id}`}>
           <img
-            loading="lazy"
+          loading="lazy"
             src={article.image}
             alt=""
             className="w-100 h-100"

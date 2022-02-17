@@ -15,7 +15,7 @@ function Team() {
         <Title>Exposition Team</Title>
         <Card className="rounded-0">
           <Card.Body className=" rounded-0" as={motion.div} whileHover={{scale:1.03}}>
-            <Image src={batch} fluid loading="lazy" />
+            <Image src={batch} fluid loading="lazy"/>
           </Card.Body>
         </Card>
       </Row>

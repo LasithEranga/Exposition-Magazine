@@ -4,6 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import logo from "../../images/logo.png";
 
+
 const OffCanvas = ({ name, ...props }) => {
   const [show, setShow] = useState(false);
 
@@ -18,10 +19,10 @@ const OffCanvas = ({ name, ...props }) => {
       <span
         varient="primary"
         onClick={handleShow}
-        className=" ms-lg-0 p-1 ms-3 border-0 text-dark"
+        className=" ms-lg-0 p-2 p-lg-0 ms-3 border-0 text-dark"
         style={{ backgroundColor: "transparent" }}
       >
-        <GiHamburgerMenu size={30} />
+        <GiHamburgerMenu size={40} />
       </span>
       <Offcanvas show={show} onHide={handleClose} {...props} className="">
         <Offcanvas.Header closeButton>

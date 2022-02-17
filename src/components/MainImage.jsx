@@ -2,11 +2,12 @@ import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import image from "../images/main-image.png";
 import "./MainImage.css";
+import {motion} from 'framer-motion';
 
 const MainImage = () => {
   return (
     <Container fluid={'lg'}className="p-0 m-0 m-md-auto">
-        <div className="container-main-image ">
+        <motion.div className="container-main-image " whileHover={{scale:1.02}}>
       <img
         src={image}
         alt=""
@@ -43,7 +44,7 @@ const MainImage = () => {
           </span>
         </span>
       </div>
-    </div>
+    </motion.div>
     </Container>
   );
 };

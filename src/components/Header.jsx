@@ -3,8 +3,9 @@ import { Container } from "react-bootstrap";
 import { NavLink, Link,useLocation } from "react-router-dom";
 import logo from "../images/logo main.png";
 import OffCanvas from "./Buttons/OffCanvas";
-
-
+import mit from '../images/mit logo black new.png'
+import {motion} from 'framer-motion';
+import '../components/Buttons/offcanvas.css';
 
 const Header = () => {
   const location = useLocation();
@@ -12,15 +13,19 @@ const Header = () => {
     <React.Fragment>
       <Container
         style={{ position: "relative" }}
-        className="d-flex justify-content-center align-items-center py-3"
+        className="d-flex justify-content-start justify-content-lg-center align-items-center py-3 px-0"
       >
-        <div style={{ position: "absolute", left: 0 }}>
+        <div className="canvas" style={{ position: "absolute"}}>
           <OffCanvas placement={"start"} name={"Click"} />
+        </div>
+
+        <div className="d-none d-lg-block" style={{ position: "absolute", right: 0 }}>
+          <img src={mit} alt=""  style={{width:'10rem'}} />
         </div>
 
         <Link to={"/"}>
           {" "}
-          <img src={logo} alt="" style={{ height: "5rem" }} />
+          <motion.img src={logo} alt="" className="logo-hight" whileHover={{scale:1.2}}/>
         </Link>
       </Container>
       <div

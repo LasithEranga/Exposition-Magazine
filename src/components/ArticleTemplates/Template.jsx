@@ -44,6 +44,7 @@ const Template = () => {
         <Col lg={1}></Col>
         <Col xs={12} lg={7} xl={7}>
           <img
+            loading="lazy"
             src={article.image ? article.image : ""}
             alt=""
             className="w-100 mt-2 mt-lg-3"

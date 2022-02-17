@@ -9,6 +9,7 @@ function CardView(props) {
       <motion.div whileHover={{ scale: 1.04 }}>
         <Card style={{ height: "15rem" }} className="me-3 ">
           <Card.Img
+            loading="lazy"
             variant="top"
             src={props.image ? props.image : ""}
             style={{ objectFit: "cover", width: "100%", height: "100%" }}
