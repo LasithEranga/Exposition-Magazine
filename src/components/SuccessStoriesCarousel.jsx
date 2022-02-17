@@ -8,6 +8,7 @@ const SuccessStoryCarousel = ({ stories }) => {
       fade
       className="position-relative p-0 "
       pause={false}
+      indicators={false}
     >
       {stories
         ? stories.map((story, index) => (

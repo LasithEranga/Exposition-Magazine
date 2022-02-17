@@ -17,11 +17,11 @@ const getPopularArticles = () => {
 };
 
 const filteredData = ArticleData.filter((article) => {
-  return article.category === "miscellaneous";
+  return article.category === "miscellaneous" && article.title !== "EDITOR’S NOTE";
 });
 
 const editorsNote = ArticleData.filter((article) => {
-  return article.title === "Editor's Note";
+  return article.title === "EDITOR’S NOTE";
 })[0];
 
 const getSpirits = ArticleData.filter((article) => {

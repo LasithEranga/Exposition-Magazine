@@ -1,22 +1,23 @@
 [
     {
-        "image":"",
-        "alt":"Melissa Image",
-        "name" :"Melissa-Roxburgh",
-        "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam placeat fuga eum in, quas error dolore, eius voluptates officiis sapiente ipsam hic quis, minus dolores ea ullam quaerat quos saepe tempore. Libero neque amet, eum doloribus perspiciatis, ad nemo tenetur nihil modi repudiandae praesentium nam numquam nesciunt tempore, laborum aperiam!"
+        "image":"https://magazine.exposition.lk/images/article271.jpg",
+        "alt":"Sanduni Perera",
+        "name" :"Sanduni Perera",
+        "content":"It was a tough time due to the pandemic. People had a hard time finding a  job and had to go to the first job they got selected. However, completing the  BSc MIT was truly a blessing as we could apply for both IT and Management.  Following MIT, playing basketball and taekwondo, vice captaining a team,  holding positions in clubs and societies and working with them helped  develop my “never giving up” attitude."
+        
     },
 
     {
-        "image":"",
-        "alt":"Disha Patani",
-        "name" :"Disha Patani",
-        "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam placeat fuga eum in, quas error dolore, eius voluptates officiis sapiente ipsam hic quis, minus dolores ea ullam quaerat quos saepe tempore. Libero neque amet, eum doloribus perspiciatis, ad nemo tenetur nihil modi repudiandae praesentium nam numquam nesciunt tempore, laborum aperiam!"
+        "image":"https://magazine.exposition.lk/images/article272.jpg",
+        "alt":"Asenika Liyanage",
+        "name" :"Asenika Liyanage",
+        "content":"I started my undergraduate studies at MIT in 2017. After completing the four years of my degree  specializing in Information Technology, I stepped out as a job seeking MITian during one of  the most challenging, chaotic periods in the world. We had to complete our final year along  with the final year research remotely"
     },
 
     {
-        "image":"",
-        "alt":"Victoria Pedretti",
-        "name" :"Victoria Pedretti",
-        "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam placeat fuga eum in, quas error dolore, eius voluptates officiis sapiente ipsam hic quis, minus dolores ea ullam quaerat quos saepe tempore. Libero neque amet, eum doloribus perspiciatis, ad nemo tenetur nihil modi repudiandae praesentium nam numquam nesciunt tempore, laborum aperiam!"
+        "image":"https://magazine.exposition.lk/images/article273.jpg",
+        "alt":"Udara Sembukuttiarachchi",
+        "name" :"Udara Sembukuttiarachchi",
+        "content":"I started my journey as an undergraduate at the Department of Industrial Management,  University of Kelaniya in March 2017, and bid adieu in March 2020. The three years I spent at  the department reading for the degree BSc in Management and Information Technology  was an unforgettable roller-coaster ride with never-ending learning opportunities."
     }
 ]

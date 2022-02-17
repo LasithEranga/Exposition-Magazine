@@ -7,7 +7,7 @@ import ArticleList from '../Data/Articles.json';
 function News() {
   const filteredArticles = ArticleList.filter(
     (article) => article.category === `news`
-  );
+  ).slice(0,4);
   return (
       <Card className="border-0 ps-2 pt-0 border-0 rounded-0">
         <Card.Body className=" student-corner-container ">

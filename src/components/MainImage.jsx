@@ -25,7 +25,7 @@ const MainImage = () => {
             INTERVIEWS
           </Link>
           <Link
-            to="/articles/main"
+            to="/articles/5"
             className="border-0 ms-2 btn text-light"
             style={{ backgroundColor: "#F2B900" }}
             size="sm"
