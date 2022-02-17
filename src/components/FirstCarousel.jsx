@@ -7,7 +7,7 @@ import ArticleList from "../Data/Articles.json";
 import { Link } from "react-router-dom";
 
 let expertInsight = ArticleList.filter(
-  (article) => article.category === `expert's insights`
+  (article) => article.category === `expert's-insights`
 );
 
 function FirstCarousel() {
@@ -28,9 +28,9 @@ function FirstCarousel() {
             <div className="mb-5"></div>
             <Row>
               <div className="d-flex mt-1">
-                <Col className=" col-12 ms-lg-3 pb-5 text-dark">
+                <Col className=" col-12 pb-5 text-dark">
                   <h4>{expertInsight[0].title}</h4>
-                  <span>{expertInsight[0].description}</span>
+                  <span className="text-secondary">{expertInsight[0].description}</span>
                 </Col>
               </div>
               <div></div>

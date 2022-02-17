@@ -8,7 +8,8 @@ import RelatedArticles from "./RelatedArticles";
 import ArticleDataContext from "../../context/ArticleDataContext";
 
 const Template = () => {
-  window.scrollTo(0, 0);
+  setTimeout(()=>{window.scrollTo(0, 0);},500);
+  
 
 
   const params = useParams();
@@ -33,7 +34,7 @@ const Template = () => {
               to={`/articlefilter/${article.category ? article.category : ""}`}
             >
               <span
-                className={`badge text-wrap d-flex align-items-center ${article.categoryColor}`}
+                className={`badge text-nowrap d-flex align-items-center ${article.categoryColor}`}
               >
                 {article.category.toUpperCase()}
               </span>
