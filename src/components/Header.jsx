@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../images/logo.png";
+import logo from "../images/logo main.png";
 import OffCanvas from "./Buttons/OffCanvas";
 
 const Header = () => {
@@ -18,7 +18,7 @@ const Header = () => {
 
         <Link to={"/"}>
           {" "}
-          <img src={logo} alt="" style={{ height: "4rem" }} />
+          <img src={logo} alt="" style={{ height: "5rem" }} />
         </Link>
       </Container>
       <div

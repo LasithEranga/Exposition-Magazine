@@ -34,8 +34,8 @@ function SmallCard({ article }) {
           </Row>
         )}
         <Link to={`/articles/${article.id}`}>
-          <span className="text-dark  fw-bold stu-corner-text">
-            {_.truncate(article.title.toUpperCase(), { length: "50" })}
+          <span className="text-dark  fw-bold stu-corner-text ">
+            {_.truncate(article.title.toUpperCase(), { length: "40" })}
           </span>
         </Link>
       </Col>
