@@ -39,7 +39,7 @@ const MainImage = () => {
             className="text-white fs-2 fw-bold lead"
             style={{ fontSize: "2rem" }}
           >
-            DESHABANDHU W. K. H. WEGAPITIYA
+            MR. DHANIKA PERERA
           </span>
         </span>
       </div>
