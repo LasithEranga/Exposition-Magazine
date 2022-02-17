@@ -43,6 +43,11 @@ const ExpositionCard = ({ article }) => {
               {_.truncate(article.title.toUpperCase(), { length: 20 })}
             </span>
           </Link>
+          <Link to={`/articles/${article.id}`}>
+          <p className="text-dark stu-corner-text pt-1 d-md-none">
+            {article.description}
+          </p>
+        </Link>
         </Col>
         <hr className="my-3" />
       </Row>

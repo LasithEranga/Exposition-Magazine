@@ -38,6 +38,11 @@ function SmallCard({ article }) {
             {truncate(article.quote.toUpperCase(), { length: "40" })}
           </span>
         </Link>
+        <Link to={`/articles/${article.id}`}>
+          <p className="text-dark stu-corner-text pt-1 d-md-none">
+            {article.description}
+          </p>
+        </Link>
       </Col>
       <hr className="mt-3" />
     </Row>
