@@ -7,7 +7,7 @@ import ArticleList from "../Data/Articles.json";
 function StudentsCorner(props) {
   const filteredArticles = ArticleList.filter(
     (article) => article.category === `student's-corner`
-  );
+  ).slice(0,7);
   return (
     <Card className={"border-0 ps-2 pt-0 rounded-0 " + props.className}>
       <Card.Body className=" student-corner-container ">

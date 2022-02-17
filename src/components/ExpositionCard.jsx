@@ -6,6 +6,9 @@ import "./ExpositionCard.css";
 import { Link } from "react-router-dom";
 
 const ExpositionCard = ({ article }) => {
+
+ 
+
   return (
     <Col md={6} lg={12} className="expo-card-border">
       <Row className="mb-3 mb-lg-0 mx-1 mx-lg-0 ">
@@ -37,7 +40,7 @@ const ExpositionCard = ({ article }) => {
           </span>
           <Link to={`/articles/${article.id}`}>
             <span className="text-dark fw-bold d-block mt-1 exposition-title ">
-              {_.truncate(article.title.toUpperCase(), { length: "50" })}
+              {_.truncate(article.title.toUpperCase(), { length: 20 })}
             </span>
           </Link>
         </Col>

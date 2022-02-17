@@ -14,12 +14,12 @@ const RetaledArticles = (filteredArticle) => {
       (article) => article.category !== filteredArticle.category
     );
 
-    if (relatedArticles.length >= 3) {
-      relatedArticles = relatedArticles.slice(0, 2);
+    if (relatedArticles.length >= 4) {
+      relatedArticles = relatedArticles.slice(0, 4);
     }
 
-    if (nonRelatedArticles.length >= 3) {
-      nonRelatedArticles = nonRelatedArticles.slice(0, 2);
+    if (nonRelatedArticles.length >= 4) {
+      nonRelatedArticles = nonRelatedArticles.slice(0, 4);
     }
 
     const nextArticle = shuffled[shuffled.length - 1];

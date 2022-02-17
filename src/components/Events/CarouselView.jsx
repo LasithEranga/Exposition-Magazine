@@ -8,13 +8,13 @@ import { Link } from "react-router-dom";
 
 function CarouselView({ article }) {
   return (
-    <Card className="rounded-0 pb-3">
+    <Card className="rounded-0">
       <Card.Body className="px-1 expert-card-hr">
         <Carousel controls={false} indicators={false}>
-          <Carousel.Item>
+          <Carousel.Item interval={2000}>
             <div className=" image-competition">
               <img
-              loading="lazy"
+                loading="lazy"
                 src={"https://magazine.exposition.lk/images/edify.png"}
                 className="w-100 h-100"
                 style={{ objectFit: "cover" }}
@@ -22,11 +22,12 @@ function CarouselView({ article }) {
               />
             </div>
           </Carousel.Item>
-          <Carousel.Item>
+
+          <Carousel.Item interval={2000}>
             <div className=" image-competition">
               <img
-              loading="lazy"
-                src={"https://magazine.exposition.lk/images/edify.png"}
+                loading="lazy"
+                src={"https://magazine.exposition.lk/images/edify_winners.jpg"}
                 className="w-100 h-100"
                 style={{ objectFit: "cover" }}
                 alt=""
@@ -35,13 +36,23 @@ function CarouselView({ article }) {
           </Carousel.Item>
         </Carousel>
 
-        <div className="mb-5"></div>
         <Row>
-          <div className="d-flex mt-1">
-            <Col className=" col-12 ms-lg-3 pb-5">
-              <Link to={`/articles/${article?article.id:''}`}>
+          <div className="d-flex mt-2 pt-1">
+            <Col className=" col-12 ms-lg-3 pb-1 pb-lg-3">
+            <Link to={`/articlefilter/${article.category}`}>
+              <span
+                className={`badge rounded-1 text-nowrap  mb-2 ${
+                  article.categoryColor ? article.categoryColor : ""
+                }`}
+              >
+                {article.category.toUpperCase()}
+              </span>
+            </Link>
+              <Link to={`/articles/${article ? article.id : ""}`}>
                 <h4 className="text-dark">{article ? article.title : ""} </h4>
-                <span className="text-dark">{article ? article.description : ""}</span>
+                <span className="text-dark">
+                  {article ? article.description : ""}
+                </span>
               </Link>
             </Col>
           </div>

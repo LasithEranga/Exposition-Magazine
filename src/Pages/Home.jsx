@@ -25,7 +25,7 @@ const Home = () => {
         <BelowLanding/>
       </div>
 
-      <SuccessStories/>
+      {/* <SuccessStories/> */}
       <div className="mt-4">
         <SectionFour/>
       </div>

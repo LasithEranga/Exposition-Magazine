@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
         <div className="w-100 w-md-50 h-100 d-flex justify-content-center flex-column ">
           <div className="pt-5 pt-md-0 p-md-5">
-            <div className="fs-4 text-start" style={{ color: "#C49706" }}>
+            <div className="fs-4 text-start" style={{ color: "#daa520" }}>
               Contact Us
             </div>
             <div className=" d-flex flex-column text-light fw-light ">

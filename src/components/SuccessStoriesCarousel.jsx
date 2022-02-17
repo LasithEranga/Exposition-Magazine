@@ -8,11 +8,12 @@ const SuccessStoryCarousel = ({ stories }) => {
       fade
       className="position-relative p-0 "
       pause={false}
+      indicators={false}
     >
       {stories
         ? stories.map((story, index) => (
             <Carousel.Item key={index} interval={1000}>
-              <div className=" bg-dark w-100 " style={{ height: "40rem" }}>
+              <div className=" bg-dark w-100 " style={{ height: "38rem" }}>
                 <img
                   loading="lazy"
                   src={story.image ? story.image : ""}
