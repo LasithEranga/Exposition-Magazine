@@ -6,6 +6,7 @@ import Share from "../Buttons/Share";
 import FooterCard from "./FooterCard";
 import RelatedArticles from "./RelatedArticles";
 import ArticleDataContext from "../../context/ArticleDataContext";
+import './ArticleTemplate.css';
 
 const Template = () => {
   window.scrollTo(0, 0);

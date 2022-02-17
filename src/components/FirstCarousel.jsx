@@ -27,10 +27,10 @@ function FirstCarousel() {
             </div>
             <div className="mb-2"></div>
             <Row>
-              <div className="d-flex mt-1 ">
+              <div className="d-flex mt-1 pb-lg-1">
                 <Col className=" col-12 pb-2 text-dark">
                   <h4>{expertInsight[0].title}</h4>
-                  <h6 className="d-block d-md-none d-lg-block">{expertInsight[0].quote}</h6>
+                  <h6 className=" d-md-none d-xxl-flex">{expertInsight[0].quote}</h6>
                   <span className="text-secondary ">{expertInsight[0].description}</span>
                 </Col>
               </div>
