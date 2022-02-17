@@ -67,7 +67,7 @@ function SectionFour() {
             <Card className="pt-3 pt-md-0 ps-lg-1  rounded-0">
               <Row className="p-lg-3 pt-md-3 py-lg-3 d-flex expo-card-hr pb-md-3">
                 {getPopularArticles().map((article, index) => {
-                  return <ExpositionCard key={index} article={article} />;
+                  return <ExpositionCard  key={index} article={article} />;
                 })}
               </Row>
             </Card>

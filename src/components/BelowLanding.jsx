@@ -48,7 +48,7 @@ function BelowLanding() {
           </Row>
           <Row>
             <Col className="col d-md-none  d-lg-flex ms-md-3 ms-lg-4 px-lg-0">
-              <Row className="px-3 px-md-0  col-lg-12 mx-lg-0">
+              <Row className="px-3 px-lg-0 px-md-0  col-lg-12 mx-lg-0">
                 <Title>365 x 4 </Title>
                 <Card className="rounded-0 ps-3">
                   <Card.Body>
