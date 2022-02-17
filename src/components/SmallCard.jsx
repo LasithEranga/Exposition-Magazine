@@ -1,4 +1,4 @@
-import _ from "lodash";
+import truncate from "lodash/truncate";
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -35,7 +35,7 @@ function SmallCard({ article }) {
         )}
         <Link to={`/articles/${article.id}`}>
           <span className="text-dark  fw-bold stu-corner-text ">
-            {_.truncate(article.title.toUpperCase(), { length: "40" })}
+            {truncate(article.title.toUpperCase(), { length: "40" })}
           </span>
         </Link>
       </Col>
