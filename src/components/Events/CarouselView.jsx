@@ -27,7 +27,7 @@ function CarouselView({ article }) {
         <Row>
           <div className="d-flex mt-2 pt-1">
 
-            <Col className=" col-12 ms-lg-3 pb-1 pb-lg-3 pb-xxl-4">
+            <Col className=" col-12 ms-lg-3 pb-1 pb-lg-3 pb-xxl-0">
             <Link to={`/articlefilter/${article.category}`}>
               <span
                 className={`badge rounded-1 text-nowrap  mb-2 ${
