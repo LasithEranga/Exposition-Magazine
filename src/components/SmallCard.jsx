@@ -19,7 +19,7 @@ function SmallCard({ article }) {
           />
         </Link>
       </Col>
-      <Col className=" col-12 col-md-6 ps-0 ps-md-2">
+      <Col className=" col-12 col-md-6 ps-0 ps-md-2 pe-lg-0">
         {article.category && (
           <Row className="">
             <Link to={`/articlefilter/${article.category}`} className="">
@@ -35,7 +35,7 @@ function SmallCard({ article }) {
         )}
         <Link to={`/articles/${article.id}`}>
           <span className="text-dark  fw-bold stu-corner-text ">
-            {_.truncate(article.title.toUpperCase(), { length: "40" })}
+            {_.truncate(article.quote.toUpperCase(), { length: "40" })}
           </span>
         </Link>
       </Col>
