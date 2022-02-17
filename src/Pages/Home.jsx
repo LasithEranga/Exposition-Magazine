@@ -6,9 +6,9 @@ import MainImage from "../components/MainImage";
 import MemoryLane from "../components/MemoryLane";
 import SectionFive from "../components/SectionFive";
 import SectionFour from "../components/SectionFour";
-import SuccessStories from "../components/SuccessStories";
 import Events from "../components/Events/Events";
 import Team from "../components/Team";
+
 
 const Home = () => {
 
@@ -24,8 +24,6 @@ const Home = () => {
       <div className="mt-4">
         <BelowLanding/>
       </div>
-
-      {/* <SuccessStories/> */}
       <div className="mt-4">
         <SectionFour/>
       </div>

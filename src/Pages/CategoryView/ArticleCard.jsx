@@ -5,9 +5,11 @@ import { Link } from "react-router-dom";
 import "./AllArticles.css";
 import truncate from "lodash/truncate";
 
+import { motion } from "framer-motion";
+
 function ArticleCard(props) {
   return (
-    <Col xs={12} md={6} lg={4}>
+    <Col  xs={12} md={6} lg={4}>
       <Card style={{ width: "100%" }} className="my-2">
       <Link to={`/articles/${props.id}`} className=""><Card.Img
           className="p-3 pb-0"
@@ -17,7 +19,7 @@ function ArticleCard(props) {
         /></Link>
         <Card.Body>
           <div className="d-flex felx-column justify-content-between ">
-            <Card.Title className="fw-bold">{props.title} </Card.Title>
+          <Link to={`/articles/${props.id}`} className=""><Card.Title className="fw-bold text-dark">{props.title} </Card.Title></Link>
             <Link to={`/articlefilter/${props.category}`}>
               <span
                 style={{ fontSize: "0.7rem" }}

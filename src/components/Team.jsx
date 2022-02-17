@@ -9,11 +9,11 @@ import Title from "./Title";
 
 function Team() {
   return (
-    <Container className="p-md-0">
-      <Row className="px-2 px-lg-0">
+    <Container className="">
+      <Row className="px-3 px-lg-0">
         <Title>Exposition Team</Title>
         <Card className="rounded-0">
-          <Card.Body className="px-1 rounded-0">
+          <Card.Body className=" rounded-0">
             <Image src={batch} fluid loading="lazy"/>
           </Card.Body>
         </Card>
