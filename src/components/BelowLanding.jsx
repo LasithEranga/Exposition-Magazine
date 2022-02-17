@@ -41,7 +41,7 @@ function BelowLanding() {
               </Row>
             </Col>
 
-            <Col className="col-12 col-md-12 col-lg-4  ps-md-4  ms-lg-3">
+            <Col className="col-12 col-md-12 col-lg-4  ps-md-4  ms-lg-3 ">
               <Row className="px-3 px-md-1">
                 <Title>News</Title>
                 <News />
