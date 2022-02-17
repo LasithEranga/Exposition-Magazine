@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import "./EventCard.css";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function EventCard(props) {
   return (
@@ -12,7 +13,7 @@ function EventCard(props) {
       lg={6}
       className={`mt-3 px-0  ${props.class ? props.class : " "}`}
     >
-      <Card className="rounded-0">
+      <Card className="rounded-0" as={motion.div} whileHover={{ scale: 1.03 }}>
         <Card.Body>
           <Link to={`/articles/${props.id}`}>
             <Col className=" image-event">
@@ -28,8 +29,7 @@ function EventCard(props) {
               <span style={{ fontWeight: "bold" }}>
                 {props.title ? props.title : " "}
               </span>
-              <br></br>{" "}
-              <span>{props.quote ? props.quote : " "}</span>
+              <br></br> <span>{props.quote ? props.quote : " "}</span>
               <br />
             </Col>
           </Link>

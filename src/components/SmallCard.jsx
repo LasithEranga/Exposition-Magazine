@@ -4,14 +4,15 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./SmallCard.css";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function SmallCard({ article }) {
   return article ? (
-    <Row>
+    <Row as={motion.div} whileHover={{scale:1.05}}>
       <Col className={`px-0 col-12 col-md-6  image-height`}>
         <Link to={`/articles/${article.id}`}>
           <img
-            loading="lazy"
+          loading="lazy"
             src={article.image ? article.image : ""}
             alt=""
             className="w-100 h-100"
@@ -37,6 +38,11 @@ function SmallCard({ article }) {
           <span className="text-dark  fw-bold stu-corner-text ">
             {truncate(article.quote.toUpperCase(), { length: "40" })}
           </span>
+        </Link>
+        <Link to={`/articles/${article.id}`}>
+          <p className="text-dark stu-corner-text pt-1 d-md-none">
+            {article.description}
+          </p>
         </Link>
       </Col>
       <hr className="mt-3" />

@@ -9,7 +9,6 @@ import Title from "./Title";
 import News from "./News";
 import TSFItem from "./TSFItem";
 import ArticleList from "../Data/Articles.json";
-
 import SuccessStories from './SuccessStories';
 
 const getTSF = () => {
@@ -23,7 +22,7 @@ const getTSF = () => {
 function BelowLanding() {
   return (
     <Container>
-      <Row>
+      <Row >
         <Col className="col-12 col-md-5 col-lg-3  ">
           <Row className="px-3 px-md-0">
             <Title>Students' Corner </Title>
@@ -34,8 +33,8 @@ function BelowLanding() {
         <Col className="col-12 col-md-7 col-lg-9">
           <Row>
             <Col className="col ms-md-3 ms-lg-4">
-              <Row className="px-3 px-md-0">
-                <Title>Experts Insights</Title>
+              <Row className="px-3 px-md-0" >
+                <Title >Experts Insights</Title>
 
                 <FirstCarousel />
               </Row>

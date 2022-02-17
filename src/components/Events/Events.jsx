@@ -6,7 +6,7 @@ import Title from "../Title";
 import EventCard from "./EventCard";
 import CarouselView from "./CarouselView";
 import ArticleData from '../../Data/Articles.json';
-
+import { motion } from "framer-motion";
 const events = ArticleData.filter(article=>article.category === `events`);
 const edifyEvent = ArticleData.filter(article=>article.category === `Edify Winner`);
 function Events() {
@@ -15,7 +15,7 @@ function Events() {
       <Title>Events</Title>
       <Row className="mx-0">
         <Col className="col">
-          <Row>
+          <Row as={motion.div} whileHover={{scale:1.03}}>
             <CarouselView article={edifyEvent[0]}/>
           </Row>
         </Col>

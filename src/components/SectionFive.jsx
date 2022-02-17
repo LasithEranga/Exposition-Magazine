@@ -10,10 +10,10 @@ import Title from "./Title";
 function SectionFive() {
   return (
     <Container className="">
-      <Row className="px-4 px-lg-0">
+      <Row className="px-3 px-lg-0">
         <Title>Empowering Partner - Astra</Title>
-        <Card className="rounded-0">
-          <Card.Body className="px-1 rounded-0">
+        <Card className="rounded-0 p-0">
+          <Card.Body className="p-x1rounded-0">
             <Image src={banner} fluid loading="lazy"/>
           </Card.Body>
         </Card>

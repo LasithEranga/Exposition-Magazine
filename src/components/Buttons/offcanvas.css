@@ -1,0 +1,32 @@
+.logo-hight {
+  height: 5rem;
+}
+
+.canvas {
+  right: 0;
+}
+@media (min-width: 576px) {
+  .canvas {
+    right: 0;
+  }
+  .logo-hight {
+    height: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .canvas {
+    left: 0;
+  }
+  .logo-hight {
+    height: 5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  
+}
+

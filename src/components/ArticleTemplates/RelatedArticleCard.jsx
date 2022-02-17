@@ -17,13 +17,17 @@ function RelatedArticleCard(props) {
                 props.article.categoryColor ? props.article.categoryColor : ""
               }`}
             >
-              {props.article.category ? props.article.category.toUpperCase() : ""}
+              {props.article.category
+                ? props.article.category.toUpperCase()
+                : ""}
             </span>
           </Link>
         </Row>
         <Row>
           <Link to={`/articles/${props.article.id}`} className="p-0">
-            <span className="px-0 fw-bold text-black">{props.article.title}</span>
+            <span className="px-0 fw-bold text-black">
+              {props.article.title}
+            </span>
           </Link>
         </Row>
       </Col>
@@ -31,6 +35,7 @@ function RelatedArticleCard(props) {
         {" "}
         <Link to={`/articles/${props.article.id}`} className="p-0">
           <img
+            loading="lazy"
             src={props.article.image}
             className="w-100 h-100"
             alt=""
@@ -39,7 +44,8 @@ function RelatedArticleCard(props) {
         </Link>
       </Col>
       <Row style={{ color: "#8d9498" }}>
-        {props.article.author} . {props.article.readTime}{" read"}
+        {props.article.author} . {props.article.readTime}
+        {" read"}
       </Row>
     </Row>
   );

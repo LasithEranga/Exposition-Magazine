@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
+import {motion} from 'framer-motion';
 
 const ScrollToTop = () => {
   const [isScrolling, setisScrolling] = useState(false);
@@ -25,7 +26,8 @@ const ScrollToTop = () => {
 
   return (
     isScrolling && (
-      <div
+      <motion.div
+      whileHover={{scale:1.2}}
         className="d-flex justify-content-center align-items-center"
         onClick={clickHandler}
         style={{
@@ -41,7 +43,7 @@ const ScrollToTop = () => {
         }}
       >
         <IoIosArrowUp size={30} style={{ color: "white" }} />
-      </div>
+      </motion.div>
     )
   );
 };
