@@ -13,6 +13,7 @@ const ImageWithPopUp = ({ image, alt }) => {
       <ImageModal show={isModalOpen} image={image} />
       <div className=" bg-dark w-100 " style={{ height: "40rem" }}>
         <img
+          loading="lazy"
           src={image ? image : ""}
           alt={alt ? alt : ""}
           className="w-100 h-100"
@@ -32,6 +33,7 @@ const ImageWithPopUp = ({ image, alt }) => {
         }}
       >
         <img
+          loading="lazy"
           src={image ? image : ""}
           alt=""
           style={{ width: "75%", height: "75%", objectFit: "cover" }}

@@ -14,7 +14,7 @@ function SectionFive() {
         <Title>Empowering Partner - Astra</Title>
         <Card className="rounded-0">
           <Card.Body className="px-1 rounded-0">
-            <Image src={banner} fluid />
+            <Image src={banner} fluid loading="lazy"/>
           </Card.Body>
         </Card>
       </Row>
