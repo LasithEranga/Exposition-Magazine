@@ -29,7 +29,7 @@ function EventCard(props) {
                 {props.title ? props.title : " "}
               </span>
               <br></br>{" "}
-              <span>{props.description ? props.description : " "}</span>
+              <span>{props.quote ? props.quote : " "}</span>
               <br />
             </Col>
           </Link>
