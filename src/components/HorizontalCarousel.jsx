@@ -5,7 +5,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./dotStyle.css";
 import Title from "./Title";
-
+import { motion } from "framer-motion";
 import ArticleList from "../Data/Articles.json";
 
 const filteredList = ArticleList.filter(

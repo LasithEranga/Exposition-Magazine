@@ -3,13 +3,14 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./SpiritCard.css";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function SpiritCard({article}) {
   return (
     <Col md={6} lg={12} className={`px-0`}>
-      <Row className="mb-3 mx-md-0 ">
+      <Row className="mb-3 mx-md-0 " >
         
-        <Col lg={6} className="image-spirit pb-3 pb-lg-0">
+        <Col lg={6} className="image-spirit pb-3 pb-lg-0" as={motion.div} whileHover={{scale:1.03}}>
           
           <Link to={`/articles/${article.id}`}>
             <img
@@ -22,7 +23,7 @@ function SpiritCard({article}) {
           </Link>
           
         </Col>
-        <Col lg={6} className="">
+        <Col lg={6} className="" as={motion.div} whileHover={{scale:1.03}}>
         <div className="mb-2">
             {article.category && (
               <span className="" style={{ fontWeight: "bold" }}>
@@ -45,7 +46,7 @@ function SpiritCard({article}) {
           
         </Col>
 
-        <hr className="mt-4 " />
+        <hr  className="mt-4 "/>
       </Row>
     </Col>
   );

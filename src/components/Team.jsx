@@ -6,15 +6,16 @@ import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import batch from "../images/batch.webp";
 import Title from "./Title";
+import { motion } from "framer-motion";
 
 function Team() {
   return (
     <Container className="">
-      <Row className="px-3 px-lg-0">
+      <Row className="px-3 px-lg-0" >
         <Title>Exposition Team</Title>
         <Card className="rounded-0">
-          <Card.Body className=" rounded-0">
-            <Image src={batch} fluid loading="lazy"/>
+          <Card.Body className=" rounded-0" as={motion.div} whileHover={{scale:1.03}}>
+            <Image src={batch} fluid loading="lazy" />
           </Card.Body>
         </Card>
       </Row>

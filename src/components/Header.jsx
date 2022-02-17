@@ -1,8 +1,10 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink, Link,useLocation } from "react-router-dom";
 import logo from "../images/logo main.png";
 import OffCanvas from "./Buttons/OffCanvas";
+
+
 
 const Header = () => {
   const location = useLocation();
@@ -31,41 +33,41 @@ const Header = () => {
           className="text-center overflow-auto pb-3 pb-lg-0 "
           style={{ fontSize: "0.9rem", fontWeight: "600" }}
         >
-          <Link className=" text-dark px-2 " to="/">
+          <NavLink end className=" text-dark px-2 " to="/" >
             HOME
-          </Link>
-          <Link className="text-dark px-2" to="/articlefilter">
+          </NavLink>
+          <NavLink end className="text-dark px-2" to="/articlefilter">
             ARTICLES
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/articlefilter/events"
             className="text-dark px-2 text-nowrap "
           >
             IMSSA EVENTS
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/articlefilter/news"
             className="text-dark px-2 text-nowrap "
           >
             NEWS
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/articlefilter/interviews"
             className="text-dark px-2 text-nowrap "
           >
             INTERVIEWS
-          </Link>
+          </NavLink>
 
-          <Link
+          <NavLink
             to="/articlefilter/expert's-insights"
             className="text-dark px-2 text-nowrap "
           >
             EXPERT'S INSIGHTS
-          </Link>
+          </NavLink>
 
-          <Link className="text-dark px-2 text-nowrap " to="/about-us">
+          <NavLink className="text-dark px-2 text-nowrap " to="/about-us">
             ABOUT-US
-          </Link>
+          </NavLink>
         </div>
       </div>
     </React.Fragment>

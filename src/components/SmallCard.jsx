@@ -4,10 +4,11 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./SmallCard.css";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function SmallCard({ article }) {
   return article ? (
-    <Row>
+    <Row as={motion.div} whileHover={{scale:1.05}}>
       <Col className={`px-0 col-12 col-md-6  image-height`}>
         <Link to={`/articles/${article.id}`}>
           <img
