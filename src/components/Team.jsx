@@ -14,7 +14,7 @@ function Team() {
         <Title>Exposition Team</Title>
         <Card className="rounded-0">
           <Card.Body className="px-1 rounded-0">
-            <Image src={batch} fluid />
+            <Image src={batch} fluid loading="lazy"/>
           </Card.Body>
         </Card>
       </Row>

@@ -18,6 +18,7 @@ function FirstCarousel() {
           <Card.Body className="px-1 expert-card-hr">
             <div className="expert-insight-img">
               <img
+              loading="lazy"
                 alt=""
                 src={expertInsight[0].image}
                 className="w-100 h-100 expert-insight-img"

@@ -17,6 +17,10 @@ const useTime = (timeout) => {
     };
   }, [timeout]);
 
+  // useEffect(()=>{
+  //   window.onload = ()=>{setIsTimePassed(true)}
+  // },[])
+
   return isTimePassed;
 };
 

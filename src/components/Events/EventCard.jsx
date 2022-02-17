@@ -17,6 +17,7 @@ function EventCard(props) {
           <Link to={`/articles/${props.id}`}>
             <Col className=" image-event">
               <img
+                loading="lazy"
                 className="w-100 h-100"
                 src={props.image}
                 alt=""
