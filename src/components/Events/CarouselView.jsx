@@ -26,16 +26,18 @@ function CarouselView({ article }) {
 
         <Row>
           <div className="d-flex mt-2 pt-1">
-            <Col className=" col-12 ms-lg-3 pb-1 pb-lg-3">
-              <Link to={`/articlefilter/${article.category}`}>
-                <span
-                  className={`badge rounded-1 text-nowrap  mb-2 ${
-                    article.categoryColor ? article.categoryColor : ""
-                  }`}
-                >
-                  {article.category.toUpperCase()}
-                </span>
-              </Link>
+
+            <Col className=" col-12 ms-lg-3 pb-1 pb-lg-3 pb-xxl-4">
+            <Link to={`/articlefilter/${article.category}`}>
+              <span
+                className={`badge rounded-1 text-nowrap  mb-2 ${
+                  article.categoryColor ? article.categoryColor : ""
+                }`}
+              >
+                {article.category.toUpperCase()}
+              </span>
+            </Link>
+
               <Link to={`/articles/${article ? article.id : ""}`}>
                 <h4 className="text-dark">{article ? article.title : ""} </h4>
                 <span className="text-dark">
