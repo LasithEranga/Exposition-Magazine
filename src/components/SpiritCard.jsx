@@ -13,6 +13,7 @@ function SpiritCard({article}) {
           
           <Link to={`/articles/${article.id}`}>
             <img
+            loading="lazy"
               src={article.image}
               alt=""
               className="w-100 h-100"

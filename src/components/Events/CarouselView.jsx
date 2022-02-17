@@ -14,6 +14,7 @@ function CarouselView({ article }) {
           <Carousel.Item>
             <div className=" image-competition">
               <img
+              loading="lazy"
                 src={"https://magazine.exposition.lk/images/edify.png"}
                 className="w-100 h-100"
                 style={{ objectFit: "cover" }}
@@ -24,6 +25,7 @@ function CarouselView({ article }) {
           <Carousel.Item>
             <div className=" image-competition">
               <img
+              loading="lazy"
                 src={"https://magazine.exposition.lk/images/edify.png"}
                 className="w-100 h-100"
                 style={{ objectFit: "cover" }}

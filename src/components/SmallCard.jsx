@@ -8,11 +8,10 @@ import { Link } from "react-router-dom";
 function SmallCard({ article }) {
   return article ? (
     <Row>
-      <Col
-        className={`px-0 col-12 col-md-6  image-height`}
-      >
+      <Col className={`px-0 col-12 col-md-6  image-height`}>
         <Link to={`/articles/${article.id}`}>
           <img
+            loading="lazy"
             src={article.image ? article.image : ""}
             alt=""
             className="w-100 h-100"
