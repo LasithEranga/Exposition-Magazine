@@ -11,8 +11,7 @@ function SponsorCard(props) {
       lg={4}
       className={`mt-3 px-5 ${props.class ? props.class : " "}`}
     >
-      <div className="rounded-0" as={motion.div} whileHover={{ scale: 1.03 }}>
-          <Link to={`/articles/${props.id}`}>
+      <div className="rounded-0 text-center" as={motion.div} whileHover={{ scale: 1.03 }}>
             <Col className=" image-sponsor">
               <img
                 loading="lazy"
@@ -28,7 +27,6 @@ function SponsorCard(props) {
               </p>
               <br />
             </Col>
-          </Link>
       </div>
     </Col>
   );
