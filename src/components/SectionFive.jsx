@@ -11,10 +11,10 @@ function SectionFive() {
   return (
     <Container className="">
       <Row className="px-3 px-lg-0">
-        <Title>Empowering Partner - Astra</Title>
+        <Title>Empowering Partner - MAS</Title>
         <Card className="rounded-0 p-0">
           <Card.Body className="p-x1rounded-0">
-            <Image src={banner} fluid loading="lazy"/>
+            <Image src={banner} width={"100%"} loading="lazy"/>
           </Card.Body>
         </Card>
       </Row>

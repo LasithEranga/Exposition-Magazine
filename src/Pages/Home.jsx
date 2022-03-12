@@ -6,6 +6,7 @@ import MainImage from "../components/MainImage";
 import MemoryLane from "../components/MemoryLane";
 import SectionFive from "../components/SectionFive";
 import SectionFour from "../components/SectionFour";
+import Sponsors from "../components/Sponsors";
 import Events from "../components/Events/Events";
 import Team from "../components/Team";
 
@@ -29,14 +30,17 @@ const Home = () => {
       <div className="mt-4">
         <SectionFour/>
       </div>
-      {/* <div className="mt-4">
+      <div className="mt-4">
         <SectionFive/>
-      </div> */}
+      </div>
       <div className="mt-4" >
         <MemoryLane/>
       </div>
       <div className="mt-4">
       <Events />
+      </div>
+      <div className="mt-4">
+        <Sponsors />
       </div>
       <div className="mt-4">
         <Team/>

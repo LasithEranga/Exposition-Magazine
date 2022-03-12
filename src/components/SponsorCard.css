@@ -1,0 +1,29 @@
+
+.image-sponsor {
+    height: 7rem;
+  }
+  
+  
+  @media (min-width: 576px) {
+    .image-sponsor {
+        height: 7rem;
+      }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .image-sponsor {
+      height: 5rem;
+  
+    }
+  }
+  
+  @media (min-width: 992px) {
+  }
+  
+  @media (min-width: 1200px) {
+    .image-sponsor {
+      height: 7rem;
+  
+    }
+  }
+  
